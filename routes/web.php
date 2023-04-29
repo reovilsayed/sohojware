@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [PageController::class,'home'])->name('home');
 Route::get('/service/{slug}', [PageController::class,'service'])->name('service');
+Route::get('/post/{slug}', [PageController::class,'post'])->name('post');
 
 
 Route::group(['prefix' => 'admin'], function () {

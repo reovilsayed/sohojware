@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-12   ">
                             <div class="cta-links-area "><a class=" btn-outline cta-link cta-link-primary " href="#0">start now</a>
-                                <div class="play-btn-row-dir "><a class="video-link" href="https://www.youtube.com/watch?v=QI4_dGvZ5yE&amp;ab_channel=JUtah" role="button" title="play" data-fancybox="data-fancybox">
+                                <div class="play-btn-row-dir "><a class="video-link" href="https://www.youtube.com/watch?v=WLrT2T0LLiU" role="button" title="play" data-fancybox="data-fancybox">
                                         <div class="play-video-btn">
                                             <div class="play-btn"> <i class="fas fa-play icon"></i></div>
                                         </div>
@@ -125,7 +125,7 @@
                         <div class="info-items-list ">
                             <div class="row ">
                                 <div class="col-9 col-xl-6">
-                                    <div class="info-item"><i class="flaticon-medal  info-icon"></i>
+                                    <div class="info-item"><i class="fa-solid fa-medal me-4 mt-2" style="font-size:30px"></i>
                                         <div class="info-content">
                                             <h5 class="info-title">first on field </h5>
                                             <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="col-9 col-xl-6">
-                                    <div class="info-item"><i class="flaticon-game-console info-icon"></i>
+                                    <div class="info-item"><i class="fa-solid fa-vr-cardboard me-4 mt-2" style="font-size:30px"></i>
                                         <div class="info-content">
                                             <h5 class="info-title">easy to reach </h5>
                                             <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -143,7 +143,7 @@
                                     </div>
                                 </div>
                                 <div class="col-9 col-xl-6">
-                                    <div class="info-item"><i class="flaticon-map info-icon"></i>
+                                    <div class="info-item"><i class="fa-solid fa-map-location-dot me-4 mt-2" style="font-size:30px"></i>
                                         <div class="info-content">
                                             <h5 class="info-title">worldwide services </h5>
                                             <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                                 <div class="col-9 col-xl-6">
-                                    <div class="info-item"><i class="flaticon-technical-support-1  info-icon"></i>
+                                    <div class="info-item"><i class="fa-solid fa-headset me-4 mt-2" style="font-size:30px"></i>
                                         <div class="info-content">
                                             <h5 class="info-title">24/7 support </h5>
                                             <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -162,11 +162,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cta-area"><a class=" btn-solid reveal-start" href="#0">Get in touch</a>
-                            <div class="signature ">
+                        <div class="cta-area"><a class=" btn-solid reveal-start" href="#contact-us">Get in touch</a>
+                            <!-- <div class="signature ">
                                 <div class="signature-img"></div>
                                 <div class="signature-name">CEO &amp; Founder </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cta-area "><a class=" btn-solid " href="#0">get in toutch</a></div>
+                        <div class="cta-area "><a class=" btn-solid " href="#contact-us">get in toutch</a></div>
                     </div>
                 </div>
             </div>
@@ -256,25 +256,25 @@
             <div class="row ">
                 <!--Info One-->
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-project-management stat-icon"></i>
+                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-solid fa-hands-holding-circle" style="color: #0A6A9E; font-size:48px"></i>
                         <p class="stat-num "><span class="counter" data-from="10" data-to="750" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">finished projects</span>
                     </div>
                 </div>
                 <!--Info Two-->
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-content-management stat-icon"></i>
+                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-regular fa-note-sticky" style="color: #0A6A9E; font-size:48px"></i>
                         <p class="stat-num "><span class="counter" data-from="0" data-to="23" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">Created jobs</span>
                     </div>
                 </div>
                 <!--Info Three-->
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-user stat-icon"></i>
+                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-regular fa-user" style="color: #0A6A9E; font-size:48px"></i>
                         <p class="stat-num "><span class="counter" data-from="0" data-to="200" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">happy customers</span>
                     </div>
                 </div>
                 <!--Info Four-->
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
-                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-aim stat-icon"></i>
+                    <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-solid fa-bullseye" style="color: #0A6A9E; font-size:48px"></i>
                         <p class="stat-num "><span class="counter" data-from="0" data-to="28" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">years Of exprience</span>
                     </div>
                 </div>
@@ -290,7 +290,7 @@
             <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">portfolio</span>
                 <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Awesome <span class='hollow-text'>portfolio</span></h2>
             </div>
-            <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid    " href="portfolio-grid.html">see more <i class="bi bi-arrow-right icon "></i></a></div>
+            <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid    " href="portfolio-grid.html">see more <i class="fa-solid fa-arrow-right"></i></a></div>
         </div>
         <div class="portfolio-wrapper  ">
             <!--a menu of links to show the photos users needs   -->
@@ -369,27 +369,12 @@
               
               
               -->
-                    <div class="swiper-slide">
-                        <div class="client-logo  "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/1-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/2-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/3-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/4-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/5-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/6-white.png" alt=" "></a></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/clients-logos/7-white.png" alt=" "></a></div>
-                    </div>
+                   @foreach ($clients as $client)
+                       
+                   <div class="swiper-slide">
+                       <div class="client-logo "><a href="{{ $client->link }}"><img class="img-fluid logo " loading="lazy" src="{{ Voyager::image($client->logo) }}" alt=" "></a></div>
+                   </div>
+                   @endforeach
                 </div>
             </div>
         </div>
@@ -413,7 +398,7 @@
             <!--First Plan-->
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
-                    <div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
+                    <div class="plan-head">
                         <h4 class="plane-name">free plan</h4>
                         <div class="plan-price">
                             <h3 class="price">00<sup class="currency-symbol">$</sup></h3><span class="per">per
@@ -435,7 +420,7 @@
             <!--Second-plan-->
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
-                    <div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
+                    <div class="plan-head">
                         <h4 class="plane-name">standerd plan</h4>
                         <div class="plan-price">
                             <h3 class="price">85<sup class="currency-symbol">$</sup></h3><span class="per">per
@@ -457,7 +442,7 @@
             <!--Third-plan-->
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
                 <div class="plan   featured  wow fadeInUp  " data-wow-delay=".5s ">
-                    <div class="plan-head"><i class="flaticon-box plan-icon"></i>
+                    <div class="plan-head">
                         <h4 class="plane-name">pro plan</h4>
                         <div class="plan-price">
                             <h3 class="price">150<sup class="currency-symbol">$</sup></h3><span class="per">per
@@ -479,7 +464,7 @@
             <!--fourth-plan-->
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".6s ">
-                    <div class="plan-head"><i class="flaticon-basic-shapes plan-icon"></i>
+                    <div class="plan-head">
                         <h4 class="plane-name">ultimate plan</h4>
                         <div class="plan-price">
                             <h3 class="price">210<sup class="currency-symbol">$</sup></h3><span class="per">per
@@ -581,11 +566,11 @@
                     </div>
                     <!--navigation buttons-->
                     <div class="swiper-button-prev">
-                        <div class="left-arrow"><i class="bi bi-chevron-left icon "></i>
+                        <div class="left-arrow"><i class="fa-solid fa-arrow-left"></i>
                         </div>
                     </div>
                     <div class="swiper-button-next">
-                        <div class="right-arrow"><i class="bi bi-chevron-right icon "></i>
+                        <div class="right-arrow"><i class="fa-solid fa-arrow-right "></i>
                         </div>
                     </div>
                 </div>
@@ -741,60 +726,26 @@
             <div class="col-12 ">
                 <div class="posts-grid ">
                     <div class="row">
+                        @foreach ($posts as $post )
+                            
                         <div class="col-12 col-lg-4 ">
-                            <div class="post-box"> <a class="post-link" href="#0" title="How litespeed technology works to speed up your site ">
-                                    <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/blog/post-images/1.jpg" alt="" /><span class="post-date"><span class="day">05 </span>oct 2022
+                            <div class="post-box"> <a class="post-link" href="{{route('post',$post->slug)}}" title="How litespeed technology works to speed up your site ">
+                                    <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy" src="{{Voyager::image($post->image)}}" alt="" /><span class="post-date"><span class="day">{{ $post->created_at->format('d M Y') }} </span>
                                         </span></div>
                                 </a>
                                 <div class="post-summary">
-                                    <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>hosting</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>Allan Moore</a></div>
-                                    <div class="post-text"><a class="post-link" href="#0">
-                                            <h2 class="post-title"> How litespeed technology works to speed up your
-                                                site </h2>
+                                    <div class="post-info"><a class="info post-cat" href="#"><i class="fa-regular fa-bookmark me-2"></i>{{ $post->category->name }}</a><a class="info post-author" href="#"> <i class="fa-regular fa-user me-2"></i>Sayed Khan</a></div>
+                                    <div class="post-text"><a class="post-link" href="{{route('post',$post->slug)}}">
+                                            <h2 class="post-title">{{ $post->title }} </h2>
                                         </a>
-                                        <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit.Iure nulla dolorem, voluptates molestiae</p><a class="read-more" href="#0" title="How litespeed technology works to speed up your site ">read
-                                            more<i class="bi bi-arrow-right icon "></i></a>
+                                        <p class="post-excerpt">{{$post->excerpt}}</p><a class="read-more" href="{{route('post',$post->slug)}}" title="How litespeed technology works to speed up your site ">read
+                                            more<i class="fa-solid fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 ">
-                            <div class="post-box"> <a class="post-link" href="#0" title="give your website a new look and feel with themes">
-                                    <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/blog/post-images/2.jpg" alt="" /><span class="post-date"><span class="day">15 </span>sep 2022
-                                        </span></div>
-                                </a>
-                                <div class="post-summary">
-                                    <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>web dev</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>mhmd amin</a></div>
-                                    <div class="post-text"><a class="post-link" href="#0">
-                                            <h2 class="post-title"> give your website a new look and feel with
-                                                themes</h2>
-                                        </a>
-                                        <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit.Iure nulla dolorem, voluptates molestiae</p><a class="read-more" href="#0" title="give your website a new look and feel with themes">read
-                                            more<i class="bi bi-arrow-right icon "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 ">
-                            <div class="post-box"> <a class="post-link" href="#0" title="the role of domain names in SEO world explained ">
-                                    <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy" src="https://amincodes.com/html/one-pages/flex-it/assets/images/blog/post-images/3.jpg" alt="" /><span class="post-date"><span class="day">27 </span>aug 2022
-                                        </span></div>
-                                </a>
-                                <div class="post-summary">
-                                    <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>SEO</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>yusuf amin</a></div>
-                                    <div class="post-text"><a class="post-link" href="#0">
-                                            <h2 class="post-title"> the role of domain names in SEO world explained
-                                            </h2>
-                                        </a>
-                                        <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                            elit.Iure nulla dolorem, voluptates molestiae</p><a class="read-more" href="#0" title="the role of domain names in SEO world explained ">read
-                                            more<i class="bi bi-arrow-right icon "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+                      
                     </div>
                 </div>
             </div>
@@ -855,7 +806,7 @@
                 </div>
             </div>
         </section>
-        <section class="locations-section  mega-section ">
+        <!-- <section class="locations-section  mega-section ">
             <div class="sec-heading centered  ">
                 <div class="content-area">
                     <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">our offices around the world</h2>
@@ -931,7 +882,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
 </section>
 <!-- End  blog Section-->
 @endsection

@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta name="description" content="@yield('meta-description',setting('site.description'))">
+    <meta name="description" content="@yield('meta-keywords',setting('site.keywords'))">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -71,9 +72,6 @@
                     <ul class="list-js links-list">
                         <li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link   active"
                                 href="#page-hero">home</a>
-                            <ul class="sub-menu ">
-                      
-                            </ul>
                         </li>
                         <li class="nav-item menu-item"><a class="nav-link menu-link  " href="#services">services </a>
                         </li>
@@ -92,7 +90,11 @@
                     <!--Menu Toggler button-->
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
                     <!--search Icon button-->
-                    <div class="control header-search-btn"><i class="fab fa-whatsapp" style="font-size: 30px;"></i></div>
+                    <div class="">
+                        <a href="https://wa.me/8801738324024" >
+                        <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
+                        </a>
+                 </div>
                     <!--Dark/Light mode button-->
                 
                     <!--mini shoping cart-->
@@ -114,8 +116,8 @@
         <div class="container">
             <div class="row footer-cols">
                 <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy"
-                        src="https://amincodes.com/html/one-pages/flex-it/assets/images/logo/logo-colored.png"
-                        alt="logo" />
+                        src="{{asset('assets/favicon.png')}}"
+                        alt="logo" style="max-width: 60px;" />
                     <div class="footer-col-content-wrapper">
                         <p class="footer-text-about-us ">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -144,16 +146,16 @@
                     <h2 class=" footer-col-title    ">useful links</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu ">
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i> <a
                                     class="footer-menu-link" href="#0">Google</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">Dribbble</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">linkedIn</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">wikipedia</a>
                             </li>
                         </ul>
@@ -163,16 +165,16 @@
                     <h2 class=" footer-col-title    ">Resources</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">support</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">dashboard</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">drivers</a>
                             </li>
-                            <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1" style="color:#0a6a9e"></i><a
                                     class="footer-menu-link" href="#0">projects</a>
                             </li>
                         </ul>
@@ -181,12 +183,12 @@
                 <div class="col-12     col-lg-4 footer-col ">
                     <h2 class=" footer-col-title    ">contact information</h2>
                     <div class="footer-col-content-wrapper">
-                        <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a
-                                class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a>
+                        <div class="contact-info-card"><i class="fa-solid fa-envelope me-2" style="color:#0a6a9e"></i><a
+                                class="text-lowercase  info" href="mailto:example@support.com " >example@support.com</a>
                         </div>
-                        <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span
+                        <div class="contact-info-card"><i class="fa-solid fa-location-dot me-2" style="color:#0a6a9e"></i><span
                                 class="text-lowercase  info">5 Xyz st., Abc, alexandria, egypt.</span></div>
-                        <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info"
+                        <div class="contact-info-card"><i class="fa-solid fa-mobile me-2" style="color:#0a6a9e"></i><a class="info"
                                 href="tel:+20123456789">+20123456789 </a></div>
                         <div class="contact-info-card">
                             <div class="social-icons">
@@ -222,7 +224,7 @@
                             &copy; 2022
                             Created by:
 
-                            <a class="link" href="#0">amin-themes</a>
+                            <a class="link" href="#0">Sohojware</a>
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
@@ -240,7 +242,7 @@
             class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
     <!-- End loading-screen Component-->
     <!-- Start back-to-top Component-->
-    <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
+    <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
 
 
@@ -255,6 +257,7 @@
     <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    @yield('js')
 </body>
 
 </html>

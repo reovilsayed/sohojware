@@ -10,8 +10,7 @@
 
 @section('css')
 <link rel="stylesheet" href="{{asset('assets/css/service.css')}}">
-<!-- <link rel="stylesheet" href="https://nexgen-html.codings.dev/assets/css/default.css"> -->
-<link rel="stylesheet" href="https://nexgen-html.codings.dev/page-single-service-1.html/assets/css/vendor/bootstrap.min.css">
+
 @endsection
 @section('content')
  <!-- Hero -->
@@ -69,7 +68,7 @@
                     </div>
 
                     <!-- Sidebar -->
-                    <aside class="col-12 col-lg-4 pl-lg-5 p-0 float-right sidebar">                    
+                    <!-- <aside class="col-12 col-lg-4 pl-lg-5 p-0 float-right sidebar">                    
                         <div class="row">
                             <div class="col-12 align-self-center text-left">
                                 <h4>Service Mapping</h4>
@@ -86,7 +85,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </aside>
+                    </aside> -->
                 </div>
             </div>
         </section>
