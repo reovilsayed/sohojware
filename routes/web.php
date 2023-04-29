@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [PageController::class,'home'])->name('home');
+Route::get('/service/{slug}', [PageController::class,'service'])->name('service');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
-Route::get('/service', [PageController::class,'service']);

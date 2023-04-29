@@ -1,4 +1,12 @@
 @extends('layouts.app')
+@section('title','Sohojware | '. $service->title )
+@section('meta-description', $service->meta_description)
+
+@section('social_media')
+<meta property="og:title" content="{{ $service->title}}" />
+<meta property="og:description"content="{{$service->meta_description}}" />
+<meta property="og:url" content="{{route('service',$service->slug)}}" />
+@endsection
 
 @section('css')
 <link rel="stylesheet" href="{{asset('assets/css/service.css')}}">
@@ -25,11 +33,11 @@
                                 <!-- Content -->
                                 <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Single Service</li>
+                                        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">{{ $service->title }}</li>
                                     </ol>
                                 </nav>
-                                <h1 class="mb-0 title effect-static-text">Single Service</h1>
+                                <h1 class="mb-0 title effect-static-text">{{ $service->title }}</h1>
                             </div>
                         </div>
                     </div>
@@ -49,23 +57,13 @@
                             <div class="col-12">
                                 <span class="pre-title m-0">Know what the law requires</span>
                                 <div class="title-icon">                                    
-                                    <h4>Legal  Consulting</h4>
+                                    <h4>{{ $service->title }}</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 align-self-center">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit tortor, interdum sed cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus.</p>
-                                <p>Praesent fringilla quis massa et placerat. Mauris eu dui eget urna pellentesque gravida vitae quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna.</p>
-                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam tortor, ultrices accumsan mauris eget, pulvinar tincidunt erat. Sed nisi nisi, rutrum sit amet elit.</blockquote>
-                                <p>Sed mauris nulla, tempor eu est vel, dapibus hendrerit mauris curabitur dictum pharetra.</p>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Consectetur adipiscing elit</li>
-                                    <li>Integer molestie lorem at massa</li>
-                                    <li>Facilisis in pretium nisl aliquet</li>
-                                </ul>
-                                <p>Etiam mollis sem sed bibendum blandit. Aenean quis luctus ligula, vitae suscipit dui. Nunc diam orci, tincidunt eget consectetur sit amet, vulputate.</p>
+                                {!! $service->description !!}
                             </div>
                         </div>        
                     </div>
@@ -76,38 +74,15 @@
                             <div class="col-12 align-self-center text-left">
                                 <h4>Service Mapping</h4>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-organization"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
+                                    @foreach ($services as $service)
+                                        
+                                    <li class="list-group-item  text-white">
+                                        <a href="{{route('service',$service->slug)}}"> {{ $service->title }}</a>
+                                        
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-globe-alt"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-layers"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-pie-chart"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-briefcase"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-plane"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-chart"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-center align-items-center">
-                                        <a href="#"><i class="icon icon-drawer"></i></a>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </li>
+                                    @endforeach
+                              
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -147,7 +122,7 @@
                             <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                         </div>  
                         <div data-aos="fade-up" class="col-12 col-md-5 p-0 pr-md-4 item">
-                            <h4 style="text-align: justify;"><i class="mr-2 icon-graduation"></i>Expertise</h4>
+                            <h4 style="text-align: justify;"><i class="fa-solid fa-graduation-cap me-2"></i>Expertise</h4>
                             <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -156,45 +131,7 @@
             </div>
         </section>
 
-        <!-- About 2 -->
-        <section id="about-2" class="section-3 odd highlights team image-right">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8 align-self-top text">
-                        <div class="row intro m-0">
-                            <div class="col-12 p-0">
-                                <span class="pre-title m-0">You more prepared</span>
-                                <h2><span class="featured"><span>Boost </span></span> Your Creativity</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 p-0 pr-md-5">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis diam varius diam ultricies lacinia. <b>Mauris lacus tellus, ultrices eu volutpat sit amet, finibus a ipsum.</b> Nullam sit amet pretium felis.</p>
-                                <p><b>Cras sem ante, accumsan quis sem sed, rutrum varius nunc.</b></p>
-                            </div>
-                        </div>
-                        
-                        <!-- Action -->
-                        <div data-aos="fade-up" class="buttons">
-                            <div class="d-sm-inline-flex mt-4">
-                                <a href="#contact" class="smooth-anchor mt-4 btn primary-button">GET IN TOUCH</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" class="col-12 col-lg-4 align-self-end">
-                        <div class="quote">
-                            <div class="quote-content">
-                                <h4>Consultant Speech</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut lacinia diam.</p>
-                                <p>Vivamus efficitur et est quis posuere. Nulla sollicitudin vulputate dui, id pretium tortor congue eu. Integer aliquet justo eu quam volutpat ullamcorper.</p>
-                                <h5>Jacob Hill Jr.</h5>
-                            </div>
-                            <i class="quote-right fas fa-quote-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Contact -->
         <section id="contact" class="section-4 form contact">
@@ -246,7 +183,7 @@
                                             <span class="form-alert"></span>
                                         </div>
                                         <div class="col-12 input-group m-0 p-2">
-                                            <a class="btn primary-button">SEND</a>
+                                            <a class="btn-outline cta-link cta-link-primary">SEND</a>
                                         </div>
                                     </div>
                                 </form>
@@ -277,9 +214,6 @@
                                         Main Avenue, 987
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -287,113 +221,6 @@
             </div>
         </section>
         
-        <!-- Footer -->
-        <footer>
-
-            <!-- Footer [content] -->
-            <section id="footer" class="odd footer offers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-3 footer-left">
-
-                            <!-- Navbar Brand-->
-                            <a class="navbar-brand" href="/">
-                                <span class="brand">
-                                    <span class="featured">
-                                        <span class="first">NEX</span>
-                                    </span>
-                                    <span class="last">GEN</span>
-                                </span>
-                                
-                                <!-- 
-                                    Custom Logo
-                                    <img src="assets/images/logo.svg" alt="NEXGEN">
-                                -->
-                            </a>
-                            <p>A Functional HTML Template<br>for Corporate & Business.</p>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="fas fa-phone-alt mr-2"></i>
-                                        +1 (305) 1234-5678
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="fas fa-envelope mr-2"></i>
-                                        hello@example.com
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="fas fa-map-marker-alt mr-2"></i>
-                                        Main Avenue, 987
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#contact" class="mt-4 btn outline-button smooth-anchor">GET IN TOUCH</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-9 p-0 footer-right">
-                            <div class="row items">
-                                <div class="col-12 col-lg-4 item">
-                                    <div class="card">
-                                        <h4>About</h4>
-                                        <a href="#"><i class="icon-arrow-right"></i>The Company</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Institutional</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Social & Events</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Innovation</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Environment</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Technology</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 item">
-                                    <div class="card">
-                                        <h4>Services</h4>
-                                        <a href="#"><i class="icon-arrow-right"></i>Audit & Assurance</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Financial Advisory</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Analytics M&A</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Middle Marketing</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Legal Consulting</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Regulatory Risk</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4 item">
-                                    <div class="card">
-                                        <h4>Support</h4>
-                                        <a href="#"><i class="icon-arrow-right"></i>Responsibility</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Terms of Use</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>About Cookies</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Privacy Policy</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Accessibility</a>
-                                        <a href="#"><i class="icon-arrow-right"></i>Information</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Copyright -->
-            <section id="copyright" class="p-3 odd copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                            <p>Enjoy the low price. We are tracking any intention of piracy.</p>
-                            <!--
-                                Suggestion: Replace the text above with a description of your website.
-                             -->
-                        </div>
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© 2023 NEXGEN is Proudly Powered by <a href="https://themeforest.net/user/codingsdev" target="_blank">Codings</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </footer>
 
         <!-- Modal [search] -->
         <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">

@@ -1,11 +1,20 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <meta name="description" content="@yield('meta-description',setting('site.description'))">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="IT Solutions &amp; Business Services Responsive HTML5 Bootstrap5  Website Template">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="agency, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="Sayed Khan Prince">
+    <!-- Mobile Specific Meta -->
+    <link rel="canonical" href="{{ url(Request::url()) }}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- fav icon -->
     <link rel="icon" href="{{asset('assets/favicon.png')}}">
@@ -31,7 +40,9 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
     @yield('css')
-    <title> Sohoj Ware</title>
+    <title> @yield('title','Sohoj Ware')</title>
+
+    @yield('social_media')
 </head>
 
 <body class=" dark-theme  landing-page-demo">
