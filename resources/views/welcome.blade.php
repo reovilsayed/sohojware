@@ -673,57 +673,35 @@
                             <div class="card-header " id="heading-1">
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">are
-                                        your service easy to use?</button>
+                                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                        How do I get started with your services?
+                                    </button>
                                 </h5>
                             </div>
                             <div class="collapse " id="collapse-1" aria-labelledby="collapse-1"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high
-                                        life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
-                                </div>
+                                    <p class="faq-answer">
+                                        Simply contact us through our website, and one of our team members will reach out to you to discuss your project and provide you with a quote.
+                                    </p>
+                                </div> 
                             </div>
                         </div>
                         <div class="card mb-2">
-                            <div class="card-header " id="heading-2">
+                            <div class="card-header " id="heading-1">
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">will
-                                        i receive future updates?</button>
+                                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                        What are the monthly subscription options available for website maintenance?
+                                    </button>
                                 </h5>
                             </div>
-                            <div class="collapse " id="collapse-2" aria-labelledby="collapse-2"
+                            <div class="collapse " id="collapse-1" aria-labelledby="collapse-1"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high
-                                        life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">
+                                        We offer a range of monthly subscription options based on the complexity of your website and your specific maintenance needs. Our pricing starts from $100 per month, and we can tailor a subscription package to fit your unique requirements.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -731,31 +709,39 @@
                             <div class="card-header " id="heading-3">
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">is
-                                        this services work in my country?</button>
+                                        data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                        What is included in the website maintenance subscription?
+                                    </button>
                                 </h5>
                             </div>
                             <div class="collapse " id="collapse-3" aria-labelledby="collapse-3"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high
-                                        life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">
+                                        Our website maintenance subscription includes regular updates and backups, security checks and monitoring, performance optimization, content updates, and technical support. We ensure that your website is running smoothly and remains secure.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="card mb-2">
+                            <div class="card-header " id="heading-2">
+                                <h5 class="mb-0 faq-title">
+                                    <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                                        How do you provide SEO services?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="collapse " id="collapse-2" aria-labelledby="collapse-2"
+                                data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="faq-answer">
+                                        Our SEO services include both on-page and off-page optimization techniques, article writing, and implementation of Google Analytics, Tag Manager, and Search Console. We customize our approach based on your budget and specific business needs. Our goal is to help you improve your website's visibility and ranking on search engines, and ultimately drive more traffic to your site.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card mb-2">
                             <div class="card-header " id="heading-4">
                                 <h5 class="mb-0 faq-title">
