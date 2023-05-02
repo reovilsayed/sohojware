@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class,'home'])->name('home');
 Route::get('service/{slug}', [PageController::class,'service'])->name('service');
 Route::get('post/{slug}', [PageController::class,'post'])->name('post');
+Route::post('contact', [ContactController::class,'store'])->name('contact.store');
 
 
 Route::group(['prefix' => 'admin'], function () {
