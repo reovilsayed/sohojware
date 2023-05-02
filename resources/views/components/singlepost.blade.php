@@ -1,0 +1,23 @@
+<div class="col-12 col-lg-4 ">
+    <div class="post-box"> <a class="post-link" href="{{ route('post', $post->slug) }}"
+            title="How litespeed technology works to speed up your site ">
+            <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy"
+                    src="{{ Voyager::image($post->image) }}" alt="" /><span class="post-date"><span
+                        class="day">{{ $post->created_at->format('d M Y') }} </span>
+                </span></div>
+        </a>
+        <div class="post-summary">
+            <div class="post-info"><a class="info post-cat" href="#"><i
+                        class="fa-regular fa-bookmark me-2"></i>{{ $post->category->name }}</a><a
+                    class="info post-author" href="#"> <i class="fa-regular fa-user me-2"></i>Sayed Khan</a></div>
+            <div class="post-text"><a class="post-link" href="{{ route('post', $post->slug) }}">
+                    <h2 class="post-title">{{ $post->title }} </h2>
+                </a>
+                <p class="post-excerpt">{{ $post->excerpt }}</p><a class="read-more"
+                    href="{{ route('post', $post->slug) }}"
+                    title="How litespeed technology works to speed up your site ">read
+                    more<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

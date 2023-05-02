@@ -10,17 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="agency, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="keywords" content="web designer,web developer,digital">
     <meta name="author" content="Sayed Khan Prince">
-    <!-- Mobile Specific Meta -->
     <link rel="canonical" href="{{ url(Request::url()) }}" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- fav icon -->
     <link rel="icon" href="{{ asset('assets/favicon.png') }}">
-
-    <!-- bootstarp -->
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
@@ -32,22 +26,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <!-- Font Family -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
-    <!-- main-LTR -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
     @yield('css')
-    <title> @yield('title', 'Sohoj Ware')</title>
-
+    <title>@yield('title', 'Sohoj Ware')</title>
     @yield('social_media')
 </head>
 
-<body class=" dark-theme  landing-page-demo">
-    <!--Start Page Header-->
+<body class="dark-theme landing-page-demo">
     <header class=" header-basic" id="page-header">
         <div class="header-search-box">
             <div class="close-search"></div>
@@ -86,28 +74,17 @@
                     </ul>
                 </div>
                 <div class="controls-box">
-                    <!--Menu Toggler button-->
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-                    <!--search Icon button-->
                     <div class="">
                         <a target="_blank" href="https://wa.me/8801738324024">
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
                     </div>
-                    <!--Dark/Light mode button-->
-
-                    <!--mini shoping cart-->
                 </div>
             </nav>
         </div>
-        <!--End navbar-->
     </header>
-    <!--End Page Header-->
     @yield('content')
-
-
-
-    <!-- Start  page-footer Section-->
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="https://amincodes.com/html/one-pages/flex-it/assets/images/sections-bg-images/footer-bg-1.jpg"
@@ -118,10 +95,12 @@
                         src="{{ asset('assets/favicon.png') }}" alt="logo" style="max-width: 60px;" />
                     <div class="footer-col-content-wrapper">
                         <p class="footer-text-about-us ">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Voluptatibus facere modi possimus dignissimos,
-                            aliquam nobis eaque? Voluptatem magnam quisquam rem.
-
+                            We are a team of IT specialists who have been providing IT support since 2015. Our team
+                            comprises highly experienced web developers, web designers, graphic designers, digital
+                            marketers, app developers, and professionals from all sectors necessary to run a successful
+                            business. We prioritize building strong relationships with our clients over focusing solely
+                            on business. Our commitment to delivering quality work and exceptional service has helped us
+                            build a loyal client base.
                         </p>
                     </div>
                     <div class="form-area ">
@@ -180,34 +159,34 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12     col-lg-4 footer-col ">
-                    <h2 class=" footer-col-title    ">contact information</h2>
+                <div class="col-12 col-lg-4 footer-col ">
+                    <h2 class=" footer-col-title">contact information</h2>
                     <div class="footer-col-content-wrapper">
                         <div class="contact-info-card"><i class="fa-solid fa-envelope me-2"
                                 style="color:#0a6a9e"></i><a class="text-lowercase  info"
-                                href="mailto:example@support.com ">example@support.com</a>
+                                href="mailto:info@sohojware.com">info@sohojware.com</a>
                         </div>
                         <div class="contact-info-card"><i class="fa-solid fa-location-dot me-2"
                                 style="color:#0a6a9e"></i><span class="text-lowercase  info">5 Xyz st., Abc,
                                 alexandria, egypt.</span></div>
-                        <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
+                        {{-- <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
                                 style="color:#0a6a9e"></i><a class="info" href="tel:+20123456789">+20123456789 </a>
-                        </div>
+                        </div> --}}
                         <div class="contact-info-card">
                             <div class="social-icons">
                                 <div class="sc-wrapper dir-row sc-size-32">
                                     <ul class="sc-list">
-                                        <li class="sc-item " title="Facebook"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="Facebook"><a target="_blank" class="sc-link" href="https://www.facebook.com/sohojitltd/"
                                                 title="social media icon"><i
                                                     class="fab fa-facebook-f sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item " title="youtube"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="youtube"><a target="_blank" class="sc-link" href="https://www.youtube.com/@sohojware/videos"
                                                 title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item " title="instagram"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="instagram"><a class="sc-link" href="#0"
                                                 title="social media icon"><i class="fab fa-instagram sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item " title="twitter"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="twitter"><a class="sc-link" href="#0"
                                                 title="social media icon"><i class="fab fa-twitter sc-icon"></i></a>
                                         </li>
                                     </ul>
@@ -223,12 +202,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex justify-content-start">
                         <p class="creadits">
-
-
-                            &copy; 2022
+                            &copy; {{ now()->format('Y') }}
                             Created by:
-
-                            <a class="link" href="#0">Sohojware</a>
+                            <a class="link" href="{{ url('/') }}">Sohojware</a>
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
@@ -240,17 +216,11 @@
             </div>
         </div>
     </footer>
-    <!-- End  page-footer Section-->
-    <!-- Start loading-screen Component-->
     <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span
             class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span>
     </div>
-    <!-- End loading-screen Component-->
-    <!-- Start back-to-top Component-->
     <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
-
-
     <script src="{{ asset('assets/js/plugins/jquery-3.6.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/appear.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/bootstrap.bundle.min.js') }}"></script>
