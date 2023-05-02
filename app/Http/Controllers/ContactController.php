@@ -38,6 +38,16 @@ class ContactController extends Controller
             'emails' => [],
         ];
         Mail::to($request->email)->send(new NotificationEmail($data));
+
+        $data2 = [
+            'name'=>'Admin',
+            'subject' => $request->subject,
+            'body' => 'Name: '.$request->name .'<br>'. 'Email:'.$request->email.'<br>'. 'Phone:'.$request->phone.'<br>'. 'Message:'.$request->message.'<br>'. 'Package:'.$request->package.'<br>',
+            'button_link' => '',
+            'button_text' => '',
+            'emails' => [],
+        ];
+        Mail::to('reovilsayed@gmail.com')->send(new NotificationEmail($data2));
         return redirect('/')->with('success_msg', 'Your message has been sent. We will get back to you soon!');
     }
 }
