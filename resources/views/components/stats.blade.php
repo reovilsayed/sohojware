@@ -16,7 +16,7 @@
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
                     <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-regular fa-note-sticky"
                             style="color: #0A6A9E; font-size:48px"></i>
-                        <p class="stat-num "><span class="counter" data-from="0" data-to="23" data-speed="3000"
+                        <p class="stat-num "><span class="counter" data-from="0" data-to="15" data-speed="3000"
                                 data-refresh-interval="50"></span><span class="sign">+</span></p><span
                             class="stat-desc">Created jobs</span>
                     </div>
@@ -32,7 +32,7 @@
                 <div class="col-12 col-md-6 col-lg-3 stat-box ">
                     <div class="stat-box-inner  " data-tilt="data-tilt"><i class="fa-solid fa-bullseye"
                             style="color: #0A6A9E; font-size:48px"></i>
-                        <p class="stat-num "><span class="counter" data-from="0" data-to="28" data-speed="3000"
+                        <p class="stat-num "><span class="counter" data-from="0" data-to="8" data-speed="3000"
                                 data-refresh-interval="50"></span><span class="sign">+</span></p><span
                             class="stat-desc">years Of exprience</span>
                     </div>

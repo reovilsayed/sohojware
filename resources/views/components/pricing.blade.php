@@ -18,21 +18,24 @@
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
                 <div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
                     <div class="plan-head">
-                        <h4 class="plane-name">BASIC</h4>
+                        <h4 class="plane-name">Basic</h4>
                         <div class="plan-price">
-                            <h3 class="price">200<sup class="currency-symbol">$</sup></h3>
+                            <h3 class="price">300<sup class="currency-symbol">$</sup></h3> ex tax
                         </div>
                     </div>
                     <div class="plan-details">
                         <ul class="plan-list">
-                            <li class="plan-feat"> <span class="feat-text">Small Ecommerce Website</span></li>
-                            <li class="plan-feat"> <span class="feat-text">Small busness/Portfolio Website</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Small website (up to 5 pages)</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Ecommerce Functionality (basic)</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Basic on-page SEO</span></li>
                             <li class="plan-feat"> <span class="feat-text">Free Images</span></li>
-                            <li class="plan-feat"> <span class="feat-text">On Page Seo</span></li>
-                            <li class="plan-feat"> <span class="feat-text">Google Analytics</span></li>
-                            <li class="plan-feat"> <span class="feat-text">Google Index</span></li>
-                            <li class="plan-feat"> <span class="feat-text">Search Console</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Submission to Google Index</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Analytics setup</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Search Console setup</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Tag Manager setup</span></li>
                             <li class="plan-feat"> <span class="feat-text">Single Payment Gateway</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Upto 3 Banner Design</span></li>
+                            <li class="plan-feat"> <span class="feat-text">3 Article upto 1000 words</span></li>
                         </ul>
                     </div>
                     <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
@@ -43,22 +46,25 @@
                     <div class="plan-head">
                         <h4 class="plane-name">Standerd</h4>
                         <div class="plan-price">
-                            <h3 class="price">500<sup class="currency-symbol">$</sup></h3>
+                            <h3 class="price">600<sup class="currency-symbol">$</sup></h3> ex tax
                         </div>
                     </div>
                     <div class="plan-details">
                         <ul class="plan-list">
-                            <li class="plan-feat"><span class="feat-text">Mid Ecommerce Website</span></li>
-                            <li class="plan-feat"><span class="feat-text">Small busness/Portfolio Website</span></li>
-                            <li class="plan-feat"><span class="feat-text">Free Images</span></li>
-                            <li class="plan-feat"><span class="feat-text">On Page Seo</span></li>
-                            <li class="plan-feat"><span class="feat-text">Google Analytics</span></li>
-                            <li class="plan-feat"><span class="feat-text">Google Index</span></li>
-                            <li class="plan-feat"><span class="feat-text">Search Console</span></li>
-                            <li class="plan-feat"><span class="feat-text">Single Payment Gateway</span></li>
+                            <li class="plan-feat"><span class="feat-text">Medium website (up to 10 pages)</span></li>
+                            <li class="plan-feat"><span class="feat-text">Medium Ecommerce Functionality</span></li>
+                            <li class="plan-feat"><span class="feat-text">Advanced on-page SEO</span></li>
+                            <li class="plan-feat"><span class="feat-text">Stock Images</span></li>
+                            <li class="plan-feat"><span class="feat-text">Submission to Google Index</span></li>
+                            <li class="plan-feat"><span class="feat-text">Google Analytics setup</span></li>
+                            <li class="plan-feat"><span class="feat-text">Google Search Console setup</span></li>
+                            <li class="plan-feat"><span class="feat-text">Google Tag Manager setup</span></li>
+                            <li class="plan-feat"><span class="feat-text">Multiple Payment Gateway</span></li>
+                            <li class="plan-feat"><span class="feat-text">Upto 6 Banner Design</span></li>
+                            <li class="plan-feat"><span class="feat-text">6 Article upto 1000 words</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">select plan </a></div>
                 </div>
             </div>
             <!--Third-plan-->
@@ -67,16 +73,22 @@
                     <div class="plan-head">
                         <h4 class="plane-name">Pro Plan</h4>
                         <div class="plan-price">
-                            <h3 class="price">1000<sup class="currency-symbol">$</sup></h3>
+                            <h3 class="price">1000<sup class="currency-symbol">$</sup></h3>Ex Tax
                         </div>
                     </div>
                     <div class="plan-details">
                         <ul class="plan-list">
-                            <li class="plan-feat"><span class="feat-text"> 150 Lorem, ipsum dolor. </span></li>
-                            <li class="plan-feat"><span class="feat-text"> 20 Lorem ipsum dolor sit . </span></li>
-                            <li class="plan-feat"><span class="feat-text"> Lorem ipsum dolor sit. </span></li>
-                            <li class="plan-feat"><span class="feat-text"> free Lorem ipsum dolor . </span></li>
-                            <li class="plan-feat"><span class="feat-text"> added Lorem ipsum dolor. </span></li>
+                            <li class="plan-feat"><span class="feat-text">Large website (up to 20 pages)</span></li>
+                            <li class="plan-feat"><span class="feat-text">Multivendor Ecommerce Functionality</span></li>
+                            <li class="plan-feat"><span class="feat-text">Comprehensive on-page SEO</span></li>
+                            <li class="plan-feat"><span class="feat-text">Stock Images</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Submission to Google Index</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Analytics setup</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Search Console setup</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Google Tag Manager setup</span></li>
+                            <li class="plan-feat"><span class="feat-text">Multiple Payment Gateway</span></li>
+                            <li class="plan-feat"><span class="feat-text">Upto 10 Banner Design</span></li>
+                            <li class="plan-feat"><span class="feat-text">10 Article upto 1000 words</span></li>
                         </ul>
                     </div>
                     <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
@@ -93,14 +105,21 @@
                     </div>
                     <div class="plan-details">
                         <ul class="plan-list">
-                            <li class="plan-feat"> <span class="feat-text"> 150 Lorem, ipsum dolor. </span></li>
-                            <li class="plan-feat "> <span class="feat-text"> 20 Lorem ipsum dolor sit . </span></li>
-                            <li class="plan-feat "> <span class="feat-text"> Lorem ipsum dolor sit. </span></li>
-                            <li class="plan-feat "> <span class="feat-text"> free Lorem ipsum dolor . </span></li>
-                            <li class="plan-feat "> <span class="feat-text"> added Lorem ipsum dolor. </span></li>
+                            <li class="plan-feat"><span class="feat-text">A fully customized website design tailored to your specific needs</span></li>
+                            <li class="plan-feat"><span class="feat-text">Custom featured Android/Ios apps</span></li>
+                            <li class="plan-feat"><span class="feat-text">Advance Booking system</span></li>
+                            <li class="plan-feat"><span class="feat-text">Healthcare website with appointment</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Customized CRM</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Social networking website</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Travel website</span></li>
+                            <li class="plan-feat"> <span class="feat-text">Job board website</span></li>
+                            <li class="plan-feat"><span class="feat-text">All type of Payment Gateway</span></li>
+                            <li class="plan-feat"><span class="feat-text">Educational website with online courses</span></li>
+                            <li class="plan-feat"><span class="feat-text">All type of complex website and Apps</span></li>
+                            <li class="plan-feat"><span class="feat-text">Custom API built and Integration</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">select plan </a></div>
                 </div>
             </div>
         </div>

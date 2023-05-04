@@ -6,8 +6,7 @@
                     <div class="contact-form-panel">
                         <div class="sec-heading centered    ">
                             <div class="content-area">
-                                <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Have any questions? Let's
-                                    answer them</h2>
+                                <h2 class=" title wow fadeInUp" data-wow-delay=".4s">So let's build something together</h2>
                             </div>
                         </div>
                         <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">

@@ -2,27 +2,27 @@
 /*** LTR websites ***/
 /**/
 /*===================================================
-Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template 
+Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
 Auther: aminThemes
 Version: 1.0
 Last change: 30 November 2022
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template 
+Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
 ====================================================*/
 /*==
 - global-rules and helper classes
 - page-header
-- page-hero 
+- page-hero
 - services
-- about 
-- portfolio 
-- portfolio-single  
-- our-team 
-- our-clients 
-- faq 
-- testimonials 
-- contact-us 
-- take-action 
-- page-footer 
+- about
+- portfolio
+- portfolio-single
+- our-team
+- our-clients
+- faq
+- testimonials
+- contact-us
+- take-action
+- page-footer
 - blog
 - 404 Page
 - pricing
@@ -1971,7 +1971,7 @@ body.rounded-btns .read-more {
 }
 
 /*
- End .page-header Rules    
+ End .page-header Rules
 */
 /*   Start .page-hero Rules   */
 .hero-swiper-slider .slide-title, .page-hero .hero-text-area .hero-title {
@@ -4554,7 +4554,6 @@ body.rounded-btns .read-more {
   font-weight: 400;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .pricing .plan .plan-list .plan-feat .feat-icon {
   color: var(--clr-main);
