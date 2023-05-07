@@ -51,10 +51,13 @@
         <div class="container">
             <!--Start navbar-->
             <nav class="menu-navbar" id="main-nav">
-                <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo"
-                            loading="lazy" src="{{ asset('assets/favicon.png') }}" alt="logo" /><img
-                            class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
-                            alt="logo" /></a></div>
+                <div class="header-logo"><a class="logo-link" href="#">
+                    <img class="logo-img light-logo"
+                            loading="lazy" src="{{ asset('assets/favicon.png') }}" alt="logo" />
+                    <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
+                            alt="logo" />
+                        </a>
+                </div>
                 <div class="links menu-wrapper ">
                     <ul class="list-js links-list">
                         <li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link active"
