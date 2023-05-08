@@ -18,7 +18,7 @@
                         <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0"
                             data-wow-delay=".1s">
                             <div class="service-content">
-                                <h3 class="service-title">{{ $service->title }}</h3>
+                                <h3 class="service-title">{{ $service->name }}</h3>
                                 <p class="service-text">
                                     {{ $service->short_description }}
                                 </p>

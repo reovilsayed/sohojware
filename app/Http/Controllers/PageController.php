@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Client;
-use App\Models\Post as ModelsPost;
+use App\Models\Category;
 use App\Service;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
@@ -12,20 +12,20 @@ class PageController extends Controller
 {
     public function home()
     {
-        $services=Service::latest()->get();
+        $services=Category::latest()->get();
         $posts=Post::latest()->limit(3)->get();
         $clients=Client::all();
        return view('welcome',compact('services','posts','clients'));
     }
     public function service($slug)
     {
-       $service=Service::where('slug',$slug)->firstOrFail();
-       $services=Service::limit(5)->get();
+       $service=Category::where('slug',$slug)->firstOrFail();
+       $services=Category::limit(5)->get();
        return view('service',compact('service','services'));
     }
     public function post($slug)
     {
-        $post=ModelsPost::where('slug',$slug)->firstOrFail();
+        $post=Post::where('slug',$slug)->firstOrFail();
         $posts=Post::latest()->limit(4)->get();
         $shareComponent = \Share::page(
             env('APP_URL').'/post/'.$slug,
@@ -35,7 +35,7 @@ class PageController extends Controller
         ->twitter()
         ->linkedin()
         ->telegram()
-        ->whatsapp()        
+        ->whatsapp()
         ->reddit();
         return view('single_post',compact('post','posts','shareComponent'));
     }

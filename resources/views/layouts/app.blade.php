@@ -6,13 +6,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta name="description" content="@yield('meta-description', setting('site.description'))">
-    <meta name="description" content="@yield('meta-keywords', setting('site.keywords'))">
+    <meta name="keywords" content="@yield('meta-keywords', setting('site.keywords'))">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="web designer,web developer,digital">
     <meta name="author" content="Sayed Khan Prince">
-    <link rel="canonical" href="{{ url(Request::url()) }}" />
+    {{-- <link rel="canonical" href="{{ url(Request::url()) }}" /> --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('assets/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap.min.css') }}">
@@ -31,7 +30,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @yield('css')
-    <title>@yield('title', 'Sohoj Ware')</title>
+    <title>@yield('title', setting('site.title'))</title>
     @yield('social_media')
 </head>
 
