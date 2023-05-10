@@ -13,7 +13,7 @@ class PageController extends Controller
     public function home()
     {
         $services=Category::latest()->get();
-        $posts=Post::latest()->limit(3)->get();
+        $posts=Post::where('featured',1)->get();
         $clients=Client::all();
        return view('welcome',compact('services','posts','clients'));
     }
