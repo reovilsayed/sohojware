@@ -13,7 +13,7 @@ class PageController extends Controller
     public function home()
     {
         $services=Category::latest()->get();
-        $posts=Post::where('featured',1)->get();
+        $posts=Post::where('featured',1)->where('status','PUBLISHED')->get();
         $clients=Client::all();
        return view('welcome',compact('services','posts','clients'));
     }
@@ -26,9 +26,8 @@ class PageController extends Controller
     public function post($slug)
     {
         $post=Post::where('slug',$slug)->firstOrFail();
-        $posts=Post::latest()->limit(4)->get();
         $shareComponent = \Share::page(
-            env('APP_URL').'/post/'.$slug,
+            route('post',$slug),
             'Your share text comes here',
         )
         ->facebook()
@@ -37,7 +36,7 @@ class PageController extends Controller
         ->telegram()
         ->whatsapp()
         ->reddit();
-        return view('single_post',compact('post','posts','shareComponent'));
+        return view('single_post',compact('post','shareComponent'));
     }
 
 }
