@@ -185,10 +185,10 @@
                                         <li class="sc-item" title="youtube"><a target="_blank" class="sc-link" href="https://www.youtube.com/@sohojware/videos"
                                                 title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item" title="instagram"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="instagram"><a target="_blank" class="sc-link" href="https://instagram.com/sohoj_it_insta"
                                                 title="social media icon"><i class="fab fa-instagram sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item" title="twitter"><a class="sc-link" href="#0"
+                                        <li class="sc-item" title="twitter"><a target="_blank" class="sc-link" href="https://twitter.com/sohoj_it"
                                                 title="social media icon"><i class="fab fa-twitter sc-icon"></i></a>
                                         </li>
                                     </ul>
