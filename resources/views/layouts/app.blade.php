@@ -63,8 +63,6 @@
                         <li class="nav-item menu-item"><a class="nav-link menu-link" href="#portfolio">portfolio </a>
                         </li>
                         <li class="nav-item menu-item"><a class="nav-link menu-link" href="#pricing">pricing </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#testimonials">testimonials
-                            </a></li>
                         <li class="nav-item menu-item"><a class="nav-link menu-link" href="#faq">FAQ </a></li>
                         <li class="nav-item menu-item"><a class="nav-link menu-link" href="#contact-us">contact us
                             </a></li>
