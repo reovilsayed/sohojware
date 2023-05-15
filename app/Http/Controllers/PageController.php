@@ -17,6 +17,11 @@ class PageController extends Controller
         $clients=Client::all();
        return view('welcome',compact('services','posts','clients'));
     }
+    public function posts()
+    {
+        $posts = Post::latest()->paginate(12);
+        return view('posts',compact('posts'));
+    }
     public function service($slug)
     {
        $service=Category::where('slug',$slug)->firstOrFail();

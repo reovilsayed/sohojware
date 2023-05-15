@@ -1,14 +1,17 @@
 @extends('layouts.app')
-@section('title', 'Sohojware | ' . $service->name)
-@section('meta-description', $service->meta_description)
-@section('meta-keywords', $service->meta_keywords)
 @section('social_media')
-    <meta property="og:title" content="{{ $service->seo_title }}" />
-    <meta property="og:description"content="{{ $service->meta_description }}" />
-    <meta property="og:url" content="{{ route('service', $service->slug) }}" />
+    <meta property="og:title" content="{{ setting('site.title') }}" />
+    <meta property="og:description"content="{{ setting('site.description') }}" />
+    <meta property="og:url" content="{{ route('posts') }}" />
 @endsection
 @section('css')
     <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
+    <style>
+        .row {
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
+    </style>
 @endsection
 @section('content')
     <section id="slider" class="hero p-0 odd featured">
@@ -23,7 +26,7 @@
                             <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">{{ $service->name }}</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Posts</li>
                                 </ol>
                             </nav>
                         </div>
@@ -32,24 +35,15 @@
             </div>
         </div>
     </section>
-    <section id="single" class="section-1 single">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 p-0 text">
-                    <div class="row intro m-0">
-                        <div class="col-12">
-                            <div class="title-icon">
-                                <h4>{{ $service->name }}</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 align-self-center">
-                            {!! $service->description !!}
-                        </div>
-                    </div>
-                </div>
+    <section class="blog blog-home mega-section  " id="blog">
+        <div class="container ">
+            <div class="sec-heading">
+                <h2 class="title wow fadeInUp" data-wow-delay=".4s">latest <span class='hollow-text'>news</span></h2>
             </div>
+        </div>
+        <div class="container">
+            <x-posts :posts="$posts" />
+        </div>
         </div>
     </section>
 @endsection

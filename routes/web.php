@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [PageController::class,'home'])->name('home');
+Route::get('posts', [PageController::class,'posts'])->name('posts');
 Route::get('service/{slug}', [PageController::class,'service'])->name('service');
 Route::get('post/{slug}', [PageController::class,'post'])->name('post');
 Route::post('contact', [ContactController::class,'store'])->name('contact.store');

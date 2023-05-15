@@ -10,11 +10,11 @@
                 </p>
             </div>
         </div>
-        <div class="row gx-4 gy-4 services-row ">
+        <div class="row gx-4 gy-4 services-row">
             @foreach ($services as $service)
                 <div class="col-12 col-md-6  col-lg-4 mx-auto ">
                     <a href="{{ route('service', $service->slug) }}">
-                        <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0"
+                        <div class="box service-box  wow fadeInUp reveal-start h-100" data-wow-offset="0"
                             data-wow-delay=".1s">
                             <div class="service-content">
                                 <h3 class="service-title">{{ $service->name }}</h3>
