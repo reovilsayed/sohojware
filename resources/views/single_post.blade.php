@@ -49,7 +49,7 @@
                     <div class="blog-details-col-8 mt-5">
                         <div class="blog-details-post-wrap">
                             <div class="blog-details-thum">
-                                <img src="{{Voyager::image($post->image)}}" alt="">
+                                <img src="{{Voyager::image($post->image)}}" alt="sohojware" title="{{$post->title}}">
                             </div>
                             <div class="blog-details-post-content">
                                 <div class="blog-details-meta-box">
