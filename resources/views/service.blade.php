@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Sohojware | ' . $service->name)
 @section('meta-description', $service->meta_description)
+@section('meta-keywords', $service->meta_keywords)
 @section('social_media')
-    <meta property="og:title" content="{{ $service->name }}" />
+    <meta property="og:title" content="{{ $service->seo_title }}" />
     <meta property="og:description"content="{{ $service->meta_description }}" />
     <meta property="og:url" content="{{ route('service', $service->slug) }}" />
 @endsection

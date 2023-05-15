@@ -1,4 +1,9 @@
 @extends('layouts.app')
+@section('social_media')
+    <meta property="og:title" content="{{ setting('site.title')}}" />
+    <meta property="og:description"content="{{ setting('site.description') }}" />
+    <meta property="og:url" content="{{ url('/') }}" />
+@endsection
 @section('content')
     <section class="page-hero  d-flex align-items-center" id="page-hero">
         <div class="overlay-photo-image-bg"
@@ -10,7 +15,6 @@
                 <div class="col-12 col-lg-6">
                     <div class="hero-text-area">
                         <div class="row">
-
                             <div class="col-12">
                                 <div class="pre-title ">IT solutions </div>
                                 <h1 class="hero-title  ">providing the best services & IT <span

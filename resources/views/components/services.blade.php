@@ -13,14 +13,13 @@
         <div class="row gx-4 gy-4 services-row ">
             @foreach ($services as $service)
                 <div class="col-12 col-md-6  col-lg-4 mx-auto ">
-                    <!--Start First service box-->
                     <a href="{{ route('service', $service->slug) }}">
                         <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0"
                             data-wow-delay=".1s">
                             <div class="service-content">
                                 <h3 class="service-title">{{ $service->name }}</h3>
                                 <p class="service-text">
-                                    {{ $service->short_description }}
+                                    {{ $service->meta_description }}
                                 </p>
                             </div><a class="read-more" href="{{ route('service', $service->slug) }}">read more<i
                                     class="fa-solid fa-arrow-right ms-2"></i></a>

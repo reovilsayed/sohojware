@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <meta name="description" content="@yield('meta-description', setting('site.description'))">
     <meta name="keywords" content="@yield('meta-keywords', setting('site.keywords'))">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    @yield('social_media')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sayed Khan Prince">
-    {{-- <link rel="canonical" href="{{ url(Request::url()) }}" /> --}}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('assets/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
@@ -31,7 +27,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @yield('css')
     <title>@yield('title', setting('site.title'))</title>
-    @yield('social_media')
 </head>
 
 <body class="dark-theme landing-page-demo">
