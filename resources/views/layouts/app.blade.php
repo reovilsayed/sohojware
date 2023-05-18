@@ -57,22 +57,35 @@
                 </div>
                 <div class="links menu-wrapper ">
                     <ul class="list-js links-list">
-                        <li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link active"
+                        <li class="nav-item menu-item has-sub-menu"><a
+                                class="nav-link menu-link  {{ request()->routeIs('home') ? 'active' : '' }}"
                                 href="{{ route('home') }}">home</a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('services') ? 'active' : '' }}"
                                 href="{{ route('services') }}">services </a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('about') }}">about
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('about') ? 'active' : '' }}"
+                                href="{{ route('about') }}">about
                             </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('portfolios') ? 'active' : '' }}"
                                 href="{{ route('portfolios') }}">portfolio </a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('pricing') }}">pricing </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('faq') }}">FAQ </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('posts') }}">Posts
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
+                                href="{{ route('pricing') }}">pricing </a></li>
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
+                                href="{{ route('faq') }}">FAQ
                             </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('posts') ? 'active' : '' }}"
+                                href="{{ route('posts') }}">Posts
+                            </a></li>
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"
                                 href="{{ route('contact') }}">contact us
                             </a></li>
                     </ul>
@@ -240,6 +253,7 @@
     <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
+
     @yield('js')
 </body>
 
