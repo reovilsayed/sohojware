@@ -8,7 +8,8 @@
     <!--End Page Header-->
     <!-- Start inner Page hero-->
     <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
-        <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg')}}" data-bg-opacity="1">
+        <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg') }}"
+            data-bg-opacity="1">
         </div>
         <div class="overlay-color" data-bg-opacity=".75"></div>
         <div class="container">
@@ -16,7 +17,8 @@
                 <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Services </h1>
                 <nav aria-label="breadcrumb ">
                     <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i
+                                    class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="breadcrumb-item active">services</li>
                     </ul>
                 </nav>
@@ -25,7 +27,7 @@
     </section>
     <!-- End inner Page hero-->
     <!-- Start  services Section-->
-    <x-services :services="$services"/>
+    <x-services :services="$services" />
     <!-- End  services Section-->
     <!-- Start  testimonials-->
     <section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials-img-bg">

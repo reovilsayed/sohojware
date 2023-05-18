@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
@@ -46,26 +48,32 @@
         <div class="container">
             <!--Start navbar-->
             <nav class="menu-navbar" id="main-nav">
-                <div class="header-logo"><a class="logo-link" href="#">
-                    <img class="logo-img light-logo"
-                            loading="lazy" src="{{ asset('assets/favicon.png') }}" alt="logo" />
-                    <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
+                <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
+                        <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
                             alt="logo" />
-                        </a>
+                        <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
+                            alt="logo" />
+                    </a>
                 </div>
                 <div class="links menu-wrapper ">
                     <ul class="list-js links-list">
                         <li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link active"
-                                href="#page-hero">home</a>
+                                href="{{ route('home') }}">home</a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#services">services </a>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                                href="{{ route('services') }}">services </a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#about">about </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#portfolio">portfolio </a>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('about') }}">about
+                            </a></li>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                                href="{{ route('portfolios') }}">portfolio </a>
                         </li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#pricing">pricing </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#faq">FAQ </a></li>
-                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="#contact-us">contact us
+                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('pricing') }}">pricing </a></li>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('faq') }}">FAQ </a></li>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link" href="{{ route('posts') }}">Posts
+                            </a></li>
+                        <li class="nav-item menu-item"><a class="nav-link menu-link"
+                                href="{{ route('contact') }}">contact us
                             </a></li>
                     </ul>
                 </div>
@@ -172,18 +180,22 @@
                             <div class="social-icons">
                                 <div class="sc-wrapper dir-row sc-size-32">
                                     <ul class="sc-list">
-                                        <li class="sc-item" title="Facebook"><a target="_blank" class="sc-link" href="https://www.facebook.com/sohojitltd/"
+                                        <li class="sc-item" title="Facebook"><a target="_blank" class="sc-link"
+                                                href="https://www.facebook.com/sohojitltd/"
                                                 title="social media icon"><i
                                                     class="fab fa-facebook-f sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item" title="youtube"><a target="_blank" class="sc-link" href="https://www.youtube.com/@sohojware/videos"
+                                        <li class="sc-item" title="youtube"><a target="_blank" class="sc-link"
+                                                href="https://www.youtube.com/@sohojware/videos"
                                                 title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item" title="instagram"><a target="_blank" class="sc-link" href="https://instagram.com/sohoj_it_insta"
+                                        <li class="sc-item" title="instagram"><a target="_blank" class="sc-link"
+                                                href="https://instagram.com/sohoj_it_insta"
                                                 title="social media icon"><i class="fab fa-instagram sc-icon"></i></a>
                                         </li>
-                                        <li class="sc-item" title="twitter"><a target="_blank" class="sc-link" href="https://twitter.com/sohoj_it"
-                                                title="social media icon"><i class="fab fa-twitter sc-icon"></i></a>
+                                        <li class="sc-item" title="twitter"><a target="_blank" class="sc-link"
+                                                href="https://twitter.com/sohoj_it" title="social media icon"><i
+                                                    class="fab fa-twitter sc-icon"></i></a>
                                         </li>
                                     </ul>
                                 </div>

@@ -9,32 +9,30 @@
 @endsection
 @section('css')
     <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
+    
 @endsection
 @section('content')
-    <section id="slider" class="hero p-0 odd featured">
-        <div class="swiper-container no-slider animation slider-h-50 slider-h-auto">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-center">
-                    <video class="full-image to-bottom" data-mask="70" playsinline autoplay muted loop>
-                        <source src="https://nexgen-html.codings.dev/assets/videos/work.mp4" type="video/mp4" />
-                    </video>
-                    <div class="slide-content row text-center">
-                        <div class="col-12 mx-auto inner">
-                            <nav data-aos="zoom-out-up" data-aos-delay="800" aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">{{ $service->name }}</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
+    <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg')}}" data-bg-opacity="1">
+    </div>
+    <div class="overlay-color" data-bg-opacity=".75"></div>
+    <div class="container">
+        <div class="hero-text-area centerd">
+            <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Services </h1>
+            <nav aria-label="breadcrumb ">
+                <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
+                    <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                    <li class="breadcrumb-item active">{{$service->name}}</li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section id="single" class="section-1 single">
+    </div>
+</section>
+    <!-- Start inner Page hero-->
+    <div class="service-single ">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
+                <!--Start service content-->
                 <div class="col-12 col-lg-8 p-0 text">
                     <div class="row intro m-0">
                         <div class="col-12">
@@ -49,7 +47,28 @@
                         </div>
                     </div>
                 </div>
+                <!--Start service content-->
+                <!-- Start service sidebar-->
+                <div class="col-12 col-xl-4">
+                    <div class="service-sidebar ">
+                        <div class="sidebar-pane">
+                            <h2 class="sidebar-title">list of services</h2>
+                            <ul class="list">
+                                @foreach ($services as $service)
+                                    <li class="list-item">
+                                        <a href="#0">{{ $service->name }} <i class="bi bi-arrow-right icon "></i></a>
+                                    </li>
+                                @endforeach
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End service sidebar-->
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End inner Page hero-->
+
 @endsection

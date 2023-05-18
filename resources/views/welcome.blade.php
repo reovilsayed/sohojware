@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('social_media')
-    <meta property="og:title" content="{{ setting('site.title')}}" />
+    <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
     <meta property="og:url" content="{{ url('/') }}" />
 @endsection
@@ -26,12 +26,16 @@
                             </div>
                             <div class="col-10">
                                 <p class="hero-subtitle ">
-                                    We offer website development, mobile app creation, SEO, digital marketing, content writing, graphic design, and video editing services. Our diverse skill sets enable us to support businesses of all sizes and industries, empowering them to reach their target audience effectively.
+                                    We offer website development, mobile app creation, SEO, digital marketing, content
+                                    writing, graphic design, and video editing services. Our diverse skill sets enable us to
+                                    support businesses of all sizes and industries, empowering them to reach their target
+                                    audience effectively.
                                 </p>
                             </div>
                             <div class="col-12">
                                 <div class="cta-links-area ">
-                                    <a class="btn-outline cta-link cta-link-primary nav-link menu-link" href="#services">Services</a>
+                                    <a class="btn-outline cta-link cta-link-primary nav-link menu-link"
+                                        href="#services">Services</a>
                                     <div class="play-btn-row-dir ">
                                         <a class="video-link" href="https://www.youtube.com/watch?v=WLrT2T0LLiU"
                                             role="button" title="play" data-fancybox="data-fancybox">
@@ -56,14 +60,14 @@
             </div>
         </div>
     </section>
-    <x-services :services="$services"/>
-    <x-about/>
-    <x-stats/>
-    <x-portfolio/>
-    <x-clients :clients="$clients"/>
+    <x-services :services="$services" />
+    <x-about />
+    <x-stats />
+    <x-portfolio :portfolios="$portfolios" />
+    <x-clients :clients="$clients" />
     <x-pricing />
     {{-- <x-testimonials /> --}}
     <x-faq />
-    <x-blog :posts="$posts"/>
+    <x-blog :posts="$posts" />
     <x-contact />
 @endsection

@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use App\Models\Category;
+use App\Models\Portfolio;
+use App\Models\Post;
 use App\Service;
 use Illuminate\Http\Request;
-use TCG\Voyager\Models\Post;
 
 class PageController extends Controller
 {
@@ -15,12 +16,14 @@ class PageController extends Controller
         $services = Category::latest()->get();
         $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
-        return view('welcome', compact('services', 'posts', 'clients'));
+        $portfolios = Portfolio::latest()->limit(9)->get();
+        return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));
     }
     public function posts()
     {
         $posts = Post::latest()->paginate(12);
-        return view('posts', compact('posts'));
+        $categories = Category::limit(5)->get();
+        return view('posts', compact('posts', 'categories'));
     }
     public function service($slug)
     {
@@ -28,6 +31,18 @@ class PageController extends Controller
         $services = Category::limit(5)->get();
         return view('service', compact('service', 'services'));
     }
+    public function portfolios()
+    {
+        $clients = Client::all();
+        $portfolios = Portfolio::latest()->limit(9)->get();
+        return view('portfolios', compact('clients', 'portfolios'));
+    }
+    public function portfolio($slug)
+    {
+        $portfolio = Portfolio::where('slug', $slug)->firstOrFail();
+        return view('single_portfolio', compact('portfolio'));
+    }
+
     public function post($slug)
     {
         $post = Post::where('slug', $slug)->firstOrFail();
@@ -45,7 +60,20 @@ class PageController extends Controller
     }
     public function services()
     {
+
         $services = Category::latest()->get();
-        return view('services', compact('services'));
+        return view('services', compact('services',));
+    }
+    public function about()
+    {
+        return view('about');
+    }
+    public function pricing()
+    {
+        return view('pricing');
+    }
+    public function faq()
+    {
+        return view('faq');
     }
 }

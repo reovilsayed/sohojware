@@ -9,5 +9,8 @@ class Category extends \TCG\Voyager\Models\Category
 {
     use HasFactory;
 
-
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
