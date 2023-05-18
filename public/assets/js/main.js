@@ -1,9 +1,9 @@
 /*===================================================
-Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template 
+Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
 Auther: aminThemes
 Version: 1.0
 Last change: 30 November 2022
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template 
+Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
 ====================================================*/
 
 //GLOBAL VARIBALES
@@ -267,25 +267,7 @@ $(function () {
     });
 
     /* ******* Start Percentage loading screen interactions ********/
-    let percentage = 0;
-    let LoadingCounter = setInterval(function () {
-        if (percentage <= 100) {
-            // $('#loading-screen ').css('opacity', (100 - percentage));
-            $("#loading-screen .loading-counter").text(percentage + "%");
-            $("#loading-screen .bar").css("width", (100 - percentage) / 2 + "%");
-            $("#loading-screen .progress-line").css(
-                "transform",
-                "scale(" + percentage / 100 + ")"
-            );
-            percentage++;
-        } else {
-            $("#loading-screen").fadeOut(500);
-            setTimeout(() => {
-                $("#loading-screen").remove();
-            }, 1500);
-            clearInterval(LoadingCounter);
-        }
-    }, 10);
+
 
     main_window.on("scroll", function () {
         if ($(this).scrollTop() > 50) {
@@ -372,7 +354,7 @@ $(function () {
     /*************End Contact Form Functionality************/
 
     /* ********************************
-      Start Vendors plugins options Area 
+      Start Vendors plugins options Area
       *********************************/
 
     //initialize swiper [Hero Section] //fade slider
@@ -722,6 +704,6 @@ $(function () {
         }
     }
     /************************************
-      End Vendors plugins options Area 
+      End Vendors plugins options Area
        ******************************** */
 });
