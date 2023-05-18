@@ -1,8 +1,12 @@
 @extends('layouts.app')
-
+@section('social_media')
+    <meta property="og:title" content="{{ setting('site.title') }}" />
+    <meta property="og:description"content="{{ setting('site.description') }}" />
+    <meta property="og:url" content="{{ route('contact') }}" />
+@endsection
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
+
 @endsection
 @section('content')
 <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
@@ -93,22 +97,8 @@
                     </div>
                 </div>
             </section>
-            <section class="map-section  elf-section">
-                <div class="sec-heading  centered   ">
-                    <div class="content-area">
-                        <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">find us on google maps</h2>
-                    </div>
-                </div>
-                <div class="map-box  wow fadeInUp" data-wow-delay=".6s">
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe class="map-iframe" id="gmap_canvas"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1613762954590!5m2!1sen!2seg"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <x-contact />
+       
+           
         </div>
     </section>
 @endsection

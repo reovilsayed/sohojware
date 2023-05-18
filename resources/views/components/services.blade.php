@@ -1,7 +1,7 @@
 <section class="services services-boxed mega-section  " id="services">
     <div class="container">
         <div class="sec-heading  ">
-            <div class="content-area"><span class=" pre-title wow fadeInUp " data-wow-delay=".2s">services</span>
+            <div class="content-area"><span class=" pre-title wow fadeInUp m-0" data-wow-delay=".2s">services</span>
                 <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>services</span> we
                     offer</h2>
                 <p class="subtitle wow fadeInUp" data-wow-delay=".6s">
@@ -12,7 +12,7 @@
         </div>
         <div class="row gx-4 gy-4 services-row">
             @foreach ($services as $service)
-                <div class="col-12 col-md-6  col-lg-4 mx-auto ">
+                <div class="col-12 col-md-6  col-lg-4 mx-auto ps-0">
                     <a href="{{ route('service', $service->slug) }}">
                         <div class="box service-box  wow fadeInUp reveal-start h-100" data-wow-offset="0"
                             data-wow-delay=".1s">

@@ -97,11 +97,20 @@
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
                     </div>
+                    <div class="mode-switcher ms-3">
+                        <div class="switch-inner go-light" title="Switch To Light Mode ">
+                            <i class="bi bi-sun icon"></i>
+                        </div>
+                        <div class="switch-inner go-dark" title="Switch To Dark Mode ">
+                            <i class="bi bi-moon icon"></i>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     @yield('content')
+    <x-contact />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="https://amincodes.com/html/one-pages/flex-it/assets/images/sections-bg-images/footer-bg-1.jpg"

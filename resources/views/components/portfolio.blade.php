@@ -5,7 +5,8 @@
                 <h2 class="title wow fadeInUp" data-wow-delay=".4s">Awesome <span class='hollow-text'>portfolio</span></h2>
             </div>
             <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid    "
-                    href="portfolio-grid.html">see more <i class="fa-solid fa-arrow-right"></i></a></div>
+                    href="{{ route('portfolios') }}">see more <i
+                        class="fa-solid fa-arrow-right"></i></a></div>
         </div>
         <div class="portfolio-wrapper  ">
             {{-- <ul class="portfolio-btn-list wow fadeInUp" data-wow-delay=".2s">
@@ -22,10 +23,10 @@
                             <div class="item   "><a class="portfolio-img-link"
                                     href="{{ route('portfolio', $portfolio->slug) }}"><img
                                         class="portfolio-img   img-fluid " loading="lazy"
-                                        src="{{ Voyager::image($portfolio->image) }}"
-                                        alt="portfolio item photo" /></a>
+                                        src="{{ Voyager::image($portfolio->image) }}" alt="portfolio item photo" /></a>
                                 <div class="item-info ">
-                                    <h3 class="item-title">{{ $portfolio->title }}</h3><i class="bi bi-arrow-right icon "></i>
+                                    <h3 class="item-title">{{ $portfolio->title }}</h3><i
+                                        class="bi bi-arrow-right icon "></i>
                                 </div>
                             </div>
                         </div>

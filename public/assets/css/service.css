@@ -2882,7 +2882,7 @@ header .navbar-expand .navbar-brand .featured .first {
 
 .card p {
     margin: 0 0 10px;
-    white-space: pre-wrap;
+    white-space: normal;
     -webkit-transition: all 0.4s ease-out 0s;
     -o-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;

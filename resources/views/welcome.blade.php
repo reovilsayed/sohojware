@@ -2,7 +2,7 @@
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
-    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:url" content="{{ url('home') }}" />
 @endsection
 @section('content')
     <section class="page-hero  d-flex align-items-center" id="page-hero">
@@ -69,5 +69,5 @@
     {{-- <x-testimonials /> --}}
     <x-faq />
     <x-blog :posts="$posts" />
-    <x-contact />
+   
 @endsection

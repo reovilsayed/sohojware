@@ -1,5 +1,9 @@
 @extends('layouts.app')
-
+@section('social_media')
+    <meta property="og:title" content="{{ setting('site.title') }}" />
+    <meta property="og:description"content="{{ setting('site.description') }}" />
+    <meta property="og:url" content="{{ route('services') }}" />
+@endsection
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
@@ -54,9 +58,12 @@
                                                 alt="First Slide "></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
-                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing
-                                                    elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis
-                                                    explicabo odio tenetur nulla sint vel.</p>
+                                                <p class="testimonial-text ">SohojWare exceeded my expectations with their
+                                                    web design and development services. They created a stunning and
+                                                    user-friendly website that perfectly represents my brand. Their
+                                                    attention to detail and commitment to delivering high-quality work is
+                                                    commendable. I highly recommend SohojWare for anyone seeking top-notch
+                                                    web solutions.</p>
                                             </div>
                                         </div>
                                         <div class="customer-info ">
@@ -77,9 +84,12 @@
                                                 alt="First Slide "></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
-                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing
-                                                    elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis
-                                                    explicabo odio tenetur nulla sint vel.</p>
+                                                <p class="testimonial-text ">Working with SohojWare for app development was
+                                                    a game-changer for my business. Their team crafted a seamless and
+                                                    intuitive mobile application that has significantly enhanced our
+                                                    customer experience. The expertise and professionalism of SohojWare are
+                                                    unmatched, and I am thrilled with the results. Thank you for your
+                                                    exceptional work</p>
                                             </div>
                                         </div>
                                         <div class="customer-info ">
@@ -100,9 +110,12 @@
                                                 alt="First Slide "></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
-                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing
-                                                    elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis
-                                                    explicabo odio tenetur nulla sint vel. </p>
+                                                <p class="testimonial-text "> SohojWare's Web Design & Development services
+                                                    have truly transformed my online presence. They crafted a visually
+                                                    stunning and highly functional website that perfectly captures my
+                                                    brand's essence. The team at SohojWare demonstrated exceptional
+                                                    expertise and professionalism throughout the process. I couldn't be
+                                                    happier with the results! </p>
                                             </div>
                                         </div>
                                         <div class="customer-info ">
@@ -158,20 +171,10 @@
                             <div class="collapse " id="collapse-1" aria-labelledby="collapse-1"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answe">Our services are designed to be user-friendly and accessible.
+                                        Whether you need web design and development, app development, WordPress
+                                        customization, SEO assistance, or graphic design, we strive to provide a seamless
+                                        and intuitive experience.</p>
                                 </div>
                             </div>
                         </div>
@@ -186,20 +189,10 @@
                             <div class="collapse " id="collapse-2" aria-labelledby="collapse-2"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">Yes, we strive to build long-term relationships with our clients.
+                                        Depending on your specific project and requirements, we offer options for future
+                                        updates, enhancements, and ongoing maintenance to keep your website or app up to
+                                        date.</p>
                                 </div>
                             </div>
                         </div>
@@ -214,20 +207,12 @@
                             <div class="collapse " id="collapse-3" aria-labelledby="collapse-3"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">Yes, our services are available and can work in your country. We
+                                        provide web design and development, app development, WordPress customization, SEO,
+                                        and graphic design services to clients worldwide. Regardless of your location, we
+                                        can collaborate remotely and effectively to meet your specific needs and deliver
+                                        high-quality solutions. We adapt our services to accommodate clients from different
+                                        countries and ensure a seamless experience throughout the project. </p>
                                 </div>
                             </div>
                         </div>
@@ -244,20 +229,10 @@
                             <div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">Our pricing structure is determined on a project-by-project
+                                        basis, taking into account factors such as project complexity, required features,
+                                        and customization needs. We offer competitive pricing and provide detailed quotes
+                                        based on your specific requirements. </p>
                                 </div>
                             </div>
                         </div>
@@ -272,20 +247,11 @@
                             <div class="collapse " id="collapse-5" aria-labelledby="collapse-5"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">In addition to the project-specific pricing, there may be
+                                        additional fees associated with services such as hosting and domain fees,
+                                        third-party software or plugin fees, content creation or stock media fees, and
+                                        ongoing maintenance and support fees. These fees vary depending on your specific
+                                        requirements and are discussed and clarified during the project scoping phase.</p>
                                 </div>
                             </div>
                         </div>
@@ -293,27 +259,17 @@
                             <div class="card-header " id="heading-6">
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6"> how
-                                        can i sign up the contract?</button>
+                                        data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6"> Do
+                                        you offer post-launch support and maintenance?</button>
                                 </h5>
                             </div>
                             <div class="collapse " id="collapse-6" aria-labelledby="collapse-6"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa
-                                        nesciunt
-                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                        a
-                                        bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch
-                                        et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                                        anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                        butcher
-                                        vice lomo. Leggings occaecat craft beer farm-to-table. </p>
+                                    <p class="faq-answer">Yes, we offer post-launch support and maintenance services. We
+                                        understand the importance of ongoing support to ensure your website or app continues
+                                        to function optimally. We provide various support and maintenance packages tailored
+                                        to your needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -333,13 +289,15 @@
                     <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">contact
                             us</span>
                         <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">get in totch with us</h2>
-                        <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit Omnis <br>id atque dignissimos repellat quae ullam.</p>
+                        <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">We value your feedback and are here to
+                            assist you. Contact us today and experience exceptional customer service. Our dedicated team is
+                            ready to address your inquiries and provide the assistance you need. Reach out to us now and let
+                            us exceed your expectations!</p>
                     </div>
                 </div>
                 <!--Start .see-more-area-->
                 <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s"><a class=" btn-solid cta-link"
-                        href="contact-us.html">contact us</a></div>
+                        href="{{ route('contact') }}">contact us</a></div>
                 <!--End Of .see-more-area        -->
             </div>
         </div>
