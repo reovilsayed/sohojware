@@ -1,13 +1,14 @@
 @extends('layouts.app')
-
+@section('title','Sohojware | '. $portfolio->title )
+@section('meta-description', $portfolio->meta_description)
+@section('meta-keywords', $portfolio->meta_keywords)
 @section('social_media')
     <meta property="og:title" content="{{ $portfolio->title }}" />
     <meta property="og:description"content="{{ $portfolio->body }}" />
     <meta property="og:url" content="{{ route('portfolio',$portfolio->slug) }}" />
+    <meta property="og:image" content="{{Voyager::image($portfolio->image)}}" />
 @endsection
-@section('css')
 
-@endsection
 @section('content')
     <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
         <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg') }}"
@@ -20,7 +21,7 @@
                 <nav aria-label="breadcrumb ">
                     <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
                         <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{url('/')}}"><i
-                                    class="fa-solid fa-house-chimney"></i>Home</a></li>
+                                    class="fa-solid fa-house-chimney"></i> Home</a></li>
                         <li class="breadcrumb-item active">Portfolio / {{ $portfolio->title }}</li>
                     </ul>
                 </nav>
