@@ -16,13 +16,13 @@ class PageController extends Controller
         $services = Category::latest()->get();
         $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->limit(9)->get();
+        $portfolios = Portfolio::latest()->limit(6)->get();
         return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));
     }
     public function posts()
     {
-        $posts = Post::latest()->paginate(12);
-        $categories = Category::limit(5)->get();
+        $posts = Post::latest()->where('status','PUBLISHED')->paginate(12);
+        $categories = Category::get();
         return view('posts', compact('posts', 'categories'));
     }
     public function service($slug)
@@ -60,7 +60,6 @@ class PageController extends Controller
     }
     public function services()
     {
-
         $services = Category::latest()->get();
         return view('services', compact('services',));
     }
