@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use App\Models\Category;
+use App\Models\Page;
 use App\Models\Portfolio;
 use App\Models\Post;
 use App\Service;
 use Illuminate\Http\Request;
+
 
 class PageController extends Controller
 {
@@ -74,5 +76,19 @@ class PageController extends Controller
     public function faq()
     {
         return view('faq');
+    }
+    public function page($slug)
+    {
+        $page = Page::where('slug',$slug)->where('status','ACTIVE')->first();
+        return view('page',compact('page'));
+    }
+    public function sitemap()
+    {
+        $posts = Post::latest()->where('status','PUBLISHED')->get();
+        $pages = Page::where('status','ACTIVE')->get();
+        return response()->view('sitemap', [
+             'posts' => $posts,
+             'pages' => $pages,
+        ])->header('Content-Type', 'text/xml');
     }
 }

@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('page/{slug}', [PageController::class, 'page'])->name('page');
+
 Route::get('posts', [PageController::class, 'posts'])->name('posts');
 Route::get('post/{slug}', [PageController::class, 'post'])->name('post');
 Route::get('services', [PageController::class, 'services'])->name('services');
@@ -33,7 +35,7 @@ Route::get('portfolio/{slug}', [PageController::class, 'portfolio'])->name('port
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 
-
+Route::get('sitemap.xml',[PageController::class,'sitemap']);
 
 
 Route::group(['prefix' => 'admin'], function () {
