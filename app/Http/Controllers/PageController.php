@@ -52,7 +52,7 @@ class PageController extends Controller
     public function portfolios()
     {
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->limit(9)->get();
+        $portfolios = Portfolio::latest()->get();
         return view('portfolios', compact('clients', 'portfolios'));
     }
     public function portfolio($slug)
@@ -84,9 +84,13 @@ class PageController extends Controller
     {
         $posts = Post::latest()->where('status','PUBLISHED')->get();
         $pages = Page::where('status','ACTIVE')->get();
+        $services = Category::latest()->get();
+        $portfolios = Portfolio::latest()->get();
         return response()->view('sitemap', [
              'posts' => $posts,
              'pages' => $pages,
+             'services' => $services,
+             'portfolios' => $portfolios,
         ])->header('Content-Type', 'text/xml');
     }
 }

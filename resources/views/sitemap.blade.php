@@ -56,6 +56,22 @@
             <priority>0.8</priority>
         </url>
     @endforeach
+    @foreach ($services as $service)
+        <url>
+            <loc>{{route('service',['slug'=>$service->slug])}}</loc>
+            <lastmod>{{ $service->updated_at->tz('UTC')->toAtomString() }}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    @endforeach
+    @foreach ($portfolios as $portfolio)
+        <url>
+            <loc>{{route('portfolio',['slug'=>$portfolio->slug])}}</loc>
+            <lastmod>{{ $portfolio->updated_at->tz('UTC')->toAtomString() }}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    @endforeach
     @foreach ($pages as $page)
         <url>
             <loc>{{route('page',['slug'=>$page->slug])}}</loc>
