@@ -1,4 +1,4 @@
-<section class="services services-boxed mega-section  " id="services">
+<section class="services services-boxed mega-section  pb-0" id="services">
     <div class="container">
         <div class="sec-heading  ">
             <div class="content-area"><span class=" pre-title wow fadeInUp m-0" data-wow-delay=".2s">services</span>

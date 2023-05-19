@@ -12,7 +12,7 @@
 
 @endsection
 @section('content')
-    <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
+    <section class="d-flex align-items-center page-hero  inner-page-hero" id="page-hero">
         <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg') }}"
             data-bg-opacity="1">
         </div>

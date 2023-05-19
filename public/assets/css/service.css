@@ -3109,7 +3109,7 @@ header .navbar-expand .navbar-brand .featured .first {
 }
 
 .breadcrumb-item a:not(.btn) {
-    color: inherit;
+    color: white;
 }
 
 .breadcrumb-item a:hover {

@@ -29,6 +29,8 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @yield('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
+
     <title>@yield('title', setting('site.title'))</title>
 </head>
 
@@ -47,7 +49,7 @@
         </div>
         <div class="container">
             <!--Start navbar-->
-            <nav class="menu-navbar" id="main-nav">
+            <nav class="menu-navbar menu-white" id="main-nav">
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
                             alt="logo" />
@@ -92,7 +94,7 @@
                 </div>
                 <div class="controls-box">
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-                    <div class="">
+                    <div class="header-search-btn">
                         <a target="_blank" href="https://wa.me/8801738324024">
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
