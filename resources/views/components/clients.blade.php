@@ -9,11 +9,10 @@
         <div class=" clients-logos d-flex align-items-center justify-content-around flex-wrap">
             <div class="swiper-container">
                 <div class="swiper-wrapper clients-logo-wrapper wow fadeIn " data-wow-delay=".02s">
-
                     @foreach ($clients as $client)
                         <div class="swiper-slide">
                             <div class="client-logo "><a href="{{ $client->link }}"><img class="img-fluid logo "
-                                        loading="lazy" src="{{ Voyager::image($client->logo) }}" alt=" "></a>
+                                        loading="lazy" src="{{ Voyager::image($client->logo) }}" alt="Sohjware"></a>
                             </div>
                         </div>
                     @endforeach
