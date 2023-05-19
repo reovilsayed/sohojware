@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('social_media')
-    <meta property="og:title" content="{{ setting('site.title') }}" />
-    <meta property="og:description"content="{{ setting('site.description') }}" />
-    <meta property="og:url" content="{{ route('portfolio') }}" />
+    <meta property="og:title" content="{{ $portfolio->title }}" />
+    <meta property="og:description"content="{{ $portfolio->body }}" />
+    <meta property="og:url" content="{{ route('portfolio',$portfolio->slug) }}" />
 @endsection
 @section('css')
-  
+
 @endsection
 @section('content')
     <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
@@ -19,7 +19,7 @@
                 <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Portfolio </h1>
                 <nav aria-label="breadcrumb ">
                     <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i
+                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{url('/')}}"><i
                                     class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="breadcrumb-item active">Portfolio / {{ $portfolio->title }}</li>
                     </ul>
@@ -40,9 +40,7 @@
             <div class="main-area">
                 <div class="row">
                     <div class="col-12 col-lg-9  ">
-
-                        <p>{{ $portfolio->body }}</p>
-
+                        <p>{!! $portfolio->body !!}</p>
                     </div>
                     <div class="col-12 col-lg-3  ">
                         <div class="info-area">
