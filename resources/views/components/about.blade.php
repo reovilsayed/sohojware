@@ -29,7 +29,7 @@
                         <div class="info-items-list ">
                             <div class="row ">
                                 <div class="col-9 col-xl-6">
-                                    <div class="info-item"><i class="fa-solid fa-medal me-4 mt-2"
+                                    <div class="info-item"><i class="fa-solid fa-smile me-4 mt-2"
                                             style="font-size:30px"></i>
                                         <div class="info-content">
                                             <h5 class="info-title">Client Satisfaction</h5>

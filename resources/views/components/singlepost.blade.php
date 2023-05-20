@@ -12,10 +12,11 @@
             <div class="post-text"><a class="post-link" href="{{ route('post', $post->slug) }}">
                     <h2 class="post-title">{{ $post->title }} </h2>
                 </a>
-                <p class="post-excerpt">{{ $post->excerpt }}</p><a class="read-more"
+                <p class="post-excerpt">{{ $post->excerpt }}</p>
+                {{-- <a class="read-more"
                     href="{{ route('post', $post->slug) }}"
                     title="How litespeed technology works to speed up your site ">read
-                    more<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    more<i class="fa-solid fa-arrow-right ms-2"></i></a> --}}
             </div>
         </div>
     </div>
