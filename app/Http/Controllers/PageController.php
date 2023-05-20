@@ -7,11 +7,12 @@ use App\Models\Category;
 use App\Models\Page;
 use App\Models\Portfolio;
 use App\Models\Post;
+
 class PageController extends Controller
 {
     public function home()
     {
-        $services = Category::latest()->get();
+        $services = Category::orderBy('order', 'asc')->get();
         $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
         $portfolios = Portfolio::latest()->limit(6)->get();
@@ -19,7 +20,7 @@ class PageController extends Controller
     }
     public function posts()
     {
-        $posts = Post::latest()->where('status','PUBLISHED')->paginate(12);
+        $posts = Post::latest()->where('status', 'PUBLISHED')->paginate(12);
         $categories = Category::get();
         return view('posts', compact('posts', 'categories'));
     }
@@ -40,13 +41,13 @@ class PageController extends Controller
     }
     public function services()
     {
-        $services = Category::latest()->get();
+        $services = Category::orderBy('order', 'asc')->get();
         return view('services', compact('services',));
     }
     public function service($slug)
     {
         $service = Category::where('slug', $slug)->firstOrFail();
-        $services = Category::whereNot('id',$service->id)->get();
+        $services = Category::whereNot('id', $service->id)->get();
         return view('service', compact('service', 'services'));
     }
     public function portfolios()
@@ -77,20 +78,20 @@ class PageController extends Controller
     }
     public function page($slug)
     {
-        $page = Page::where('slug',$slug)->where('status','ACTIVE')->first();
-        return view('page',compact('page'));
+        $page = Page::where('slug', $slug)->where('status', 'ACTIVE')->first();
+        return view('page', compact('page'));
     }
     public function sitemap()
     {
-        $posts = Post::latest()->where('status','PUBLISHED')->get();
-        $pages = Page::where('status','ACTIVE')->get();
+        $posts = Post::latest()->where('status', 'PUBLISHED')->get();
+        $pages = Page::where('status', 'ACTIVE')->get();
         $services = Category::latest()->get();
         $portfolios = Portfolio::latest()->get();
         return response()->view('sitemap', [
-             'posts' => $posts,
-             'pages' => $pages,
-             'services' => $services,
-             'portfolios' => $portfolios,
+            'posts' => $posts,
+            'pages' => $pages,
+            'services' => $services,
+            'portfolios' => $portfolios,
         ])->header('Content-Type', 'text/xml');
     }
 }
