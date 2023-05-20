@@ -13,4 +13,5 @@ class Post extends  \TCG\Voyager\Models\Post
     {
         return $this->belongsTo(Category::class,'category_id');
     }
+    
 }

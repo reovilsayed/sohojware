@@ -26,17 +26,7 @@ class PageController extends Controller
     public function post($slug)
     {
         $post = Post::where('slug', $slug)->firstOrFail();
-        $shareComponent = \Share::page(
-            route('post', $slug),
-            'Your share text comes here',
-        )
-            ->facebook()
-            ->twitter()
-            ->linkedin()
-            ->telegram()
-            ->whatsapp()
-            ->reddit();
-        return view('single_post', compact('post', 'shareComponent'));
+        return view('single_post', compact('post'));
     }
     public function services()
     {
@@ -60,9 +50,6 @@ class PageController extends Controller
         $portfolio = Portfolio::where('slug', $slug)->firstOrFail();
         return view('single_portfolio', compact('portfolio'));
     }
-
-
-
     public function about()
     {
         return view('about');
@@ -77,7 +64,7 @@ class PageController extends Controller
     }
     public function page($slug)
     {
-        $page = Page::where('slug',$slug)->where('status','ACTIVE')->first();
+        $page = Page::where('slug',$slug)->where('status','ACTIVE')->firstOrFail();
         return view('page',compact('page'));
     }
     public function sitemap()
