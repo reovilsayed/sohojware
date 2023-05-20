@@ -16,8 +16,8 @@
                     <div class="hero-text-area">
                         <div class="row">
                             <div class="col-12">
-                                <div class="pre-title ">IT solutions </div>
-                                <h1 class="hero-title  ">providing the best services & IT <span
+                                <div class="pre-title">IT solutions </div>
+                                <h1 class="hero-title">providing the best services & IT <span
                                         class="featured-text">solutions <svg xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 500 150" preserveAspectRatio="none">
                                             <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7">
@@ -52,7 +52,7 @@
                 <!--start of image-area -->
                 <div class="col-12   mx-md-auto col-lg-6 text-center " data-tilt>
                     <div class="hero-image-area mb-5 mb-lg-0">
-                        <div class="hero-img-wraper  "><img class="img-fluid "
+                        <div class="hero-img-wraper"><img class="img-fluid"
                                 src="https://amincodes.com/html/one-pages/flex-it/assets/images/hero/illustration-1.png"
                                 alt="" draggable="false"></div>
                     </div>
@@ -69,5 +69,5 @@
     {{-- <x-testimonials /> --}}
     <x-faq />
     <x-blog :posts="$posts" />
-   
+
 @endsection

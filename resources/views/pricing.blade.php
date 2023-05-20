@@ -8,8 +8,6 @@
 @section('css')
 @endsection
 @section('content')
-    <x-breadcrumb>
-        {{ 'Pricing' }}
-    </x-breadcrumb>
+    <x-breadcrumb :title="'Packages'"/>
     <x-pricing />
 @endsection

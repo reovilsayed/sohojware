@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
 
@@ -148,27 +147,27 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-2  footer-col ">
-                    <h2 class=" footer-col-title    ">useful links</h2>
+                    <h2 class=" footer-col-title">useful links</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu ">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i> <a class="footer-menu-link" href="#0">Google</a>
+                                    style="color:#0a6a9e"></i> <a class="footer-menu-link" href="{{route('contact')}}">Contact</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">Dribbble</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('portfolios')}}">Portfolios</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">linkedIn</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('pricing')}}">Packages</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
                                     style="color:#0a6a9e"></i><a class="footer-menu-link"
-                                    href="#0">wikipedia</a>
+                                    href="{{route('faq')}}">FAQ</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 col-lg-2 footer-col ">
-                    <h2 class=" footer-col-title    ">Resources</h2>
+                <div class="col-6 col-lg-2 footer-col">
+                    <h2 class=" footer-col-title">Resources</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
@@ -194,12 +193,12 @@
                                 style="color:#0a6a9e"></i><a class="text-lowercase  info"
                                 href="mailto:info@sohojware.com">info@sohojware.com</a>
                         </div>
-                        <div class="contact-info-card"><i class="fa-solid fa-location-dot me-2"
+                        {{-- <div class="contact-info-card"><i class="fa-solid fa-location-dot me-2"
                                 style="color:#0a6a9e"></i><span class="text-lowercase  info">5 Xyz st., Abc,
-                                alexandria, egypt.</span></div>
-                        {{-- <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
-                                style="color:#0a6a9e"></i><a class="info" href="tel:+20123456789">+20123456789 </a>
-                        </div> --}}
+                                alexandria, egypt.</span></div> --}}
+                        <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
+                                style="color:#0a6a9e"></i><a class="info" href="https://wa.me/8801738324024">+880173834024 </a>
+                        </div>
                         <div class="contact-info-card">
                             <div class="social-icons">
                                 <div class="sc-wrapper dir-row sc-size-32">
@@ -240,14 +239,14 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
-                        <div class="terms-links"><a href="#0">Terms of Use </a>
-                            | <a href="#0">Privacy Policy</a>
+                        <div class="terms-links"><a href="{{route('page',['slug'=>'terms-and-condition'])}}">Terms of Use </a>
+                            | <a href="{{route('page',['slug'=>'privacy-policy'])}}">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </footer>
     <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span
             class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span>

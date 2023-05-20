@@ -9,7 +9,7 @@
 
 @endsection
 @section('content')
-<x-breadcrumb >
+<x-breadcrumb title="Contact">
 {{'Contact'}}
 </x-breadcrumb>
     <section class="contact-us  mega-section  pb-0" id="contact-us">
@@ -84,8 +84,8 @@
                     </div>
                 </div>
             </section>
-       
-           
+
+
         </div>
     </section>
 @endsection

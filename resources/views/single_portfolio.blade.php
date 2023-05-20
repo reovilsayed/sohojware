@@ -10,9 +10,7 @@
 @endsection
 
 @section('content')
-<x-breadcrumb >
-    {{'Portfolio'}}
-    </x-breadcrumb>
+<x-breadcrumb :title="$portfolio->title"/>
     <section class="portfolio-single mega-section">
         <div class="container">
             <div class="featured-area">
