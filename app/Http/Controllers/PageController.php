@@ -19,7 +19,7 @@ class PageController extends Controller
     }
     public function posts()
     {
-        $posts = Post::latest()->where('status','PUBLISHED')->paginate(12);
+        $posts = Post::latest()->where('status','PUBLISHED')->paginate(1);
         $categories = Category::get();
         return view('posts', compact('posts', 'categories'));
     }
