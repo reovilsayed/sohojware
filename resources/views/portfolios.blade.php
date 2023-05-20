@@ -6,17 +6,9 @@
 @endsection
 
 @section('css')
-  
+
 @endsection
 @section('content')
-<x-breadcrumb >
-    {{'Portfolios'}}
-    </x-breadcrumb>
+    <x-breadcrumb :title="'Portfolios'"/>
     <x-portfolio :portfolios="$portfolios" />
-    <!-- End  portfolio Section-->
-    <!-- Start  testimonials Section-->
-   
-    <!-- End  testimonials Section-->
-    <!-- Start  our-clients Section-->
-    <x-clients :clients="$clients" />
 @endsection

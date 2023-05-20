@@ -5,19 +5,16 @@
     <meta property="og:url" content="{{ route('posts') }}" />
 @endsection
 @section('css')
-    <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}">
-    <style>
-        .row {
-            margin-right: calc(-.5 * var(--bs-gutter-x));
-            margin-left: calc(-.5 * var(--bs-gutter-x));
-        }
-    </style>
+<link rel="stylesheet" href="https://sohojware.com/assets/css/service.css">
+<style>
+    .row {
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+</style>
 @endsection
 @section('content')
-<x-breadcrumb >
-    {{'Posts'}}
-    </x-breadcrumb>
-    <section class="blog blog-home mega-section">
+<x-breadcrumb :title="'Posts'"/>
         <div class="container ">
             <div class="row ">
                 <div class="col-12 col-lg-8 ">

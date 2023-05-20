@@ -9,8 +9,6 @@
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}"> --}}
 @endsection
 @section('content')
-    <x-breadcrumb>
-        {{ 'Services' }}
-    </x-breadcrumb>
+    <x-breadcrumb :title="'Services'"/>
     <x-services :services="$services" />
 @endsection
