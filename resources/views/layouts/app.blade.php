@@ -132,14 +132,14 @@
                     </div>
                     <div class="form-area ">
                         <div class="mailchimp-form ">
-                            <form class="one-field-form" method="post" action="#0">
+                            <form class="one-field-form" method="post" action="{{ route('subscribe') }}">
+                                @csrf
                                 <div class="field-group ">
                                     <label class="email-label" for="email-input"> Subscribe to our news letter</label>
-                                    <input class="email-input " type="email" value="" name="EMAIL"
+                                    <input class="email-input " type="email" value="" name="email"
                                         id="email-input" placeholder="Email Address" autocomplete="off" />
                                     <div class="cta-area">
-                                        <input class="btn-solid subscribe-btn" type="submit" value="Subscribe"
-                                            name="subscribe" />
+                                        <button type="submit" class="btn-solid subscribe-btn">Subscribe</button>
                                     </div>
                                 </div><span class="email-notice">*we will not share your personal info</span>
                             </form>
@@ -151,17 +151,20 @@
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu ">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i> <a class="footer-menu-link" href="{{route('contact')}}">Contact</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('portfolios')}}">Portfolios</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('pricing')}}">Packages</a>
+                                    style="color:#0a6a9e"></i> <a class="footer-menu-link"
+                                    href="{{ route('contact') }}">Contact</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
                                     style="color:#0a6a9e"></i><a class="footer-menu-link"
-                                    href="{{route('faq')}}">FAQ</a>
+                                    href="{{ route('portfolios') }}">Portfolios</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
+                                    href="{{ route('pricing') }}">Packages</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
+                                    href="{{ route('faq') }}">FAQ</a>
                             </li>
                         </ul>
                     </div>
@@ -197,7 +200,8 @@
                                 style="color:#0a6a9e"></i><span class="text-lowercase  info">5 Xyz st., Abc,
                                 alexandria, egypt.</span></div> --}}
                         <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
-                                style="color:#0a6a9e"></i><a class="info" href="https://wa.me/8801738324024">+880173834024 </a>
+                                style="color:#0a6a9e"></i><a class="info"
+                                href="https://wa.me/8801738324024">+880173834024 </a>
                         </div>
                         <div class="contact-info-card">
                             <div class="social-icons">
@@ -239,8 +243,9 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
-                        <div class="terms-links"><a href="{{route('page',['slug'=>'terms-and-condition'])}}">Terms of Use </a>
-                            | <a href="{{route('page',['slug'=>'privacy-policy'])}}">Privacy Policy</a>
+                        <div class="terms-links"><a href="{{ route('page', ['slug' => 'terms-and-condition']) }}">Terms
+                                of Use </a>
+                            | <a href="{{ route('page', ['slug' => 'privacy-policy']) }}">Privacy Policy</a>
                         </div>
                     </div>
                 </div>

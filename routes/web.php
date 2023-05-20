@@ -34,8 +34,8 @@ Route::get('portfolio/{slug}', [PageController::class, 'portfolio'])->name('port
 
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
-
-Route::get('sitemap.xml',[PageController::class,'sitemap']);
+Route::post('/subscribe', [PageController::class, 'subscribe'])->name('subscribe');
+Route::get('sitemap.xml', [PageController::class, 'sitemap']);
 
 
 Route::group(['prefix' => 'admin'], function () {
