@@ -65,7 +65,7 @@ class PageController extends Controller
     }
     public function page($slug)
     {
-        $page = Page::where('slug',$slug)->where('status','ACTIVE')->first();
+        $page = Page::where('slug',$slug)->where('status','ACTIVE')->firstOrFail();
         return view('page',compact('page'));
     }
     public function sitemap()
