@@ -41,9 +41,7 @@
 </style>
 @endsection
 @section('content')
-<x-breadcrumb >
-    {{'Post'}}
-    </x-breadcrumb>
+
 <div id="main-wrapper ">
     <div class="site-wrapper-reveal">
         <div class="blog-details-wrapper section-space--ptb_80">

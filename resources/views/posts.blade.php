@@ -4,17 +4,9 @@
     <meta property="og:description"content="{{ setting('site.description') }}" />
     <meta property="og:url" content="{{ route('posts') }}" />
 @endsection
-@section('css')
-<link rel="stylesheet" href="https://sohojware.com/assets/css/service.css">
-<style>
-    .row {
-        margin-right: calc(-.5 * var(--bs-gutter-x));
-        margin-left: calc(-.5 * var(--bs-gutter-x));
-    }
-</style>
-@endsection
 @section('content')
 <x-breadcrumb :title="'Posts'"/>
+<section class="blog blog-home mega-section" id="blog">
         <div class="container ">
             <div class="row ">
                 <div class="col-12 col-lg-8 ">
@@ -22,22 +14,7 @@
                         <div class="row">
                             <x-posts :posts="$posts" />
                             <div class="col-12">
-                                <!--Start pagination-->
-                                <nav class="ma-pagination">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="ma-page-item deactive-page-item"><a class="ma-page-link " href="#"
-                                                title="Previous Page"><i class="bi bi-chevron-left icon "></i></a></li>
-                                        <li class="ma-page-item active"><a class="ma-page-link " href="#">1 </a>
-                                        </li>
-                                        <li class="ma-page-item  "><a class="ma-page-link " href="#">2 </a></li>
-                                        <li class="ma-page-item  "><a class="ma-page-link " href="#">3 </a></li>
-                                        <li class="ma-page-item  "><a class="ma-page-link " href="#">4 </a></li>
-                                        <li class="ma-page-item  "><a class="ma-page-link " href="#">5 </a></li>
-                                        <li class="ma-page-item  "><a class="ma-page-link " href="#">6 </a></li>
-                                        <li class="ma-page-item"><a class="ma-page-link" href="#" title="Next Page"><i
-                                                    class="bi bi-chevron-right icon "></i></a></li>
-                                    </ul>
-                                </nav>
+                                {{$posts->links('pagination.sohojware')}}
                             </div>
                         </div>
                     </div>
