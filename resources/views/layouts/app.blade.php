@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
 
@@ -247,7 +246,7 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
     <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span
             class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span>
