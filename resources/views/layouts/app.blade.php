@@ -93,7 +93,7 @@
                 </div>
                 <div class="controls-box">
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-                    <div class="header-search-btn">
+                    <div class="header-search-btn text-white">
                         <a target="_blank" href="https://wa.me/8801738324024">
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
