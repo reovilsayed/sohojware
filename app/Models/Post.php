@@ -23,4 +23,5 @@ class Post extends  \TCG\Voyager\Models\Post
             $query->where('title', 'LIKE', '%' . $search . '%')->orWhere('body', 'LIKE', '%' . $search . '%');
         });
     }
+    
 }
