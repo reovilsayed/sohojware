@@ -133,7 +133,7 @@
                     </div>
                     <div class="form-area ">
                         <div class="mailchimp-form ">
-                            <form class="one-field-form" method="post" action="{{ route('subscribe') }}">
+                            <form id="subscribe-form" class="one-field-form" method="post" action="{{ route('subscribe') }}">
                                 @csrf
                                 <div class="field-group ">
                                     <label class="email-label" for="email-input"> Subscribe to our news letter</label>
@@ -272,6 +272,7 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
     @yield('js')
+
 </body>
 
 </html>
