@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
 
@@ -26,7 +27,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
     @yield('css')
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
 
@@ -48,7 +49,7 @@
         </div>
         <div class="container">
             <!--Start navbar-->
-            <nav class="menu-navbar menu-white" id="main-nav">
+            <nav class="menu-navbar " id="main-nav">
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
                             alt="logo" />
