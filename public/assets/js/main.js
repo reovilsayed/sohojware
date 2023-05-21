@@ -703,6 +703,32 @@ $(function () {
             });
         }
     }
+    $(document).ready(function() {
+        var form = $('#subscribe-form');
+        form.submit(function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            var formData = $(this).serialize();
+
+            // Send an AJAX request
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    form[0].reset();
+                    $('.email-notice').text('Thank you for subscribing!');
+                },
+                error: function(error) {
+                    // Handle the error
+                    console.log(error);
+                }
+            });
+        });
+    });
+
+
     /************************************
       End Vendors plugins options Area
        ******************************** */
