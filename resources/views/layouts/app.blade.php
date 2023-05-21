@@ -28,14 +28,14 @@
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
-    @yield('css')
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
+    @yield('css')
 
     <title>@yield('title', setting('site.title'))</title>
 </head>
 
 <body class="dark-theme landing-page-demo">
-    <header class=" header-basic" id="page-header">
+    <header class=" header-basic " id="page-header">
         <div class="header-search-box">
             <div class="close-search"></div>
             <form class="nav-search search-form" role="search" method="get" action="#">
@@ -133,7 +133,8 @@
                     </div>
                     <div class="form-area ">
                         <div class="mailchimp-form ">
-                            <form id="subscribe-form" class="one-field-form" method="post" action="{{ route('subscribe') }}">
+                            <form id="subscribe-form" class="one-field-form" method="post"
+                                action="{{ route('subscribe') }}">
                                 @csrf
                                 <div class="field-group ">
                                     <label class="email-label" for="email-input"> Subscribe to our news letter</label>
@@ -244,7 +245,8 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
-                        <div class="terms-links"><a href="{{ route('page', ['slug' => 'terms-and-condition']) }}">Terms
+                        <div class="terms-links"><a
+                                href="{{ route('page', ['slug' => 'terms-and-condition']) }}">Terms
                                 of Use </a>
                             | <a href="{{ route('page', ['slug' => 'privacy-policy']) }}">Privacy Policy</a>
                         </div>

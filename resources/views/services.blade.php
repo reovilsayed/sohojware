@@ -6,9 +6,14 @@
 @endsection
 
 @section('css')
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/service.css') }}"> --}}
+<style>
+    a,
+   .menu-link {
+       color: var(--clr-white) !important;
+   }
+</style>
 @endsection
 @section('content')
-    <x-breadcrumb :title="'Services'"/>
+    <x-breadcrumb :title="'Services'" />
     <x-services :services="$services" />
 @endsection

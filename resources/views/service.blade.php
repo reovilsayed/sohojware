@@ -7,6 +7,14 @@
     <meta property="og:description"content="{{ $service->meta_description }}" />
     <meta property="og:url" content="{{ route('service', $service->slug) }}" />
 @endsection
+@section('css')
+<style>
+    a,
+   .menu-link {
+       color: var(--clr-white) !important;
+   }
+</style>
+@endsection
 @section('content')
     <x-breadcrumb :title="$service->name">
         {{ 'Service' }}

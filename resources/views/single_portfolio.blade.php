@@ -1,16 +1,23 @@
 @extends('layouts.app')
-@section('title','Sohojware | '. $portfolio->title )
+@section('title', 'Sohojware | ' . $portfolio->title)
 @section('meta-description', $portfolio->meta_description)
 @section('meta-keywords', $portfolio->meta_keywords)
 @section('social_media')
     <meta property="og:title" content="{{ $portfolio->title }}" />
     <meta property="og:description"content="{{ $portfolio->body }}" />
-    <meta property="og:url" content="{{ route('portfolio',$portfolio->slug) }}" />
-    <meta property="og:image" content="{{Voyager::image($portfolio->image)}}" />
+    <meta property="og:url" content="{{ route('portfolio', $portfolio->slug) }}" />
+    <meta property="og:image" content="{{ Voyager::image($portfolio->image) }}" />
 @endsection
-
+@section('css')
+    <style>
+        a,
+        .menu-link {
+            color: var(--clr-white) !important;
+        }
+    </style>
+@endsection
 @section('content')
-<x-breadcrumb :title="$portfolio->title"/>
+    <x-breadcrumb :title="$portfolio->title" />
     <section class="portfolio-single mega-section">
         <div class="container">
             <div class="featured-area">
@@ -43,33 +50,7 @@
                                             <p class="detail">Web Development</p><i class="fas fa-tasks icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-12">
-                                        <div class="info">
-                                            <h5 class="title">date</h5>
-                                            <p class="detail">{{$portfolio->created_at->format('d/m/y')}}</p><i class="fas fa-calendar-alt icon"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-lg-12">
-                                        <div class="info">
-                                            <h5 class="title">share</h5>
-                                            <div class="sc-wrapper dir-row sc-size-40">
-                                                <ul class="sc-list">
-                                                    <li class="sc-item " title="Facebook"><a class="sc-link" href="#0"
-                                                            title="social media icon"><i
-                                                                class="fab fa-facebook-f sc-icon"></i></a></li>
-                                                    <li class="sc-item " title="youtube"><a class="sc-link" href="#0"
-                                                            title="social media icon"><i
-                                                                class="fab fa-youtube sc-icon"></i></a></li>
-                                                    <li class="sc-item " title="instagram"><a class="sc-link" href="#0"
-                                                            title="social media icon"><i
-                                                                class="fab fa-instagram sc-icon"></i></a></li>
-                                                    <li class="sc-item " title="twitter"><a class="sc-link" href="#0"
-                                                            title="social media icon"><i
-                                                                class="fab fa-twitter sc-icon"></i></a></li>
-                                                </ul>
-                                            </div><i class="fas fa-share-alt icon"></i>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

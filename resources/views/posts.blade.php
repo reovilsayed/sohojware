@@ -4,6 +4,14 @@
     <meta property="og:description"content="{{ setting('site.description') }}" />
     <meta property="og:url" content="{{ route('posts') }}" />
 @endsection
+@section('css')
+<style>
+    a,
+   .menu-link {
+       color: var(--clr-white) !important;
+   }
+</style>
+@endsection
 @section('content')
 <x-breadcrumb :title="'Posts'"/>
 <section class="blog blog-home mega-section" id="blog">

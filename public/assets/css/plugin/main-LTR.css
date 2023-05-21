@@ -2027,13 +2027,13 @@ body.rounded-btns .read-more {
 .header-basic.inner-page-header .header-logo .logo-img.dark-logo {
     display: none;
 }
-.header-basic a,
+/* .header-basic a,
 .header-basic .menu-link {
     color: var(--clr-white);
-}
+} */
 
-.header-basic a::before,
-.header-basic.menu-link::before {
+.header-basic.inner-page-header a::before,
+.header-basic.inner-page-header .menu-link::before {
     background-color: var(--clr-white);
 }
 .header-basic.inner-page-header .controls-box .header-search-btn {

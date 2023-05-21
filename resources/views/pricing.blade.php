@@ -6,8 +6,16 @@
 @endsection
 
 @section('css')
+
+
+    <style>
+         a,
+        .menu-link {
+            color: var(--clr-white) !important;
+        }
+    </style>
 @endsection
 @section('content')
-    <x-breadcrumb :title="'Packages'"/>
+    <x-breadcrumb :title="'Packages'" />
     <x-pricing />
 @endsection
