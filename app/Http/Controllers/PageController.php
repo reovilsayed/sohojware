@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Client;
 use App\Models\Category;
 use App\Models\Page;
 use App\Models\Portfolio;
 use App\Models\Post;
+use App\Models\subscribe;
 
 class PageController extends Controller
 {
@@ -83,5 +85,17 @@ class PageController extends Controller
             'services' => $services,
             'portfolios' => $portfolios,
         ])->header('Content-Type', 'text/xml');
+    }
+    public function subscribe(Request $request)
+    {
+        $request->validate([
+            'email' => ['required', 'unique:subscribes,email'],
+        ], [
+            'email.unique' => 'You already subscribed'
+        ]);
+        subscribe::create([
+            "email" => $request->email,
+        ]);
+        return back()->with('success_msg', 'Thanks for your subscription');
     }
 }
