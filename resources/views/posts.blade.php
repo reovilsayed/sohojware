@@ -23,8 +23,9 @@
                     <div class="blog-sidebar">
                         <!--search box-->
                         <div class="search sidebar-box">
-                            <form class="search-form" action="#">
-                                <input class="search-input" type="search" name="seach_form" placeholder="Search Posts...">
+                            <form class="search-form" action="">
+                                <input type="hidden" name="category" value="{{request('category')}}">
+                                <input class="search-input" type="search" name="search" placeholder="Search Posts..." value="{{request('search')}}">
                                 <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
                             </form>
                         </div>
@@ -35,7 +36,7 @@
                             <ul class="sidebar-list cats-list  ">
 
                                 @foreach ($categories as $category)
-                                    <li class="cat-item"><a class="cat-link" href="#">{{ $category->name }}<span
+                                    <li class="cat-item"><a class="cat-link" href="{{ route('posts', ['category' => $category->slug, 'search' => request('search')]) }}">{{ $category->name }}<span
                                                 class="cat-count">{{ $category->posts->count() }}</span></a></li>
                                 @endforeach
 
