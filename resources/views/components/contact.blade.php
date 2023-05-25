@@ -58,7 +58,7 @@
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <input type="hidden" name="package">
+                                        <input type="hidden" name="package" id="package">
                                         <div class="col-12 submit-wrapper">
                                             <button class="btn-solid" id="submit-btn" type="submit">Send your message</button>
                                         </div>

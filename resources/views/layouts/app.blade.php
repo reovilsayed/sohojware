@@ -165,17 +165,10 @@
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">support</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('posts')}}">Posts</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
-                                    href="#0">dashboard</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">drivers</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">projects</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('services')}}">Services</a>
                             </li>
                         </ul>
                     </div>

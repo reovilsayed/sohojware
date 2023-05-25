@@ -38,7 +38,7 @@
                             <li class="plan-feat"> <span class="feat-text">3 Article upto 1000 words</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us" onclick="package_select('basic')" id="basic">select plan </a></div>
                 </div>
             </div>
             <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
@@ -64,7 +64,7 @@
                             <li class="plan-feat"><span class="feat-text">6 Article upto 1000 words</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us" onclick="package_select('standerd')" id="standerd">select plan </a></div>
                 </div>
             </div>
             <!--Third-plan-->
@@ -91,12 +91,12 @@
                             <li class="plan-feat"><span class="feat-text">10 Article upto 1000 words</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us" onclick="package_select('premium')" id="premium">select plan </a></div>
                 </div>
             </div>
             <!--fourth-plan-->
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-                <div class="plan    wow fadeInUp  " data-wow-delay=".6s ">
+            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
+                <div class="plan    wow fadeInUp  " data-wow-delay=".6s">
                     <div class="plan-head">
                         <h4 class="plane-name">Custom</h4>
                         <div class="plan-price">
@@ -119,9 +119,16 @@
                             <li class="plan-feat"><span class="feat-text">Custom API built and Integration</span></li>
                         </ul>
                     </div>
-                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">select plan </a></div>
+                    <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us" onclick="package_select('custom')" id="custom">select plan </a></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+@section('js')
+   <script>
+     function package_select(name){
+        $('#package').val(name);
+    }
+   </script>
+@endsection
