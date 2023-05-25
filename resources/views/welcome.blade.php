@@ -7,7 +7,7 @@
 @section('content')
     <section class="page-hero  d-flex align-items-center" id="page-hero">
         <div class="overlay-photo-image-bg"
-            data-bg-img="https://amincodes.com/html/one-pages/flex-it/assets/images/sections-bg-images/pattern-bg-1.jpg"
+            data-bg-img="{{asset('new/assets/images/sections-bg-images/pattern-bg-1.jpg')}}"
             data-bg-opacity=".2"></div>
         <div class="particles-js dots" id="particles-js"></div>
         <div class="container">
@@ -50,11 +50,11 @@
                     </div>
                 </div>
                 <!--start of image-area -->
-                <div class="col-12   mx-md-auto col-lg-6 text-center " data-tilt>
+                <div class="col-12   mx-md-auto col-lg-6 text-center" data-tilt>
                     <div class="hero-image-area mb-5 mb-lg-0">
                         <div class="hero-img-wraper"><img class="img-fluid"
-                                src="https://amincodes.com/html/one-pages/flex-it/assets/images/hero/illustration-1.png"
-                                alt="" draggable="false"></div>
+                                src="{{asset('new/assets/images/hero/illustration-1.png')}}"
+                                alt="sohojware" draggable="false"></div>
                     </div>
                 </div>
             </div>

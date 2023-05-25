@@ -1,6 +1,6 @@
 <section class="testimonials testimonials-1-col has-dark-bg mega-section" id="testimonials">
     <div class="overlay-photo-image-bg parallax "
-        data-bg-img="https://amincodes.com/html/one-pages/flex-it/assets/images/sections-bg-images/1.jpg"
+        data-bg-img="{{asset('new/assets/images/sections-bg-images/1.jpg')}}"
         data-bg-opacity=".25"> </div>
     <div class="container">
         <div class="sec-heading  centered ">
@@ -19,7 +19,7 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="https://amincodes.com/html/one-pages/flex-it/assets/images/testimonials/1.png"
+                                            src="{{asset('new/assets/images/testimonials/1.png')}}"
                                             alt="First Slide "></div>
                                     <div class="customer-testimonial">
                                         <div class="content">
@@ -42,7 +42,7 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="https://amincodes.com/html/one-pages/flex-it/assets/images/testimonials/2.png"
+                                            src="{{asset('new/assets/images/testimonials/2.png')}}"
                                             alt="First Slide "></div>
                                     <div class="customer-testimonial">
                                         <div class="content">
@@ -65,7 +65,7 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="https://amincodes.com/html/one-pages/flex-it/assets/images/testimonials/3.png"
+                                            src="{{asset('new/assets/images/testimonials/3.png')}}"
                                             alt="First Slide "></div>
                                     <div class="customer-testimonial">
                                         <div class="content">

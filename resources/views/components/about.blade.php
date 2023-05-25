@@ -100,8 +100,8 @@
                 <div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp"
                     data-wow-delay="0.2s">
                     <div class="img-area  " data-tilt>
-                        <div class="image   "><img class="about-img img-fluid " loading="lazy"
-                                src="https://amincodes.com/html/one-pages/flex-it/assets/images/about/3.png"
+                        <div class="image"><img class="about-img img-fluid " loading="lazy"
+                                src="{{asset('new/assets/images/about/3.png')}}"
                                 alt="Our vision"></div>
                     </div>
                 </div>
@@ -113,8 +113,8 @@
                 <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s">
                     <div class="img-area  ">
                         <div class="image  " data-tilt><img class="about-img img-fluid " loading="lazy"
-                                src="https://amincodes.com/html/one-pages/flex-it/assets/images/about/1.png"
-                                alt="about"></div>
+                                src="{{asset('new/assets/images/about/1.png')}}"
+                                alt="sohojware"></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp "
