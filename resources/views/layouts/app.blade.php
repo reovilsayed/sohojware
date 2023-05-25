@@ -83,7 +83,7 @@
                 </div>
                 <div class="controls-box">
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-                    <div class="text-white">
+                    <div class="">
                         <a target="_blank" href="https://wa.me/8801738324024">
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
@@ -104,8 +104,8 @@
     <x-contact />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
-            data-bg-img="{{asset('new/assets/images/sections-bg-images/footer-bg-1.jpg')}}"
-            data-bg-opacity=".25"></div>
+            data-bg-img="{{ asset('new/assets/images/sections-bg-images/footer-bg-1.jpg') }}" data-bg-opacity=".25">
+        </div>
         <div class="container">
             <div class="row footer-cols">
                 <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy"
