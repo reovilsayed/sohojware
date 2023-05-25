@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -35,18 +35,7 @@
 </head>
 
 <body class="dark-theme landing-page-demo">
-    <header class=" header-basic " id="page-header">
-        <div class="header-search-box">
-            <div class="close-search"></div>
-            <form class="nav-search search-form" role="search" method="get" action="#">
-                <div class="search-wrapper">
-                    <label class="search-lbl">Search for:</label>
-                    <input class="search-input" type="search" placeholder="Search..." name="searchInput"
-                        autofocus="autofocus" />
-                    <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
-                </div>
-            </form>
-        </div>
+    <header class=" header-basic" id="page-header">
         <div class="container">
             <!--Start navbar-->
             <nav class="menu-navbar " id="main-nav">
@@ -94,7 +83,7 @@
                 </div>
                 <div class="controls-box">
                     <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-                    <div class="header-search-btn text-white">
+                    <div class="text-white">
                         <a target="_blank" href="https://wa.me/8801738324024">
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
