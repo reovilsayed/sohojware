@@ -17,7 +17,7 @@ class PageController extends Controller
         $services = Category::orderBy('order', 'asc')->get();
         $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->limit(6)->get();
+        $portfolios = Portfolio::latest()->limit(6)->where('status',1)->get();
         return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));
     }
     public function posts()
@@ -48,12 +48,12 @@ class PageController extends Controller
     public function portfolios()
     {
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->get();
+        $portfolios = Portfolio::latest()->where('status',1)->get();
         return view('portfolios', compact('clients', 'portfolios'));
     }
     public function portfolio($slug)
     {
-        $portfolio = Portfolio::where('slug', $slug)->firstOrFail();
+        $portfolio = Portfolio::where('slug', $slug)->where('status',1)->firstOrFail();
         return view('single_portfolio', compact('portfolio'));
     }
     public function about()
@@ -78,7 +78,7 @@ class PageController extends Controller
         $posts = Post::latest()->where('status', 'PUBLISHED')->get();
         $pages = Page::where('status', 'ACTIVE')->get();
         $services = Category::latest()->get();
-        $portfolios = Portfolio::latest()->get();
+        $portfolios = Portfolio::latest()->where('status',1)->get();
         return response()->view('sitemap', [
             'posts' => $posts,
             'pages' => $pages,

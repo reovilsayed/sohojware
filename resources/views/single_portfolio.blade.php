@@ -6,7 +6,7 @@
     <meta property="og:title" content="{{ $portfolio->title }}" />
     <meta property="og:description"content="{{ $portfolio->body }}" />
     <meta property="og:url" content="{{ route('portfolio', $portfolio->slug) }}" />
-    <meta property="og:image" content="{{ Voyager::image($portfolio->image) }}" />
+    <meta property="og:image" content="{{ Voyager::image($portfolio->featured_image) }}" />
 @endsection
 @section('css')
     <style>
@@ -20,17 +20,11 @@
     <x-breadcrumb :title="$portfolio->title" />
     <section class="portfolio-single mega-section">
         <div class="container">
-            <div class="featured-area">
-                <div class="row">
-                    <div class="col-12  mx-auto">
-                        <div class="project-featured-img"><img class="featured-img " loading="lazy"
-                                src="{{ Voyager::image($portfolio->image) }}" alt="featuerd image"></div>
-                    </div>
-                </div>
-            </div>
             <div class="main-area">
                 <div class="row">
-                    <div class="col-12 col-lg-9  ">
+                    <div class="col-12 col-lg-9">
+                        <img class="featured-img" loading="lazy"
+                            src="{{ Voyager::image($portfolio->featured_image) }}" title="{{$portfolio->title}}" alt="{{$portfolio->title}}">
                         <p>{!! $portfolio->body !!}</p>
                     </div>
                     <div class="col-12 col-lg-3  ">
@@ -39,15 +33,22 @@
                                 <div class="row">
                                     <div class="col-6 col-lg-12">
                                         <div class="info">
-                                            <h5 class="title"> client</h5>
-                                            <p class="detail">{{ $portfolio->title }}</p><i
-                                                class="fas fa-address-card icon"></i>
+                                            <h5 class="title">Payment Gateway</h5>
+                                            <p class="detail">{{ $portfolio->payment_methods }}</p><i
+                                                class="fas fa-credit-card icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <div class="info">
+                                            <h5 class="title">Language</h5>
+                                            <p class="detail">{{ $portfolio->language }}</p><i
+                                                class="fas fa-code icon"></i>
                                         </div>
                                     </div>
                                     <div class="col-6 col-lg-12">
                                         <div class="info">
                                             <h5 class="title">category</h5>
-                                            <p class="detail">Web Development</p><i class="fas fa-tasks icon"></i>
+                                            <p class="detail">{{$portfolio->category->name}}</p><i class="fas fa-tasks icon"></i>
                                         </div>
                                     </div>
 
