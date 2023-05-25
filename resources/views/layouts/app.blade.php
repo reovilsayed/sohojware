@@ -62,11 +62,11 @@
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('portfolios') ? 'active' : '' }}"
-                                href="{{ route('portfolios') }}">portfolio </a>
+                                href="{{ route('portfolios') }}">portfolio</a>
                         </li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
-                                href="{{ route('pricing') }}">pricing </a></li>
+                                href="{{ route('pricing') }}">Packages</a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
                                 href="{{ route('faq') }}">FAQ
