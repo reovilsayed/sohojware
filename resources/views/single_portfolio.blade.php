@@ -1,4 +1,4 @@
-@extends('layouts.app')
+ @extends('layouts.app')
 @section('title', 'Sohojware | ' . $portfolio->title)
 @section('meta-description', $portfolio->meta_description)
 @section('meta-keywords', $portfolio->meta_keywords)
@@ -27,7 +27,7 @@
             <div class="main-area">
                 <div class="row">
                     <div class="col-12 col-lg-9">
-                        <img class="featured-img" loading="lazy" src="{{ Voyager::image($portfolio->featured_image) }}"
+                        <img class="featured-img w-100" loading="lazy" src="{{ Voyager::image($portfolio->featured_image) }}"
                             title="{{ $portfolio->title }}" alt="{{ $portfolio->title }}">
                         <p>{!! $portfolio->body !!}</p>
                     </div>

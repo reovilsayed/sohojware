@@ -62,11 +62,11 @@
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('portfolios') ? 'active' : '' }}"
-                                href="{{ route('portfolios') }}">portfolio </a>
+                                href="{{ route('portfolios') }}">portfolio</a>
                         </li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
-                                href="{{ route('pricing') }}">pricing </a></li>
+                                href="{{ route('pricing') }}">Packages</a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
                                 href="{{ route('faq') }}">FAQ
@@ -165,17 +165,10 @@
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">support</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('posts')}}">Posts</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
-                                    href="#0">dashboard</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">drivers</a>
-                            </li>
-                            <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="#0">projects</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('services')}}">Services</a>
                             </li>
                         </ul>
                     </div>
@@ -200,19 +193,19 @@
                                     <ul class="sc-list">
                                         <li class="sc-item" title="Facebook"><a target="_blank" class="sc-link"
                                                 href="https://www.facebook.com/sohojitltd/"
-                                                title="social media icon"><i
+                                                title="sohojware facebook"><i
                                                     class="fab fa-facebook-f sc-icon"></i></a>
                                         </li>
                                         <li class="sc-item" title="youtube"><a target="_blank" class="sc-link"
                                                 href="https://www.youtube.com/@sohojware/videos"
-                                                title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
+                                                title="sohojware youtube"><i class="fab fa-youtube sc-icon"></i></a>
                                         </li>
                                         <li class="sc-item" title="instagram"><a target="_blank" class="sc-link"
                                                 href="https://instagram.com/sohoj_it_insta"
-                                                title="social media icon"><i class="fab fa-instagram sc-icon"></i></a>
+                                                title="sohojware instagram"><i class="fab fa-instagram sc-icon"></i></a>
                                         </li>
                                         <li class="sc-item" title="twitter"><a target="_blank" class="sc-link"
-                                                href="https://twitter.com/sohoj_it" title="social media icon"><i
+                                                href="https://twitter.com/sohoj_it" title="sohojware twitter"><i
                                                     class="fab fa-twitter sc-icon"></i></a>
                                         </li>
                                     </ul>
