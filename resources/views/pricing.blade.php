@@ -6,11 +6,9 @@
 @endsection
 
 @section('css')
-
-
     <style>
-         a,
-        .menu-link {
+        .header-basic a,
+        .header-basic .menu-link {
             color: var(--clr-white) !important;
         }
     </style>
