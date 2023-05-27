@@ -4,7 +4,7 @@
             <div class="content-area"><span class=" pre-title wow fadeInUp" data-wow-delay=".2s">portfolio</span>
                 <h2 class="title wow fadeInUp" data-wow-delay=".4s">Awesome <span class='hollow-text'>portfolio</span></h2>
             </div>
-            <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid    "
+            <div class=" cta-area   wow fadeInUp " data-wow-delay=".8s"><a class="cta-btn btn-solid   display "
                     href="{{ route('portfolios') }}">see more <i
                         class="fa-solid fa-arrow-right"></i></a></div>
         </div>

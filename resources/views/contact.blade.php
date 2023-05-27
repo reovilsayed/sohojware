@@ -9,10 +9,10 @@
 
 @endsection
 <style>
-    a,
-   .menu-link {
-       color: var(--clr-white) !important;
-   }
+   .header-basic a,
+        .header-basic .menu-link {
+            color: var(--clr-white) !important;
+        }
 </style>
 @section('content')
 <x-breadcrumb title="Contact">
