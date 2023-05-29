@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
 
 
