@@ -1,5 +1,5 @@
 <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
-    <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.jpg') }}"
+    <div class="overlay-photo-image-bg parallax" data-bg-img="{{ asset('new/assets/images/hero/inner-page-hero.webp') }}"
         data-bg-opacity="1">
     </div>
     <div class="overlay-color" data-bg-opacity=".75"></div>

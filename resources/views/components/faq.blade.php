@@ -8,7 +8,7 @@
             <div class="col-12 col-lg-5 align-self-center">
                 <div class="faq-img start-dir-img-frame wow fadeIn" data-wow-delay="0.2s"><img class="img-fluid"
                         loading="lazy"
-                        src="{{asset('new/assets/images/faq/faq-illustration.png')}}"
+                        src="{{asset('new/assets/images/faq/faq-illustration.webp')}}"
                         alt=""></div>
             </div>
             <div class="col-12 col-lg-7">

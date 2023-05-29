@@ -101,7 +101,7 @@
                     data-wow-delay="0.2s">
                     <div class="img-area  " data-tilt>
                         <div class="image"><img class="about-img img-fluid " loading="lazy"
-                                src="{{asset('new/assets/images/about/3.png')}}"
+                                src="{{asset('new/assets/images/about/2.webp')}}"
                                 alt="Our vision"></div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s">
                     <div class="img-area  ">
                         <div class="image  " data-tilt><img class="about-img img-fluid " loading="lazy"
-                                src="{{asset('new/assets/images/about/1.png')}}"
+                                src="{{asset('new/assets/images/about/1.webp')}}"
                                 alt="sohojware"></div>
                     </div>
                 </div>

@@ -104,7 +104,7 @@
     <x-contact />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
-            data-bg-img="{{ asset('new/assets/images/sections-bg-images/footer-bg-1.jpg') }}" data-bg-opacity=".25">
+            data-bg-img="{{ asset('new/assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
         </div>
         <div class="container">
             <div class="row footer-cols">

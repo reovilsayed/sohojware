@@ -34,18 +34,6 @@
                                     <h4 class="location-title ">New york</h4>
                                     <div class="line-on-side "> </div>
                                     <p class="location-address">United States, 307 Wilshire, 2nd av. new york 3516.</p>
-                                    <div class="location-card  "><i class="fa-regular fa-envelope icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">email:</h6><a class="email link"
-                                                href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  "><i class="fa-solid fa-phone-volume icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">phone:</h6><a class="tel link"
-                                                href="tel:0123456789">+29876543210</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
@@ -53,18 +41,6 @@
                                     <h4 class="location-title">London</h4>
                                     <div class="line-on-side "> </div>
                                     <p class="location-address">United kingdom, 12 smith town, 2nd av. London 2159.</p>
-                                    <div class="location-card  a"><i class="fa-regular fa-envelope icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">email:</h6><a class="email link"
-                                                href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  "><i class="fa-solid fa-phone-volume icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">phone:</h6><a class="tel link"
-                                                href="tel:0123456789">+969876543210</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
@@ -72,26 +48,12 @@
                                     <h4 class="location-title">tokio</h4>
                                     <div class="line-on-side "> </div>
                                     <p class="location-address">Japan, 307 chinzo appy road, portsika way. tokio 3516.</p>
-                                    <div class="location-card  "><i class="fa-regular fa-envelope icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">email:</h6><a class="email link"
-                                                href="mailto:yourname@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                    <div class="location-card  "><i class="fa-solid fa-phone-volume icon"></i>
-                                        <div class="card-content">
-                                            <h6 class="content-title mt-0">phone:</h6><a class="tel link"
-                                                href="tel:0123456789">+459876543210</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
         </div>
     </section>
 @endsection
