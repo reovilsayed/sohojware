@@ -32,8 +32,8 @@
                             <div class="col-12 col-lg-4">
                                 <div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
                                     <h4 class="location-title ">New york</h4>
-                                    <div class="line-on-side "> </div>
-                                    <p class="location-address">United States, 307 Wilshire, 2nd av. new york 3516.</p>
+                                    <div class="line-on-side"> </div>
+                                    <p class="location-address">United States, Warren st, Hudson, NY 12534.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
