@@ -30,8 +30,18 @@
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
     @yield('css')
-
     <title>@yield('title', setting('site.title'))</title>
+    @production
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX60DLSEW"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5HX60DLSEW');
+        </script>
+    @endproduction
 </head>
 
 <body class="dark-theme landing-page-demo">
