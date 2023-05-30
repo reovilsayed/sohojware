@@ -30,21 +30,21 @@
                     <div class="info-section ">
                         <div class="row">
                             <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
-                                    <h4 class="location-title ">New york</h4>
+                                <div class="info-panel wow fadeInUp h-100" data-wow-delay=".4s ">
+                                    <h4 class="location-title">United States</h4>
                                     <div class="line-on-side"> </div>
-                                    <p class="location-address">United States, Warren st, Hudson, NY 12534.</p>
+                                    <p class="location-address">Warren st, Hudson, NY 12534.</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".6s">
-                                    <h4 class="location-title">London</h4>
+                                <div class="info-panel wow fadeInUp h-100" data-wow-delay=".6s">
+                                    <h4 class="location-title">Canada</h4>
                                     <div class="line-on-side "> </div>
-                                    <p class="location-address">United kingdom, 12 smith town, 2nd av. London 2159.</p>
+                                    <p class="location-address">88 McGill Blvd W, Lethbridge, Alberta, CA</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
-                                <div class="info-panel  wow fadeInUp" data-wow-delay=".8s">
+                                <div class="info-panel  wow fadeInUp h-100" data-wow-delay=".8s">
                                     <h4 class="location-title">tokio</h4>
                                     <div class="line-on-side "> </div>
                                     <p class="location-address">Japan, 307 chinzo appy road, portsika way. tokio 3516.</p>
