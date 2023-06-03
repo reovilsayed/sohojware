@@ -37,7 +37,6 @@
         @else
             <link rel="canonical" href="{{ $current }}">
         @endif
-        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX60DLSEW"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
