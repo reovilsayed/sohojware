@@ -35,7 +35,7 @@
         @if (Str::startsWith($current = url()->current(), 'https://www'))
             <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
         @else
-            <link rel="canonical" href="{{ $current) }}">
+            <link rel="canonical" href="{{ $current }}">
         @endif
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX60DLSEW"></script>
