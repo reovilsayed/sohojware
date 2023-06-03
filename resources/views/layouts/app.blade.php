@@ -32,6 +32,11 @@
     @yield('css')
     <title>@yield('title', setting('site.title'))</title>
     @production
+        @if (Str::startsWith($current = url()->current(), 'https://www'))
+            <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
+        @else
+            <link rel="canonical" href="{{ str_replace('https://', 'https://www.', $current) }}">
+        @endif
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX60DLSEW"></script>
         <script>
