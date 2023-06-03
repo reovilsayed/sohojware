@@ -20,8 +20,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
     @yield('css')
     <title>@yield('title', setting('site.title'))</title>
     @production
