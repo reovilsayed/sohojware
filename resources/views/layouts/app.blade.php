@@ -12,13 +12,6 @@
     <meta name="author" content="Sayed Khan Prince">
     <link rel="icon" href="{{ asset('assets/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

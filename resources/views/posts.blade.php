@@ -20,7 +20,7 @@
                 <div class="col-12 col-lg-8 ">
                     <div class="posts-grid">
                         <div class="row">
-                            {{-- <x-posts :posts="$posts" /> --}}
+                            <x-posts :posts="$posts" />
                             <div class="col-12">
                                 {{$posts->links('pagination.sohojware')}}
                             </div>
