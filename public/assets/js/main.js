@@ -1,14 +1,4 @@
-/*===================================================
-Project: flex-it - IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
-Auther: aminThemes
-Version: 1.0
-Last change: 30 November 2022
-Template Description: IT Solutions & Business Services Responsive HTML5 Bootstrap5  landing-page Template
-====================================================*/
 
-//GLOBAL VARIBALES
-
-//selector constants
 var root = $("html, body");
 const main_window = $(window),
     pageBody = $("body"),
@@ -40,18 +30,6 @@ $(function () {
         }
     }
 
-    // Start open/close navbar search box
-    $(".header-search-box form").on("click", function (e) {
-        e.stopPropagation();
-    });
-
-    $(".header-search-btn").on("click", function () {
-        $(".header-search-box").addClass("show");
-
-        setTimeout(function () {
-            $(".search-input").focus();
-        }, 1000);
-    });
 
     /* ********* Start dark mode switcher ***********/
 
@@ -109,10 +87,7 @@ $(function () {
      *  START #page-header js rules
      *********************************/
 
-    /* *******  start open/close navbar search box   ********/
-    $(".header-search-box .close-search , .header-search-box").on("click", () => {
-        $(".header-search-box").removeClass("show");
-    });
+
 
     if (navMain) {
         $(bdyOnePage).scrollspy({
