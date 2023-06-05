@@ -20,7 +20,7 @@ $packages = Package::orderBy('order_no')->get();
         </div>
         <div class="row">
             @foreach ($packages as $package)
-                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan mb-3">
                     <div class="plan wow fadeInUp h-100 d-flex flex-column justify-content-between" data-wow-delay=".1s ">
                         <div class="plan-head">
                             <h4 class="plane-name">{{ $package->name }}</h4>
