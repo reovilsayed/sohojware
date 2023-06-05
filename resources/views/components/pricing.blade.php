@@ -21,7 +21,7 @@ $packages = Package::orderBy('order_no')->get();
         <div class="row">
             @foreach ($packages as $package)
                 <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-                    <div class="plan wow fadeInUp" data-wow-delay=".1s ">
+                    <div class="plan wow fadeInUp h-100 d-flex flex-column justify-content-between" data-wow-delay=".1s ">
                         <div class="plan-head">
                             <h4 class="plane-name">{{ $package->name }}</h4>
                             <div class="plan-price">
@@ -38,8 +38,9 @@ $packages = Package::orderBy('order_no')->get();
                                 @endforeach
                             </ul>
                         </div>
-                        <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us"
-                                onclick="package_select('{{$package->package_key}}')" id="basic">select plan</a></div>
+                        <div class="plan-cta">
+                            <a class="cta-btn btn-outline align-self-end" href="#contact-us" onclick="package_select('{{$package->package_key}}')" id="basic">select plan</a>
+                        </div>
                     </div>
                 </div>
             @endforeach
