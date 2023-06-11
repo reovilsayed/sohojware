@@ -20,8 +20,11 @@ class Post extends  \TCG\Voyager\Models\Post
                 $query->where('categories.slug', $category);
             });
         })->when($filter['search'] ?? false, function ($query, $search) {
-            $query->where('title', 'LIKE', '%' . $search . '%')->orWhere('body', 'LIKE', '%' . $search . '%');
+            $query->where(function($q) use($search){
+                $q->where('title', 'LIKE', '%' . $search . '%')
+                    ->orWhere('body', 'LIKE', '%' . $search . '%');
+            });
         });
     }
-    
+
 }
