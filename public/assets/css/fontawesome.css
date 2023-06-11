@@ -221,7 +221,20 @@
     content: "\f590";
 }
 .fa-arrow-right::before {
-    content: "\f061"; }
+    content: "\f061";
+}
+.fa-history::before {
+    content: "\f1da";
+}
+.fa-credit-card::before {
+    content: "\f09d";
+}
+.fa-code::before {
+    content: "\f121";
+}
+.fa-tasks::before {
+    content: "\f0ae";
+}
 .sr-only,
 .fa-sr-only {
     position: absolute;
