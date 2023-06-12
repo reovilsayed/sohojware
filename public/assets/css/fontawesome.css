@@ -235,6 +235,19 @@
 .fa-tasks::before {
     content: "\f0ae";
 }
+.fa-search::before {
+    content: "\f002";
+}
+.fa-chevron-left::before {
+    content: "\f053";
+}
+.fa-chevron-right::before {
+    content: "\f054";
+}
+.fa-sun::before {
+    content: "\f185"; }
+    .fa-moon::before {
+        content: "\f186"; }
 .sr-only,
 .fa-sr-only {
     position: absolute;

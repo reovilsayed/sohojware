@@ -3,12 +3,12 @@
         <ul class="pagination justify-content-center">
             @if ($paginator->onFirstPage())
                 <li class="ma-page-item deactive-page-item" aria-disabled="true">
-                    <span aria-hidden="true"><i class="bi bi-chevron-left icon "></i></span>
+                    <span aria-hidden="true"><i class="fa fa-chevron-left icon "></i></span>
                 </li>
             @else
                 <li class="ma-page-item" aria-disabled="true">
                     <a class="ma-page-item" href="{{ $paginator->previousPageUrl() }}"><i
-                            class="bi bi-chevron-left icon"></i></a>
+                            class="fa fa-chevron-left icon"></i></a>
                 </li>
             @endif
             @foreach ($elements as $element)
@@ -29,11 +29,11 @@
             @if ($paginator->hasMorePages())
                 <li class="ma-page-item">
                     <a class="ma-page-link" href="{{ $paginator->nextPageUrl() }}"><i
-                            class="bi bi-chevron-right icon "></i></a>
+                            class="fa fa-chevron-right icon "></i></a>
                 </li>
             @else
                 <li class="ma-page-item deactive-page-item">
-                    <span aria-hidden="true"><i class="bi bi-chevron-right icon "></i></span>
+                    <span aria-hidden="true"><i class="fa fa-chevron-right icon "></i></span>
                 </li>
             @endif
         </ul>

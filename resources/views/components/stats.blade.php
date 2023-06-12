@@ -1,6 +1,5 @@
 <section class="stats js-stats-counter mega-section">
-    <div class="overlay-photo-image-bg"
-        data-bg-img="{{asset('new/assets/images/sections-bg-images/pattern-bg-3.webp')}}"
+    <div class="overlay-photo-image-bg" data-bg-img="{{ asset('assets/images/sections-bg-images/pattern-bg-3.webp') }}"
         data-bg-opacity=".2"></div>
     <div class="container">
         <div class="stats-inner">
