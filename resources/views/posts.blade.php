@@ -5,12 +5,12 @@
     <meta property="og:url" content="{{ route('posts') }}" />
 @endsection
 @section('css')
-{{-- <style>
+<style>
    .header-basic a,
         .header-basic .menu-link {
             color: var(--clr-white) !important;
         }
-</style> --}}
+</style>
 @endsection
 @section('content')
 <x-breadcrumb :title="'Posts'"/>
