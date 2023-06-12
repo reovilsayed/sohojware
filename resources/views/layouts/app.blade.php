@@ -260,15 +260,15 @@
     </div>
     <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
-    <script src="{{ asset('assets/js/plugins/jquery-3.6.1.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/appear.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="{{ asset('assets/js/plugins/jquery.countTo.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/particles.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/vanilla-tilt.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script> --}}
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
