@@ -15,13 +15,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{asset('assets/css/plugin/swiper.css')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
@@ -46,12 +46,12 @@
             gtag('config', 'G-5HX60DLSEW');
         </script>
     @endproduction
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body class="dark-theme landing-page-demo">
-    <header class=" header-basic" id="page-header">
+    <header class="header-basic" id="page-header">
         <div class="container">
-            <!--Start navbar-->
             <nav class="menu-navbar " id="main-nav">
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
@@ -268,7 +268,7 @@
     <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/particles.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/vanilla-tilt.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script> --}}
+    <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
