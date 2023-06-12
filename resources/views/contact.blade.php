@@ -45,9 +45,9 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <div class="info-panel  wow fadeInUp h-100" data-wow-delay=".8s">
-                                    <h4 class="location-title">tokio</h4>
+                                    <h4 class="location-title">Asia</h4>
                                     <div class="line-on-side "> </div>
-                                    <p class="location-address">Japan, 307 chinzo appy road, portsika way. tokio 3516.</p>
+                                    <p class="location-address">1215 Farmgate Dhaka, Bangladesh</p>
                                 </div>
                             </div>
                         </div>
