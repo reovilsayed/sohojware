@@ -2,7 +2,7 @@
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
-    <meta property="og:url" content="{{ url('home') }}" />
+    <meta property="og:url" content="{{ url('/') }}" />
     <meta property="og:image" content="{{Voyager::image(setting('site.social_image'))}}"/>
 @endsection
 @section('content')
