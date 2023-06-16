@@ -1,11 +1,9 @@
 <section class="testimonials testimonials-1-col has-dark-bg mega-section" id="testimonials">
-    <div class="overlay-photo-image-bg parallax "
-        data-bg-img="{{asset('new/assets/images/sections-bg-images/1.jpg')}}"
+    <div class="overlay-photo-image-bg parallax " data-bg-img="{{ asset('assets/images/sections-bg-images/1.jpg') }}"
         data-bg-opacity=".25"> </div>
     <div class="container">
         <div class="sec-heading  centered ">
-            <div class="content-area"><span class=" pre-title       wow fadeInUp "
-                    data-wow-delay=".2s">testimonials</span>
+            <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">testimonials</span>
                 <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">customers <span
                         class='hollow-text'>testmonials</span></h2>
             </div>
@@ -19,8 +17,8 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="{{asset('new/assets/images/testimonials/1.png')}}"
-                                            alt="First Slide "></div>
+                                            src="{{ asset('assets/images/testimonials/1.png') }}" alt="First Slide ">
+                                    </div>
                                     <div class="customer-testimonial">
                                         <div class="content">
                                             <p class="testimonial-text "> ipsum dolor sit amet consectetur
@@ -42,8 +40,8 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="{{asset('new/assets/images/testimonials/2.png')}}"
-                                            alt="First Slide "></div>
+                                            src="{{ asset('assets/images/testimonials/2.png') }}" alt="First Slide ">
+                                    </div>
                                     <div class="customer-testimonial">
                                         <div class="content">
                                             <p class="testimonial-text "> ipsum dolor sit amet consectetur
@@ -65,8 +63,8 @@
                             <div class="testmonial-card d-flex align-items-center justify-content-center">
                                 <div class="testimonial-content">
                                     <div class="customer-img "><img class="img-fluid " loading="lazy"
-                                            src="{{asset('new/assets/images/testimonials/3.png')}}"
-                                            alt="First Slide "></div>
+                                            src="{{ asset('assets/images/testimonials/3.png') }}" alt="First Slide ">
+                                    </div>
                                     <div class="customer-testimonial">
                                         <div class="content">
                                             <p class="testimonial-text "> ipsum dolor sit amet consectetur

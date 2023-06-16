@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,54 +8,51 @@
     <meta name="keywords" content="@yield('meta-keywords', setting('site.keywords'))">
     @yield('social_media')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Sayed Khan Prince">
-    <link rel="icon" href="{{ asset('assets/favicon.png') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/flaticon.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/all.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugin/bootstrap-icons.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/jquery.fancybox.min.css') }}">
+    <meta name="author" content="ProsenJeet Das">
+    <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="{{asset('assets/css/plugin/swiper.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
-
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/plugin/main-LTR.css') }}">
     @yield('css')
     <title>@yield('title', setting('site.title'))</title>
     @production
         @if (Str::startsWith($current = url()->current(), 'https://www'))
             <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
+            <meta name="robots" content="noindex">
         @else
             <link rel="canonical" href="{{ $current }}">
         @endif
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HX60DLSEW"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-5HX60DLSEW');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-5HX60DLSEW');
         </script>
     @endproduction
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body class="dark-theme landing-page-demo">
-    <header class=" header-basic" id="page-header">
+    <header class="header-basic" id="page-header">
         <div class="container">
-            <!--Start navbar-->
             <nav class="menu-navbar " id="main-nav">
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
-                        <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
+                        <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
                             alt="logo" />
-                        <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/favicon.png') }}"
+                        <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
                             alt="logo" />
                     </a>
                 </div>
@@ -104,10 +100,10 @@
                     </div>
                     <div class="mode-switcher ms-3">
                         <div class="switch-inner go-light" title="Switch To Light Mode ">
-                            <i class="bi bi-sun icon"></i>
+                            <i class="fas fa-sun icon"></i>
                         </div>
                         <div class="switch-inner go-dark" title="Switch To Dark Mode ">
-                            <i class="bi bi-moon icon"></i>
+                            <i class="fas fa-moon icon"></i>
                         </div>
                     </div>
                 </div>
@@ -118,12 +114,12 @@
     <x-contact />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
-            data-bg-img="{{ asset('new/assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
+            data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
         </div>
         <div class="container">
             <div class="row footer-cols">
                 <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy"
-                        src="{{ asset('assets/favicon.png') }}" alt="logo" style="max-width: 60px;" />
+                        src="{{ asset('assets/logo.png') }}" alt="logo" style="max-width: 60px;" />
                     <div class="footer-col-content-wrapper">
                         <p class="footer-text-about-us ">
                             We are a team of IT specialists who have been providing IT support since 2015. Our team
@@ -179,10 +175,12 @@
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('posts')}}">Posts</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
+                                    href="{{ route('posts') }}">Posts</a>
                             </li>
                             <li class="footer-menu-item"><i class="fa-solid fa-arrow-right me-1"
-                                    style="color:#0a6a9e"></i><a class="footer-menu-link" href="{{route('services')}}">Services</a>
+                                    style="color:#0a6a9e"></i><a class="footer-menu-link"
+                                    href="{{ route('services') }}">Services</a>
                             </li>
                         </ul>
                     </div>
@@ -216,7 +214,8 @@
                                         </li>
                                         <li class="sc-item" title="instagram"><a target="_blank" class="sc-link"
                                                 href="https://instagram.com/sohoj_it_insta"
-                                                title="sohojware instagram"><i class="fab fa-instagram sc-icon"></i></a>
+                                                title="sohojware instagram"><i
+                                                    class="fab fa-instagram sc-icon"></i></a>
                                         </li>
                                         <li class="sc-item" title="twitter"><a target="_blank" class="sc-link"
                                                 href="https://twitter.com/sohoj_it" title="sohojware twitter"><i
@@ -257,11 +256,11 @@
     </div>
     <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
-    <script src="{{ asset('assets/js/plugins/jquery-3.6.1.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/appear.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="{{ asset('assets/js/plugins/jquery.countTo.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/particles.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/vanilla-tilt.min.js') }}"></script>

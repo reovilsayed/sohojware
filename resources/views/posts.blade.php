@@ -33,7 +33,7 @@
                             <form class="search-form" action="">
                                 <input type="hidden" name="category" value="{{request('category')}}">
                                 <input class="search-input" type="search" name="search" placeholder="Search Posts..." value="{{request('search')}}">
-                                <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
+                                <button class="search-btn" type="submit"><i class="fa fa-search icon"></i></button>
                             </form>
                         </div>
                         <div class="cats sidebar-box">

@@ -39,7 +39,7 @@
                                 @foreach ($services as $service)
                                     <li class="list-item">
                                         <a href="{{ route('service', $service->slug) }}">{{ $service->name }} <i
-                                                class="bi bi-arrow-right icon "></i></a>
+                                                class="fa-solid fa-arrow-right icon "></i></a>
                                     </li>
                                 @endforeach
                             </ul>

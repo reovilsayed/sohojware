@@ -7,7 +7,7 @@
             </div>
             <div class="cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a
                     class="cta-btn btn-solid   cta-btn btn-solid  " href="{{ route('posts') }}">see all posts<i
-                        class="bi bi-arrow-right icon "></i></a></div>
+                        class="fa-solid fa-arrow-right icon"></i></a></div>
         </div>
         <x-posts :posts="$posts" />
     </div>

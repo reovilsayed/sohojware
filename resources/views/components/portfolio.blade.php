@@ -26,21 +26,11 @@
                                         src="{{ Voyager::image($portfolio->image) }}" alt="portfolio item photo" /></a>
                                 <div class="item-info ">
                                     <h3 class="item-title">{{ $portfolio->title }}</h3><i
-                                        class="bi bi-arrow-right icon "></i>
+                                        class="fa-solid fa-arrow-right icon "></i>
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="col-12 col-md-6 col-lg-4 portfolio-item mobile ">
-                            <div class="item   "><a class="portfolio-img-link" href=""
-                                    data-fancybox=".show-in-fancybox"><img class="portfolio-img   img-fluid "
-                                        loading="lazy" src="" alt="portfolio item photo" /></a>
-                                <div class="item-info ">
-                                    <h3 class="item-titl"><a
-                                            href="{{ route('portfolio', $portfolio->slug) }}"></a>
-                                    </h3><i class="bi bi-eye icon "></i>
-                                </div>
-                            </div>
-                        </div> --}}
+                        
                     @endforeach
                 </div>
             </div>

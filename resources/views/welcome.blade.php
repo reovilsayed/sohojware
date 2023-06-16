@@ -2,12 +2,12 @@
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
-    <meta property="og:url" content="{{ url('home') }}" />
+    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:image" content="{{Voyager::image(setting('site.social_image'))}}"/>
 @endsection
 @section('content')
     <section class="page-hero  d-flex align-items-center" id="page-hero">
-        <div class="overlay-photo-image-bg"
-            data-bg-img="{{asset('new/assets/images/sections-bg-images/pattern-bg-1.webp')}}"
+        <div class="overlay-photo-image-bg" data-bg-img="{{ asset('assets/images/sections-bg-images/pattern-bg-1.webp') }}"
             data-bg-opacity=".2"></div>
         <div class="particles-js dots" id="particles-js"></div>
         <div class="container">
@@ -53,8 +53,8 @@
                 <div class="col-12   mx-md-auto col-lg-6 text-center" data-tilt>
                     <div class="hero-image-area mb-5 mb-lg-0">
                         <div class="hero-img-wraper"><img class="img-fluid"
-                                src="{{asset('new/assets/images/hero/illustration-1.webp')}}"
-                                alt="sohojware" draggable="false"></div>
+                                src="{{ asset('assets/images/hero/illustration-1.webp') }}" alt="sohojware"
+                                draggable="false"></div>
                     </div>
                 </div>
             </div>
@@ -69,5 +69,4 @@
     {{-- <x-testimonials /> --}}
     <x-faq />
     <x-blog :posts="$posts" />
-
 @endsection

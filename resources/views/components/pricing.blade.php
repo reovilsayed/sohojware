@@ -1,9 +1,13 @@
+<?php
+use App\Models\Package;
+$packages = Package::orderBy('order_no')->get();
+?>
 <section class="pricing mega-section" id="pricing">
     <div class="container">
-        <div class="sec-heading  ">
-            <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">pricing
+        <div class="sec-heading">
+            <div class="content-area"><span class="pre-title wow fadeInUp" data-wow-delay=".2s">pricing
                     plans</span>
-                <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>affordable</span>
+                <h2 class=" title wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>affordable</span>
                     pricing plans</h2>
                 <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">
                     We offer competitive pricing to help small and start-up businesses build a strong online <br>
@@ -15,12 +19,37 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-                <div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
+            @foreach ($packages as $package)
+                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan mb-3">
+                    <div class="plan wow fadeInUp h-100 d-flex flex-column justify-content-between" data-wow-delay=".1s ">
+                        <div class="plan-head">
+                            <h4 class="plane-name">{{ $package->name }}</h4>
+                            <div class="plan-price">
+                                <h3 class="price">{{ $package->price }}<sup class="currency-symbol">$</sup></h3>Ex Tax
+                            </div>
+                        </div>
+                        <div class="plan-details">
+                            <ul class="plan-list">
+                                @php
+                                    $services = explode('|', $package->services);
+                                @endphp
+                                @foreach ($services as $service)
+                                    <li class="plan-feat"><span class="feat-text">{{ $service }}</span></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="plan-cta">
+                            <a class="cta-btn btn-outline align-self-end" href="#contact-us" onclick="package_select('{{$package->package_key}}')" id="basic">select plan</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+            {{-- <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+                <div class="plan wow fadeInUp" data-wow-delay=".1s ">
                     <div class="plan-head">
                         <h4 class="plane-name">Basic</h4>
                         <div class="plan-price">
-                            <h3 class="price">300<sup class="currency-symbol">$</sup></h3> ex tax
+                            <h5 class="">123</h5> ex tax
                         </div>
                     </div>
                     <div class="plan-details">
@@ -121,14 +150,14 @@
                     </div>
                     <div class="plan-cta"><a class="cta-btn btn-outline" href="#contact-us" onclick="package_select('custom')" id="custom">select plan </a></div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
 @section('js')
-   <script>
-     function package_select(name){
-        $('#package').val(name);
-    }
-   </script>
+    <script>
+        function package_select(name) {
+            $('#package').val(name);
+        }
+    </script>
 @endsection
