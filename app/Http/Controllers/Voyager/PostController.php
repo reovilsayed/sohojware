@@ -367,7 +367,10 @@ class PostController extends Controller
         $this->deleteBreadImages($original_data, $to_remove);
 
         event(new BreadDataUpdated($dataType, $data));
-
+        if($data->status == 'SCHEDULE'){
+            $data->publish_date = $request->publish_date;
+            $data->save();
+        }
         if (auth()->user()->can('browse', app($dataType->model_name))) {
             $redirect = redirect()->route("voyager.{$dataType->slug}.index");
         } else {
