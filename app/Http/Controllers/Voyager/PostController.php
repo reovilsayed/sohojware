@@ -371,13 +371,8 @@ class PostController extends Controller
             $data->publish_date = $request->publish_date;
             $data->save();
         }
-        if (auth()->user()->can('browse', app($dataType->model_name))) {
-            $redirect = redirect()->route("voyager.{$dataType->slug}.index");
-        } else {
-            $redirect = redirect()->back();
-        }
 
-        return $redirect->with([
+        return back()->with([
             'message'    => __('voyager::generic.successfully_updated')." {$dataType->getTranslatedAttribute('display_name_singular')}",
             'alert-type' => 'success',
         ]);
