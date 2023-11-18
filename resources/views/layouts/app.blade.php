@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="{{asset('assets/css/plugin/swiper.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,6 +44,22 @@
         </script>
     @endproduction
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "ResearchProject",
+        "name": "Sohojware",
+        "alternateName": "The Best Services & IT Solutions",
+        "url": "https://sohojware.com/",
+        "logo": "https://sohojware.com/assets/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/sohojitltd/",
+            "https://twitter.com/sohoj_it",
+            "https://www.instagram.com/sohoj_it_insta",
+            "https://www.youtube.com/@sohojware/videos"
+        ]
+        }
+</script>
 </head>
 
 <body class="dark-theme landing-page-demo">
@@ -258,7 +275,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
     <script src="{{ asset('assets/js/plugins/jquery.countTo.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
