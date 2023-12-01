@@ -90,6 +90,17 @@
 </section>
 @section('js')
  <script>
+    $('#rand_sum').keyup(function(){
 
+        var rand_sum = $('#rand_sum').val();
+        var sum = {{$sum}};
+        if(rand_sum != sum){
+            $('#rand_sum').siblings(".error-msg").text('Please enter correc number').css("display", "block");
+            $('#rand_sum').addClass('border-danger');
+        }else{
+            $('#rand_sum').siblings(".error-msg").text("").css("display", "none");
+            $('#rand_sum').removeClass('border-danger');
+        }
+    })
  </script>
 @endsection
