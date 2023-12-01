@@ -264,6 +264,7 @@ $(function () {
         userEmail = $("#user-email"),
         msgSubject = $("#msg-subject"),
         msgText = $("#msg-text"),
+        rand_sum = $("#rand_sum"),
         submitBtn = $("#submit-btn");
 
     let isValidInput = false,
@@ -301,6 +302,7 @@ $(function () {
         e.preventDefault();
 
         ValidateNotEmptyInput(userName, "Please Enter Your Name");
+        ValidateNotEmptyInput(rand_sum, "Please Enter sum of this two number");
         ValidateNotEmptyInput(userEmail, "Please Enter Your Email");
         ValidateNotEmptyInput(msgSubject, "Please Enter Your subject");
         ValidateNotEmptyInput(msgText, "Please Enter Your Message");

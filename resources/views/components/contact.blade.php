@@ -1,3 +1,11 @@
+<?php
+  $num1 = rand(1,9);
+  $num2 = rand(1,9);
+
+  $sum = $num1 + $num2;
+  session()->put('randsum',$sum);
+?>
+
 <section class="contact-us  mega-section  py-0" id="contact-us">
     <div class="container">
         <section class="contact-us-form-section  mega-section  ">
@@ -41,7 +49,7 @@
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12 ">
+                                        <div class="col-12">
                                             <div class="input-wrapper">
                                                 <input class="text-input" id="msg-subject" name="subject"
                                                     type="text" />
@@ -50,12 +58,21 @@
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12 ">
+                                        <div class="col-12">
                                             <div class="input-wrapper">
                                                 <textarea class=" text-input" id="msg-text" name="message"></textarea>
                                                 <label class="input-label" for="msg-text">Details<span
                                                         class="req">*</span></label><span
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="input-wrapper">
+                                                <input class="text-input" id="rand_sum" name="rand_sum"
+                                                    type="number" />
+                                                <label class="input-label" for="rand_sum">{{$num1 .' + '. $num2 }} <span
+                                                    class="req">*</span></label><span
+                                                    class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
                                         <input type="hidden" name="package" id="package">

@@ -6,7 +6,7 @@ use App\Mail\NotificationEmail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Validation\ValidationException;
 class ContactController extends Controller
 {
     public function index()
@@ -23,8 +23,12 @@ class ContactController extends Controller
             'message' =>  ['required', 'max:500'],
             'phone' =>  ['nullable', 'max:20'],
             'package' =>  ['nullable', 'max:20'],
+            'rand_sum' =>  ['required', 'max:20'],
         ]);
 
+        if ($request->rand_sum != session()->get('randsum')) {
+            return response()->json(['error' => 'Invalid rand_sum'], 422);
+        }
         $contact = Contact::create([
             'name' => $request->name,
             'email' => $request->email,
