@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','About Us-Trusted By Worldwide Clients' )
+@section('title','About us-Trusted By Worldwide Clients' )
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
