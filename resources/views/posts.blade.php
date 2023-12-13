@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Ensure the highest quality service for your business' )
+@section('title','Posts' )
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
