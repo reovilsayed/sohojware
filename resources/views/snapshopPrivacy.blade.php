@@ -1,9 +1,9 @@
 @extends('layouts.app')
-@section('title', 'Frequently Asked Questions ')
+@section('title', 'Snapshop Privacy Policy')
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
-    <meta property="og:url" content="{{ route('faq') }}" />
+    <meta property="og:url" content="{{ route('snapshop.privacy') }}" />
 @endsection
 
 @section('css')
