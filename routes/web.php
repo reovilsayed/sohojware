@@ -28,6 +28,7 @@ Route::get('service/{slug}', [PageController::class, 'service'])->name('service'
 Route::get('about-us', [PageController::class, 'about'])->name('about');
 Route::get('pricing', [PageController::class, 'pricing'])->name('pricing');
 Route::get('faq', [PageController::class, 'faq'])->name('faq');
+Route::get('snapshop/privacy-policy', [PageController::class, 'snapshopPrivacy'])->name('snapshop.privacy');
 Route::get('portfolios', [PageController::class, 'portfolios'])->name('portfolios');
 Route::get('portfolio/{slug}', [PageController::class, 'portfolio'])->name('portfolio');
 

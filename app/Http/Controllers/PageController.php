@@ -68,6 +68,10 @@ class PageController extends Controller
     {
         return view('faq');
     }
+    public function snapshopPrivacy()
+    {
+        return view('snapshopPrivacy');
+    }
     public function page($slug)
     {
         $page = Page::where('slug',$slug)->where('status','ACTIVE')->firstOrFail();
