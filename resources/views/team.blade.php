@@ -50,25 +50,34 @@
                                     <div class="tm-social">
                                         <div class="sc-wrapper dir-row sc-size-40">
                                             <ul class="sc-list">
-                                                <li class="sc-item" title="Facebook">
-                                                    <a class="sc-link" href="{{ $member->facebook }}"
-                                                        title="social media icon"><i
-                                                            class="fab fa-facebook-f sc-icon"></i></a>
-                                                </li>
-                                                <li class="sc-item" title="github">
-                                                    <a class="sc-link" href="{{ $member->github }}"
-                                                        title="social media icon"><i class="fab fa-github sc-icon"></i></a>
-                                                </li>
-                                                <li class="sc-item" title="instagram">
-                                                    <a class="sc-link" href="{{ $member->instagram }}"
-                                                        title="social media icon"><i
-                                                            class="fab fa-instagram sc-icon"></i></a>
-                                                </li>
-                                                <li class="sc-item" title="linkedin">
-                                                    <a class="sc-link" href="{{ $member->linkedin }}    "
-                                                        title="social media icon"><i
-                                                            class="fab fa-linkedin sc-icon"></i></a>
-                                                </li>
+                                                @if ($member->facebook)
+                                                    <li class="sc-item" title="Facebook">
+                                                        <a class="sc-link" href="{{ $member->facebook }}"
+                                                            title="social media icon"><i
+                                                                class="fab fa-facebook-f sc-icon"></i></a>
+                                                    </li>
+                                                @endif
+                                                @if ($member->github)
+                                                    <li class="sc-item" title="github">
+                                                        <a class="sc-link" href="{{ $member->github }}"
+                                                            title="social media icon"><i
+                                                                class="fab fa-github sc-icon"></i></a>
+                                                    </li>
+                                                @endif
+                                                @if ($member->instagram)
+                                                    <li class="sc-item" title="instagram">
+                                                        <a class="sc-link" href="{{ $member->instagram }}"
+                                                            title="social media icon"><i
+                                                                class="fab fa-instagram sc-icon"></i></a>
+                                                    </li>
+                                                @endif
+                                                @if ($member->linkedin)
+                                                    <li class="sc-item" title="linkedin">
+                                                        <a class="sc-link" href="{{ $member->linkedin }}    "
+                                                            title="social media icon"><i
+                                                                class="fab fa-linkedin sc-icon"></i></a>
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
