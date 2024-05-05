@@ -29,10 +29,10 @@
                         our <span class="hollow-text">Experts</span> team members
                     </h2>
                 </div>
-                <div class="cta-area cta-area wow fadeInUp" data-wow-delay=".8s">
+                {{-- <div class="cta-area cta-area wow fadeInUp" data-wow-delay=".8s">
                     <a class="cta-btn btn-solid cta-btn btn-solid" href="our-team.html">see more<i
                             class="bi bi-arrow-right icon"></i></a>
-                </div>
+                </div> --}}
             </div>
             <div class="container-fluid">
                 <div class="row">
