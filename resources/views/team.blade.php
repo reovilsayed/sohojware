@@ -20,6 +20,7 @@
         .parallax-img {
             height: 300px;
             width: 297px;
+            object-fit: cover;
         }
     </style>
 @endsection
