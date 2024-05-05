@@ -91,7 +91,7 @@
                                     <a class="tm-link" href="team-member.html">
                                         <h6 class="tm-name">{{ $member->name }}</h6>
                                     </a>
-                                    <span class="tm-role">{{ $member->designation }} </span>
+                                    <span class="tm-role">{{ $member->designation }} </span> <br>
                                     <span class="tm-role">{{ $member->speciality }} </span>
                                 </div>
                             </div>
