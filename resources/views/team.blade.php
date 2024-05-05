@@ -16,6 +16,11 @@
         .display {
             display: none
         }
+
+        .parallax-img {
+            height: 300px;
+            width: 297px;
+        }
     </style>
 @endsection
 @section('content')
