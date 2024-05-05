@@ -9,7 +9,7 @@
     <meta name="keywords" content="@yield('meta-keywords', setting('site.keywords'))">
     @yield('social_media')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="ProsenJeet Das">
+    <meta name="author" content="Sayed Khan">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -91,8 +91,11 @@
                                 href="{{ route('portfolios') }}">portfolio</a>
                         </li>
                         <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
+                                href="{{ route('our.team') }}">Our Team</a></li>
+                        <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
-                                href="{{ route('pricing') }}">Packages</a></li>
+                                href="{{ route('pricing') }}"></a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
                                 href="{{ route('faq') }}">FAQ

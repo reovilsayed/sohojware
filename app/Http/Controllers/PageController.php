@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Client;
 use App\Models\Category;
+use App\Models\Member;
 use App\Models\Page;
 use App\Models\Portfolio;
 use App\Models\Post;
 use App\Models\subscribe;
+use App\Models\User;
 
 class PageController extends Controller
 {
@@ -17,15 +19,15 @@ class PageController extends Controller
         $services = Category::orderBy('order', 'asc')->get();
         $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->limit(6)->where('status',1)->get();
+        $portfolios = Portfolio::latest()->limit(6)->where('status', 1)->get();
         return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));
     }
     public function posts()
     {
         $posts = Post::latest()
-                     ->where('status', 'PUBLISHED')
-                     ->filter(request(['search', 'category']))
-                     ->paginate(12);
+            ->where('status', 'PUBLISHED')
+            ->filter(request(['search', 'category']))
+            ->paginate(12);
         $categories = Category::get();
         return view('posts', compact('posts', 'categories'));
     }
@@ -48,12 +50,18 @@ class PageController extends Controller
     public function portfolios()
     {
         $clients = Client::all();
-        $portfolios = Portfolio::latest()->where('status',1)->get();
+        $portfolios = Portfolio::latest()->where('status', 1)->get();
         return view('portfolios', compact('clients', 'portfolios'));
+    }
+    public function ourTeam()
+    {
+        $ourTeams = Member::orderBy('position', 'asc')->get();
+
+        return view('team', compact('ourTeams'));
     }
     public function portfolio($slug)
     {
-        $portfolio = Portfolio::where('slug', $slug)->where('status',1)->firstOrFail();
+        $portfolio = Portfolio::where('slug', $slug)->where('status', 1)->firstOrFail();
         return view('single_portfolio', compact('portfolio'));
     }
     public function about()
@@ -74,15 +82,15 @@ class PageController extends Controller
     }
     public function page($slug)
     {
-        $page = Page::where('slug',$slug)->where('status','ACTIVE')->firstOrFail();
-        return view('page',compact('page'));
+        $page = Page::where('slug', $slug)->where('status', 'ACTIVE')->firstOrFail();
+        return view('page', compact('page'));
     }
     public function sitemap()
     {
         $posts = Post::latest()->where('status', 'PUBLISHED')->get();
         $pages = Page::where('status', 'ACTIVE')->get();
         $services = Category::latest()->get();
-        $portfolios = Portfolio::latest()->where('status',1)->get();
+        $portfolios = Portfolio::latest()->where('status', 1)->get();
         return response()->view('sitemap', [
             'posts' => $posts,
             'pages' => $pages,

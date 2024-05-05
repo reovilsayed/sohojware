@@ -192,6 +192,12 @@
 .fa-youtube:before {
     content: "\f167";
 }
+.fa-github:before {
+    content: "\f09b";
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+}
 .fa-instagram:before {
     content: "\f16d";
 }
@@ -245,9 +251,11 @@
     content: "\f054";
 }
 .fa-sun::before {
-    content: "\f185"; }
-    .fa-moon::before {
-        content: "\f186"; }
+    content: "\f185";
+}
+.fa-moon::before {
+    content: "\f186";
+}
 .sr-only,
 .fa-sr-only {
     position: absolute;
