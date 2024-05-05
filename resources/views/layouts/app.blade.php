@@ -90,12 +90,10 @@
                                 class="nav-link menu-link {{ request()->routeIs('portfolios') ? 'active' : '' }}"
                                 href="{{ route('portfolios') }}">portfolio</a>
                         </li>
-                        <li class="nav-item menu-item"><a
-                                class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
-                                href="{{ route('our.team') }}">Our Team</a></li>
+
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
-                                href="{{ route('pricing') }}"></a></li>
+                                href="{{ route('pricing') }}">Package</a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
                                 href="{{ route('faq') }}">FAQ
@@ -108,6 +106,9 @@
                                 class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"
                                 href="{{ route('contact') }}">contact us
                             </a></li>
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
+                                href="{{ route('our.team') }}">Our Team</a></li>
                     </ul>
                 </div>
                 <div class="controls-box">
