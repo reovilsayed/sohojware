@@ -6,5 +6,5 @@
 @endsection
 @section('content')
     <x-breadcrumb :title="'Lets Builds'" />
-    
+    <x-letsbuild/>
 @endsection
