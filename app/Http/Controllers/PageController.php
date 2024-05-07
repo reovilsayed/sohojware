@@ -110,4 +110,7 @@ class PageController extends Controller
         ]);
         return back()->with('success_msg', 'Thanks for your subscription');
     }
+    public function letsBuild(){
+        return view('letsbuild');
+    }
 }

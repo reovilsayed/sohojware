@@ -109,6 +109,9 @@
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
                                 href="{{ route('our.team') }}">Our Team</a></li>
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
+                                href="{{ route('letsBuild') }}">lets Build</a></li>
                     </ul>
                 </div>
                 <div class="controls-box">

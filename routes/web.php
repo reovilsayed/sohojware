@@ -31,6 +31,7 @@ Route::get('faq', [PageController::class, 'faq'])->name('faq');
 Route::get('snapshop/privacy-policy', [PageController::class, 'snapshopPrivacy'])->name('snapshop.privacy');
 Route::get('portfolios', [PageController::class, 'portfolios'])->name('portfolios');
 Route::get('our-team', [PageController::class, 'ourTeam'])->name('our.team');
+Route::get('letsBuild', [PageController::class, 'letsBuild'])->name('letsBuild');
 Route::get('portfolio/{slug}', [PageController::class, 'portfolio'])->name('portfolio');
 
 
