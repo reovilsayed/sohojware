@@ -21,7 +21,7 @@ session()->put('randsum', $sum);
                         <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
                             <div class="custom-form-area input-boxed">
                                 <form class="main-form" id="contact-us-form" action="{{ route('projects.store') }}"
-                                    method="post"><span class="done-msg"></span>
+                                    enctype="multipart/form-data" method="post"><span class="done-msg"></span>
                                     @csrf
                                     <div class="row ">
                                         <div class="col-12 col-lg-6">
@@ -52,11 +52,9 @@ session()->put('randsum', $sum);
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="msg-subject" name="file"
-                                                    type="file" />
-                                                <label class="input-label" for="msg-subject">Atached file<span
-                                                        class="req">*</span></label><span
-                                                    class="b-border"></span><span class="error-msg"></span>
+                                                <label for="file" class="form-label">File Attachment</label>
+                                                <input type="file" class="form-control" id="file"
+                                                    name="file">
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -67,7 +65,7 @@ session()->put('randsum', $sum);
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-4">
+                                        {{-- <div class="col-12 col-lg-4">
                                             <div class="input-wrapper">
                                                 <input class="text-input" id="rand_sum" name="rand_sum"
                                                     type="number" />
@@ -75,10 +73,10 @@ session()->put('randsum', $sum);
                                                     <span class="req">*</span></label><span
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
-                                        </div>
-                                        <input type="hidden" name="package" id="package">
+                                        </div> --}}
+                                        {{-- <input type="hidden" name="package" id="package"> --}}
                                         <div class="col-12 submit-wrapper">
-                                            <button class="btn-solid" id="submit-btn" type="submit">Send your
+                                            <button class="btn-solid" id="submit-bt" type="submit">Send your
                                                 message</button>
                                         </div>
                                     </div>

@@ -38,33 +38,40 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-
+        // Perform user checks and create if not authenticated
         if (!Auth::check()) {
             $validatedUserData = $request->validate([
                 'name' => 'required|string|max:255',
                 'email' => 'required|string|email|max:255|unique:users',
             ]);
 
+            // Set a default password for the user
+            $defaultPassword = 'password'; // Consider a more secure password or method
+
             $user = User::create([
                 'name' => $validatedUserData['name'],
                 'email' => $validatedUserData['email'],
-                'password' => Hash::make(str::random(8)),
+                'password' => Hash::make($defaultPassword),
             ]);
+
+            // You may want to send an email to the user with their default password or instructions to change it
 
             Auth::login($user);
         } else {
             $user = Auth::user();
         }
-
-
+        // dd($request->all());
+        // Validate project data
         $validatedProjectData = $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
+            'title' => 'required',
+            'description' => 'required',
         ]);
+        // dd($request->hasFile('file'));
 
-
+        // Create project
         $project = $user->projects()->create($validatedProjectData);
 
+        // Handle file upload
         if ($request->hasFile('file')) {
             $file = $request->file('file');
             $path = $file->store('attachments', 'public');
@@ -76,9 +83,9 @@ class ProjectController extends Controller
                 'type' => $file->getClientMimeType(),
             ]);
         }
-        return redirect()->route('projects.index')->with('success', 'Project created successfully!');
-    }
 
+        return back()->with('success_msg', 'Project successfully created');
+    }
     /**
      * Display the specified resource.
      *

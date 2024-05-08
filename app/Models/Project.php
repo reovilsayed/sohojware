@@ -13,4 +13,8 @@ class Project extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+    public function attachments()
+    {
+        return $this->morphMany(Attachment::class, 'attachable');
+    }
 }
