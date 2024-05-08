@@ -60,6 +60,8 @@
         }
 </script>
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4642365103715171"
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="dark-theme landing-page-demo">
