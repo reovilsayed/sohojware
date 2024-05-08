@@ -94,25 +94,24 @@
                         <img src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?auto=format&fit=crop&w=1470&q=80"
                             class="card-img-top profile-cover-img" alt="Cover Photo">
                         <!-- Logo/Avatar -->
-                        <img src="https://randomuser.me/api/portraits/women/17.jpg"
+                        <img src="{{ Storage::url(auth()->user()->avatar) }}"
                             class="rounded-circle p-2 bg-white shadow profile-avatar-img" alt="Profile">
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
-                        <h5 class="card-title mt-2">Jennie Nichols</h5>
-                        <p class="card-text">Michigan, United States</p>
+                        <h5 class="card-title mt-2">{{ auth()->user()->name }}</h5>
+                        <p class="card-text">{{ auth()->user()->email }}</p>
                         <div class="text-start ms-3">
-                            <p class="profile-detail"><i class="bx bxl-gmail detail-icon"></i> jennie.nichols@example.com
-                            </p>
 
-                            <p class="profile-detail"><i class="bx bx-building detail-icon"></i> Acme Corp</p>
-                            <p class="profile-detail"><i class="bx bx-hard-hat detail-icon"></i> Senior Developer</p>
-                            <p class="profile-detail"><i class="bx bx-current-location detail-icon"></i> 1234 Street Rd,
-                                City,
-                                Country
+                            <p class="profile-detail"><i
+                                    class="bx bx-building detail-icon"></i>{{ auth()->user()->company ?? 'No Data' }}</p>
+                            <p class="profile-detail"><i
+                                    class="bx bx-hard-hat detail-icon"></i>{{ auth()->user()->designation ?? 'No Data' }}</p>
+                            <p class="profile-detail"><i class="bx bx-current-location detail-icon"></i>
+                                {{ auth()->user()->address ?? 'No Data' }}
                             </p>
                         </div>
-                   
+
                     </div>
                 </div>
             </div>
@@ -151,7 +150,7 @@
                                         <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
                                             <span class="avatar-title">
                                                 <i class="bx bx-money-withdraw font-size-24"></i>
-                                       
+
                                             </span>
                                         </div>
                                     </div>
