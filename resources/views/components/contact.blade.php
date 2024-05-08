@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="msg-subject" name="subject"
+                                                <input class="text-input" id="msg-subject" name="file"
                                                     type="file" />
                                                 <label class="input-label" for="msg-subject">Atached file<span
                                                         class="req">*</span></label><span
@@ -60,7 +60,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="input-wrapper">
-                                                <textarea class=" text-input" name="message" id="massage"></textarea>
+                                                <textarea class=" text-input" name="description" id="massage"></textarea>
                                                 <label class="input-label" for="msg-text">Details<span
                                                         class="req">*</span></label><span
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
