@@ -43,15 +43,15 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="project_name" name="project_name"
+                                                <input class="text-input" id="title" name="title"
                                                     type="text" />
-                                                <label class="input-label" for="project_name">Project Name </label><span
+                                                <label class="input-label" for="title">Project Title</label><span
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="msg-subject" name="subject"
+                                                <input class="text-input" id="msg-subject" name="file"
                                                     type="file" />
                                                 <label class="input-label" for="msg-subject">Atached file<span
                                                         class="req">*</span></label><span
@@ -60,7 +60,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="input-wrapper">
-                                                <textarea class=" text-input" name="message" id="massage"></textarea>
+                                                <textarea class=" text-input" name="description" id="massage"></textarea>
                                                 <label class="input-label" for="msg-text">Details<span
                                                         class="req">*</span></label><span
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
