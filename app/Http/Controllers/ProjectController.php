@@ -38,7 +38,7 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-     
+
         if (!Auth::check()) {
             $validatedUserData = $request->validate([
                 'name' => 'required|string|max:255',
@@ -48,10 +48,10 @@ class ProjectController extends Controller
             $user = User::create([
                 'name' => $validatedUserData['name'],
                 'email' => $validatedUserData['email'],
-                'password' => Hash::make(str::random(8)), 
+                'password' => Hash::make(str::random(8)),
             ]);
 
-            Auth::login($user); 
+            Auth::login($user);
         } else {
             $user = Auth::user();
         }
@@ -62,9 +62,20 @@ class ProjectController extends Controller
             'description' => 'required|string',
         ]);
 
-        
+
         $project = $user->projects()->create($validatedProjectData);
 
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $path = $file->store('attachments', 'public');
+
+            $project->attachments()->create([
+                'user_id' => auth()->id(),
+                'name' => $file->getClientOriginalName(),
+                'file' => $path,
+                'type' => $file->getClientMimeType(),
+            ]);
+        }
         return redirect()->route('projects.index')->with('success', 'Project created successfully!');
     }
 
