@@ -43,9 +43,9 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="project_name" name="project_name"
+                                                <input class="text-input" id="title" name="title"
                                                     type="text" />
-                                                <label class="input-label" for="project_name">Project Name </label><span
+                                                <label class="input-label" for="title">Project Title</label><span
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
