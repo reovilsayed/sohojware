@@ -18,9 +18,9 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('title');
             $table->text('description');
-            $table->string('type');
-            $table->timestamp('project_estd');
-            $table->string('payment_type');
+            $table->string('type')->nullable();
+            $table->timestamp('project_estd')->nullable();
+            $table->string('payment_type')->nullable();
             $table->integer('budget')->default(0);
             $table->tinyInteger('status')->default(0);
             $table->integer('total_paid')->default(0);

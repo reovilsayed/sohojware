@@ -60,13 +60,6 @@ class ProjectController extends Controller
         $validatedProjectData = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
-            'type' => 'required|string|max:255',
-            'project_estd' => 'required|date',
-            'payment_type' => 'required|string|max:255',
-            'budget' => 'required|integer',
-            'status' => 'required|integer',
-            'total_paid' => 'required|integer',
-            'note' => 'nullable|string'
         ]);
 
         
