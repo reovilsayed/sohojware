@@ -150,8 +150,19 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" style="color: #333 !important;" href="#">Sign out</a>
+                                <li>
+                                    <!-- Using Laravel's `route` helper to generate URL to logout route -->
+                                    <a class="dropdown-item" style="color: #333 !important;"
+                                        href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        Sign out
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        style="display: none;">
+                                        @csrf
+                                    </form>
                                 </li>
+
                             </ul>
                         </div>
                     @endauth
