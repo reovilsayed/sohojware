@@ -59,6 +59,7 @@
         ]
         }
 </script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 </head>
 
 <body class="dark-theme landing-page-demo">
@@ -110,8 +111,9 @@
                                 class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
                                 href="{{ route('our.team') }}">Our Team</a></li>
                         <li class="nav-item menu-item"><a
-                                class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
-                                href="{{ route('letsBuild') }}">lets Build</a></li>
+                                class="nav-link menu-link {{ request()->routeIs('letsBuild') ? 'active' : '' }}"
+                                href="{{ route('letsBuild') }}">let's Build</a></li>
+
                     </ul>
                 </div>
                 <div class="controls-box">
@@ -301,6 +303,7 @@
     </div>
     <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -315,6 +318,24 @@
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script>
+        $('#massage').summernote({
+            placeholder: 'Text Here....',
+            tabsize: 2,
+            height: 400,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]
+
+        });
+    </script>
     @yield('js')
 
 </body>

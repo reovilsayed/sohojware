@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Contact Us| Sohojware' )
+@section('title', 'Contact Us| Sohojware')
 @section('social_media')
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
@@ -7,18 +7,18 @@
 @endsection
 
 @section('css')
-
-@endsection
-<style>
-   .header-basic a,
+    <style>
+        .header-basic a,
         .header-basic .menu-link {
             color: var(--clr-white) !important;
         }
-</style>
+    </style>
+@endsection
+
 @section('content')
-<x-breadcrumb title="Contact">
-{{'Contact'}}
-</x-breadcrumb>
+    <x-breadcrumb title="Contact">
+        {{ 'Contact' }}
+    </x-breadcrumb>
     <section class="contact-us  mega-section  pb-0" id="contact-us">
         <div class="container">
             <section class="locations-section  mega-section ">

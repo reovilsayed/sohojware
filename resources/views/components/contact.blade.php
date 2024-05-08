@@ -23,7 +23,7 @@
                                     method="post"><span class="done-msg"></span>
                                     @csrf
                                     <div class="row ">
-                                        <div class="col-12 col-lg-4">
+                                        <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
                                                 <input class="text-input" id="user-name" name="name"
                                                     type="text" />
@@ -32,7 +32,7 @@
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-4">
+                                        <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
                                                 <input class="text-input" id="user-email" name="email"
                                                     type="email" />
@@ -41,26 +41,26 @@
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-4">
+                                        <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
-                                                <input class="text-input" id="user-phone" name="phone"
+                                                <input class="text-input" id="project_name" name="project_name"
                                                     type="text" />
-                                                <label class="input-label" for="user-phone">Phone <small>(Optional)</small></label><span
+                                                <label class="input-label" for="project_name">Project Name </label><span
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-12 col-lg-6">
                                             <div class="input-wrapper">
                                                 <input class="text-input" id="msg-subject" name="subject"
-                                                    type="text" />
-                                                <label class="input-label" for="msg-subject">Subject<span
+                                                    type="file" />
+                                                <label class="input-label" for="msg-subject">Atached file<span
                                                         class="req">*</span></label><span
                                                     class="b-border"></span><span class="error-msg"></span>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="input-wrapper">
-                                                <textarea class=" text-input" id="msg-text" name="message"></textarea>
+                                                <textarea class=" text-input" name="message" id="massage"></textarea>
                                                 <label class="input-label" for="msg-text">Details<span
                                                         class="req">*</span></label><span
                                                     class="b-border"></span><i></i><span class="error-msg"></span>
