@@ -171,7 +171,10 @@
         </div>
     </header>
     @yield('content')
-    <x-contact />
+    <x-contact :doNotShowOnTheseRoutes="[
+        route('login'),
+        route('register'),
+        ]" />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">

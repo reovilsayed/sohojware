@@ -47,7 +47,7 @@ Route::resource('projects', ProjectController::class);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-Route::group(['prefix' => 'client', 'as' => 'client.'], function () {
+Route::group(['prefix' => 'client', 'as' => 'client.','middleware'=>'auth'], function () {
     Route::get('dashboard', [ClientController::class, 'index'])->name('dashboard');
 });
 
