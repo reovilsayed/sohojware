@@ -111,7 +111,7 @@
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
-                                href="{{ route('our.team') }}">Our Team</a></li>
+                                href="{{ route('our.team') }}">Team Sohoj</a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('letsBuild') ? 'active' : '' }}"
                                 href="{{ route('letsBuild') }}">let's Build</a></li>
