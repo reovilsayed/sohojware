@@ -49,7 +49,7 @@
                             <div class="tm-member-card wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="tm-image js-tilt">
                                     <div class="tm-link">
-                                        <div class="overlay overlay-color"></div>
+                                        {{-- <div class="overlay overlay-color"></div> --}}
                                         <img class="img-fluid parallax-img" loading="lazy"
                                             src="{{ Voyager::image($member->image) }}" alt="Team Member" />
                                     </div>
