@@ -33,7 +33,7 @@
                 <div class="col-12 col-lg-9">
                     <div class="tm-description">
                         <h3 class="tm-title">Biography Overview.</h3>
-                        <p class="tm-text"></p>
+                        <p class="tm-text">{!! $member->description !!}</p>
 
 
 
