@@ -106,12 +106,14 @@
                             <p class="profile-detail"><i
                                     class="bx bx-building detail-icon"></i>{{ auth()->user()->company ?? 'No Data' }}</p>
                             <p class="profile-detail"><i
-                                    class="bx bx-hard-hat detail-icon"></i>{{ auth()->user()->designation ?? 'No Data' }}</p>
+                                    class="bx bx-hard-hat detail-icon"></i>{{ auth()->user()->designation ?? 'No Data' }}
+                            </p>
                             <p class="profile-detail"><i class="bx bx-current-location detail-icon"></i>
                                 {{ auth()->user()->address ?? 'No Data' }}
                             </p>
                         </div>
-
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Open modal for</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +161,12 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    
+
 @endsection
