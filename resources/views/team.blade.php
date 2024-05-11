@@ -89,7 +89,7 @@
                                     </div> --}}
                                 </div>
                                 <div class="tm-details">
-                                    <a class="tm-link" href="team-member.html">
+                                    <a class="tm-link" href="#">
                                         <h6 class="tm-name">{{ $member->name }}</h6>
                                     </a>
                                     <span class="tm-role">{{ $member->designation }} </span> <br>
