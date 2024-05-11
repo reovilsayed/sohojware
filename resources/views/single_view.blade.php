@@ -46,7 +46,7 @@
                         <div class="tm-details">
                             <h6 class="name">{{ $member->name }}</h6>
                             <span class="role">{{ $member->designation }}</span>
-                            <span class="role">{{ $member->speciality }}</span>
+                            <span class="role">,{{ $member->speciality }}</span>
                         </div>
                         <div class="tm-social">
                             <div class="sc-wrapper dir-row sc-size-40">
