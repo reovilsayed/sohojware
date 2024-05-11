@@ -113,4 +113,8 @@ class PageController extends Controller
     public function letsBuild(){
         return view('letsbuild');
     }
+    public function single_view(){
+        $ourTeams = Member::orderBy('position', 'asc')->get();
+        return view('single_view',compact('ourTeams'));
+    }
 }

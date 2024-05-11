@@ -89,7 +89,7 @@
                                     </div> --}}
                                 </div>
                                 <div class="tm-details">
-                                    <a class="tm-link" href="#">
+                                    <a class="tm-link" href="{{route('single_view')}}">
                                         <h6 class="tm-name">{{ $member->name }}</h6>
                                     </a>
                                     <span class="tm-role">{{ $member->designation }} </span> <br>
