@@ -49,6 +49,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Route::group(['prefix' => 'client', 'as' => 'client.','middleware'=>'auth'], function () {
     Route::get('dashboard', [ClientController::class, 'index'])->name('dashboard');
+    Route::post('update-password', [ClientController::class, 'updatePassword'])->name('updatePassword');
 });
 
 Auth::routes();

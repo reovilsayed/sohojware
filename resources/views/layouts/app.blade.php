@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sayed Khan">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper.css') }}" />
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+
     @yield('css')
     <title>@yield('title', setting('site.title'))</title>
     @production
@@ -133,7 +134,7 @@
                             <i class="fas fa-moon icon"></i>
                         </div>
                     </div>
-                    @auth
+                    {{-- @auth
                         <div class="dropdown text-end ms-3">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -165,16 +166,13 @@
 
                             </ul>
                         </div>
-                    @endauth
+                    @endauth --}}
                 </div>
             </nav>
         </div>
     </header>
     @yield('content')
-    <x-contact :doNotShowOnTheseRoutes="[
-        route('login'),
-        route('register'),
-        ]" />
+    <x-contact :doNotShowOnTheseRoutes="[route('login'), route('register')]" />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
@@ -333,8 +331,26 @@
     <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        toastr.options = {
+            "newestOnTop": true,
+            "positionClass": "toast-bottom-left",
+            "preventDuplicates": true,
+            "showDuration": "150",
+            "hideDuration": "200",
+            "timeOut": "4500",
+            "extendedTimeOut": "500",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+    @if (session()->has('success'))
+        <x-alert.success />
+    @endif
     <script>
         $('#massage').summernote({
             placeholder: 'Text Here....',

@@ -36,8 +36,8 @@
                                         <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
                                             class="blur-up lazyload" alt="">
                                         <div class="total-detail">
-                                            <h5>Total Order</h5>
-                                            <h3>3658</h3>
+                                            <h5>Total Projects</h5>
+                                            <h3>{{$projects->count()}}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -70,64 +70,9 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-title">
-                            <h3>Account Information</h3>
-                        </div>
 
-                        <div class="row g-4">
-                            <div class="col-xxl-6">
-                                <div class="dashboard-content-title">
-                                    <h4>Contact Information <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#editProfile">Edit</a>
-                                    </h4>
-                                </div>
-                                <div class="dashboard-detail">
-                                    <h6 class="text-content">MARK JECNO</h6>
-                                    <h6 class="text-content">vicki.pope@gmail.com</h6>
-                                    <a href="javascript:void(0)">Change Password</a>
-                                </div>
-                            </div>
 
-                            <div class="col-xxl-6">
-                                <div class="dashboard-content-title">
-                                    <h4>Newsletters <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#editProfile">Edit</a></h4>
-                                </div>
-                                <div class="dashboard-detail">
-                                    <h6 class="text-content">You are currently not subscribed to any
-                                        newsletter</h6>
-                                </div>
-                            </div>
 
-                            <div class="col-12">
-                                <div class="dashboard-content-title">
-                                    <h4>Address Book <a href="javascript:void(0)" data-bs-toggle="modal"
-                                            data-bs-target="#editProfile">Edit</a></h4>
-                                </div>
-
-                                <div class="row g-4">
-                                    <div class="col-xxl-6">
-                                        <div class="dashboard-detail">
-                                            <h6 class="text-content">Default Billing Address</h6>
-                                            <h6 class="text-content">You have not set a default billing
-                                                address.</h6>
-                                            <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                data-bs-target="#editProfile">Edit Address</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xxl-6">
-                                        <div class="dashboard-detail">
-                                            <h6 class="text-content">Default Shipping Address</h6>
-                                            <h6 class="text-content">You have not set a default shipping
-                                                address.</h6>
-                                            <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                data-bs-target="#editProfile">Edit Address</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -145,102 +90,14 @@
                             </span>
                         </div>
 
-                        <div class="profile-detail dashboard-bg-box">
-                            <div class="dashboard-title">
-                                <h3>Profile Name</h3>
-                            </div>
-                            <div class="profile-name-detail">
-                                <div class="d-sm-flex align-items-center d-block">
-                                    <h3>Vicki E. Pope</h3>
-                                    <div class="product-rating profile-rating">
-                                        <ul class="rating">
-                                            <li>
-                                                <i data-feather="star" class="fill"></i>
-                                            </li>
-                                            <li>
-                                                <i data-feather="star" class="fill"></i>
-                                            </li>
-                                            <li>
-                                                <i data-feather="star" class="fill"></i>
-                                            </li>
-                                            <li>
-                                                <i data-feather="star"></i>
-                                            </li>
-                                            <li>
-                                                <i data-feather="star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
 
-                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                    data-bs-target="#editProfile">Edit</a>
-                            </div>
-
-                            <div class="location-profile">
-                                <ul>
-                                    <li>
-                                        <div class="location-box">
-                                            <i data-feather="map-pin"></i>
-                                            <h6>Downers Grove, IL</h6>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="location-box">
-                                            <i data-feather="mail"></i>
-                                            <h6>vicki.pope@gmail.com</h6>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="location-box">
-                                            <i data-feather="check-square"></i>
-                                            <h6>Licensed for 2 years</h6>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="profile-description">
-                                <p>Residences can be classified by and how they are connected to
-                                    neighbouring residences and land. Different types of housing tenure can
-                                    be used for the same physical type.</p>
-                            </div>
-                        </div>
 
                         <div class="profile-about dashboard-bg-box">
                             <div class="row">
                                 <div class="col-xxl-7">
-                                    <div class="dashboard-title mb-3">
-                                        <h3>Profile About</h3>
-                                    </div>
 
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Gender :</td>
-                                                    <td>Female</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Birthday :</td>
-                                                    <td>21/05/1997</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Phone Number :</td>
-                                                    <td>
-                                                        <a href="javascript:void(0)"> +91 846 - 547 -
-                                                            210</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Address :</td>
-                                                    <td>549 Sulphur Springs Road, Downers, IL</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+
+
 
                                     <div class="dashboard-title mb-3">
                                         <h3>Login Details</h3>
@@ -252,9 +109,8 @@
                                                 <tr>
                                                     <td>Email :</td>
                                                     <td>
-                                                        <a href="javascript:void(0)">vicki.pope@gmail.com
-                                                            <span data-bs-toggle="modal"
-                                                                data-bs-target="#editProfile">Edit</span></a>
+                                                        <a href="javascript:void(0)">{{auth()->user()->email}}
+                                                        </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -262,7 +118,7 @@
                                                     <td>
                                                         <a href="javascript:void(0)">●●●●●●
                                                             <span data-bs-toggle="modal"
-                                                                data-bs-target="#editProfile">Edit</span></a>
+                                                                data-bs-target="#editPassword">Edit</span></a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -287,6 +143,66 @@
     </div>
 
     <!-- Edit Profile Start -->
+    <div class="modal fade theme-modal" id="editPassword" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Edit Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form action="{{ route('client.updatePassword') }}" method="POST">
+                                @csrf
+                                <div class="form-floating theme-form-floating mb-5">
+                                    <input type="password" class="form-control @error('old_password') is-invalid @enderror"
+                                        name="old_password" id="old_password">
+                                    @error('old_password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                    <label for="Current Password">Current Password</label>
+
+                                </div>
+                                <div class="form-floating theme-form-floating mb-5">
+                                    <input type="password" id="password"
+                                        class="form-control @error('password') is-invalid @enderror" name="password">
+                                    @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                    <label for="New Password">New Password</label>
+                                </div>
+                                <div class="form-floating theme-form-floating mb-5">
+                                    <input type="password"
+                                        class="form-control @error('password_confirmation') is-invalid @enderror"
+                                        name="password_confirmation">
+                                    <label for="Confirmed Password">Confirm Password</label>
+                                    @error('confirm_password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" data-bs-dismiss="modal"
+                                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
