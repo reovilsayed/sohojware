@@ -17,7 +17,7 @@ class PageController extends Controller
     public function home()
     {
         $services = Category::orderBy('order', 'asc')->get();
-        $posts = Post::where('featured', 1)->where('status', 'PUBLISHED')->get();
+        $posts = Post::latest()->limit(3)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
         $portfolios = Portfolio::latest()->limit(6)->where('status', 1)->get();
         return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));

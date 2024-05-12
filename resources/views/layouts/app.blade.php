@@ -104,7 +104,7 @@
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('posts') ? 'active' : '' }}"
-                                href="{{ route('posts') }}">Posts
+                                href="{{ route('posts') }}">Blogs
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"
@@ -172,7 +172,7 @@
         </div>
     </header>
     @yield('content')
-    <x-contact :doNotShowOnTheseRoutes="[route('login'), route('register')]" />
+    <x-contact :doNotShowOnTheseRoutes="[route('login'), route('register')  ]" />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">

@@ -25,18 +25,13 @@
     </style>
 @endsection
 @section('content')
-
     <section class="team-member mega-section">
         <div class="container mt-3">
             <div class="row">
-
                 <div class="col-12 col-lg-9">
                     <div class="tm-description">
                         <h3 class="tm-title">Biography Overview.</h3>
                         <p class="tm-text">{!! $member->description !!}</p>
-
-
-
                     </div>
                 </div>
                 <div class="col-12  col-lg-3 mx-auto ">
@@ -63,11 +58,8 @@
                                 </ul>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

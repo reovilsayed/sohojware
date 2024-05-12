@@ -19,14 +19,12 @@
                                 </svg>
                             </span>
                         </div>
-
                         <div class="dashboard-user-name">
-                            <h6 class="text-content">Hello, <b class="text-title">Vicki E. Pope</b></h6>
+                            <h6 class="text-content">Hello, <b class="text-title">{{ auth()->user()->name }}</b></h6>
                             <p class="text-content">From your My Account Dashboard you have the ability to
                                 view a snapshot of your recent account activity and update your account
                                 information. Select a link below to view or edit information.</p>
                         </div>
-
                         <div class="total-box">
                             <div class="row g-sm-4 g-3">
                                 <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
@@ -37,11 +35,10 @@
                                             class="blur-up lazyload" alt="">
                                         <div class="total-detail">
                                             <h5>Total Projects</h5>
-                                            <h3>{{$projects->count()}}</h3>
+                                            <h3>{{ $projects->count() }}</h3>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                                     <div class="total-contain">
                                         <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
@@ -54,7 +51,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                                     <div class="total-contain">
                                         <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
@@ -69,15 +65,47 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
                 </div>
+                <div class="tab-pane fade" id="pills_projects" role="tabpanel">
+                    <div class="dashboard-profile">
+                        <div class="title">
+                            <h2>Projects Details</h2>
+                            <span class="title-leaf">
+                                <svg class="icon-width bg-gray">
+                                    <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf">
+                                    </use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="btn theme-bg-color">
+                            <a href="">Create Project</a>
+                        </div>
+                        <div class="profile-about dashboard-bg-box">
+                            <div class="row">
+                                <div class="col-xxl-7">
+                                    <div class="dashboard-title mb-3">
+                                        <h3></h3>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-5">
+                                    <div class="profile-image">
+                                        <img src="../assets/images/inner-page/dashboard-profile.png"
+                                            class="img-fluid blur-up lazyload" alt="">
+                                    </div>
+                                </div>
+                            </div>
 
-
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel">
                     <div class="dashboard-profile">
                         <div class="title">
@@ -89,27 +117,19 @@
                                 </svg>
                             </span>
                         </div>
-
-
-
                         <div class="profile-about dashboard-bg-box">
                             <div class="row">
                                 <div class="col-xxl-7">
-
-
-
-
                                     <div class="dashboard-title mb-3">
                                         <h3>Login Details</h3>
                                     </div>
-
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tbody>
                                                 <tr>
                                                     <td>Email :</td>
                                                     <td>
-                                                        <a href="javascript:void(0)">{{auth()->user()->email}}
+                                                        <a href="javascript:void(0)">{{ auth()->user()->email }}
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -125,7 +145,6 @@
                                         </table>
                                     </div>
                                 </div>
-
                                 <div class="col-xxl-5">
                                     <div class="profile-image">
                                         <img src="../assets/images/inner-page/dashboard-profile.png"
@@ -158,7 +177,8 @@
                             <form action="{{ route('client.updatePassword') }}" method="POST">
                                 @csrf
                                 <div class="form-floating theme-form-floating mb-5">
-                                    <input type="password" class="form-control @error('old_password') is-invalid @enderror"
+                                    <input type="password"
+                                        class="form-control @error('old_password') is-invalid @enderror"
                                         name="old_password" id="old_password">
                                     @error('old_password')
                                         <span class="invalid-feedback" role="alert">
@@ -203,7 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+    {{-- <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
@@ -327,6 +347,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Edit Profile End -->
 @endsection

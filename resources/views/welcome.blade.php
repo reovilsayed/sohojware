@@ -3,7 +3,7 @@
     <meta property="og:title" content="{{ setting('site.title') }}" />
     <meta property="og:description"content="{{ setting('site.description') }}" />
     <meta property="og:url" content="{{ url('/') }}" />
-    <meta property="og:image" content="{{Voyager::image(setting('site.social_image'))}}"/>
+    <meta property="og:image" content="{{ Voyager::image(setting('site.social_image')) }}" />
 @endsection
 @section('content')
     <section class="page-hero  d-flex align-items-center" id="page-hero">
@@ -61,6 +61,7 @@
         </div>
     </section>
     <x-services :services="$services" />
+    <x-blog :posts="$posts" />
     <x-about />
     <x-stats />
     <x-portfolio :portfolios="$portfolios" />
@@ -68,5 +69,4 @@
     <x-pricing />
     {{-- <x-testimonials /> --}}
     <x-faq />
-    <x-blog :posts="$posts" />
 @endsection

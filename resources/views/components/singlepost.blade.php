@@ -1,4 +1,4 @@
-<div class="col-12 col-lg-6 col-md-6 col-xl-6 mb-4">
+<div class="col-12 col-lg-4 col-md-6 col-xl-4 mb-4">
     <div class="post-box h-100"> <a class="post-link" href="{{ route('post', $post->slug) }}"
             title="How litespeed technology works to speed up your site ">
             <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy"
@@ -14,9 +14,9 @@
                 </a>
                 <p class="post-excerpt">{{ $post->excerpt }}</p>
                 {{-- <a class="read-more"
-                    href="{{ route('post', $post->slug) }}"
-                    title="How litespeed technology works to speed up your site ">read
-                    more<i class="fa-solid fa-arrow-right ms-2"></i></a> --}}
+                        href="{{ route('post', $post->slug) }}"
+                        title="How litespeed technology works to speed up your site ">read
+                        more<i class="fa-solid fa-arrow-right ms-2"></i></a> --}}
             </div>
         </div>
     </div>

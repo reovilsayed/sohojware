@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +23,12 @@
     <!-- bootstrap css -->
     <link id="rtl-link" rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/bootstrap.css') }}">
     <!-- Template css -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link id="color-link" rel="stylesheet" type="text/css" href="{{ asset('assets/style.css') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4642365103715171"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
-                                    <a href="index.html">
+                                    <a href="{{ route('home') }}">
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
@@ -59,18 +65,19 @@
                         </div>
                         <div class="profile-box">
                             <div class="cover-image">
-                                <img src="../assets/images/inner-page/cover-img.jpg" class="img-fluid blur-up lazyload"
-                                    alt="">
+                                <img src="{{ asset('assets/images/sections-bg-images/pattern-bg-3.webp') }}"
+                                    class="img-fluid blur-up lazyload" alt="">
                             </div>
 
                             <div class="profile-contain">
                                 <div class="profile-image">
                                     <div class="position-relative">
-                                        <img src="../assets/images/inner-page/user/1.jpg"
+                                        <img src="{{ Voyager::image(auth()->user()->avatar) }}"
                                             class="blur-up lazyload update_img" alt="">
                                         <div class="cover-icon">
-                                            <i class="fa-solid fa-pen">
-                                                <input type="file" onchange="readURL(this,0)">
+                                            <i class="fa-solid fa-pen" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+
                                             </i>
                                         </div>
                                     </div>
@@ -91,6 +98,12 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills_projects" type="button" role="tab"><i
+                                        data-feather="user"></i>
+                                    Projects</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-profile" type="button" role="tab"><i
                                         data-feather="user"></i>
                                     Profile</button>
@@ -98,7 +111,8 @@
                             <li class="nav-item" role="presentation">
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
-                                    <button class="nav-link" type="submit" role="tab"><i data-feather="user"></i>
+                                    <button class="nav-link" type="submit" role="tab"><i
+                                            data-feather="user"></i>
                                         Logout</button>
                                 </form>
 
@@ -108,6 +122,29 @@
                 </div>
 
                 @yield('deshboard')
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Image Upload</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form action="{{ route('client.imageUpload') }}" method="POST"
+                                enctype="multipart/form-data">
+                                <div class="modal-body">
+                                    @csrf
+                                    <input type="file" name="avatar">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
