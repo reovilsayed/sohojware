@@ -163,7 +163,20 @@
                         <div class="panel-body">
                             @php
                                 $dataTypeRows = $dataType->{$edit ? 'editRows' : 'addRows'};
-                                $exclude = ['title', 'body', 'excerpt', 'slug', 'status', 'category_id', 'author_id', 'featured', 'image', 'meta_description', 'meta_keywords', 'seo_title'];
+                                $exclude = [
+                                    'title',
+                                    'body',
+                                    'excerpt',
+                                    'slug',
+                                    'status',
+                                    'category_id',
+                                    'author_id',
+                                    'featured',
+                                    'image',
+                                    'meta_description',
+                                    'meta_keywords',
+                                    'seo_title',
+                                ];
                             @endphp
 
                             @foreach ($dataTypeRows as $row)
@@ -320,7 +333,7 @@
                 @if ($edit)
                     {{ __('voyager::post.update') }}
                 @else
-                    <i class="icon wb-plus-circle"></i> {{ __('voyager::post.new') }}
+                    Publish <i class="voyager-plus"></i>
                 @endif
             </button>
         @stop
@@ -363,11 +376,11 @@
 <script>
     $(document).ready(function() {
         @if ($dataTypeContent->status == 'SCHEDULE')
-        $(".published_date_section").show();
+            $(".published_date_section").show();
         @else
-        $(".published_date_section").hide();
+            $(".published_date_section").hide();
         @endif
-       
+
         $("select[name='status']").change(function() {
             var selectedStatus = $(this).val();
             if (selectedStatus === "SCHEDULE") {
