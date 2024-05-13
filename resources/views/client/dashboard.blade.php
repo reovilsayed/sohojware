@@ -51,58 +51,91 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
-                                    <div class="total-contain">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
-                                            class="img-1 blur-up lazyload" alt="">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
-                                            class="blur-up lazyload" alt="">
-                                        <div class="total-detail">
-                                            <h5>Total Wishlist</h5>
-                                            <h3>32158</h3>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills_projects" role="tabpanel">
                     <div class="dashboard-profile">
-                        <div class="title">
-                            <h2>Projects Details</h2>
-                            <span class="title-leaf">
-                                <svg class="icon-width bg-gray">
-                                    <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf">
-                                    </use>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="btn theme-bg-color">
-                            <a href="">Create Project</a>
-                        </div>
-                        <div class="profile-about dashboard-bg-box">
-                            <div class="row">
-                                <div class="col-xxl-7">
-                                    <div class="dashboard-title mb-3">
-                                        <h3></h3>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tbody>
+                        <div class="main-content">
+                            <div class="page-content">
+                                <div class="container-fluid">
+                                    <!-- start page title -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                                <h4 class="mb-3 font-size-18">Projects List</h4>
 
-                                            </tbody>
-                                        </table>
+                                                <div class="page-title-right">
+                                                    <ol class="breadcrumb m-2">
+                                                        <li class="breadcrumb-item"><a
+                                                                href="javascript: void(0);">Projects</a></li>
+                                                        <li class="breadcrumb-item active">Projects List</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xxl-5">
-                                    <div class="profile-image">
-                                        <img src="../assets/images/inner-page/dashboard-profile.png"
-                                            class="img-fluid blur-up lazyload" alt="">
+                                    <!-- end page title -->
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col-sm">
+                                                            <div class="search-box me-2 d-inline-block">
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control"
+                                                                        autocomplete="off" id="searchTableList"
+                                                                        placeholder="Search...">
+                                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end col -->
+                                                        <div class="col-sm-auto">
+                                                            <div class="text-sm-end">
+                                                                <a href="#"
+                                                                    class="btn btn-success btn-rounded"
+                                                                    id="addProject-btn"><i class="mdi mdi-plus me-1"></i>
+                                                                    Add New Project</a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end col -->
+                                                    </div>
+                                                    <!-- end row -->
+                                                    <div class="">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table project-list-table align-middle table-nowrap dt-responsive nowrap w-100 table-borderless"
+                                                                id="projectList-table">
+                                                                <thead class="table-light">
+                                                                    <tr>
+                                                                        <th scope="col" style="width: 60px">#</th>
+                                                                        <th scope="col">Projects</th>
+                                                                        <th scope="col">Due Date</th>
+                                                                        <th scope="col">Status</th>
+                                                                        <th scope="col">Team</th>
+                                                                        <th scope="col">Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
                                     </div>
-                                </div>
+                                    <!-- end row -->
+
+                                </div> 
                             </div>
+                           
 
+                            
                         </div>
                     </div>
                 </div>
