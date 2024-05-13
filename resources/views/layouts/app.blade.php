@@ -104,7 +104,7 @@
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('posts') ? 'active' : '' }}"
-                                href="{{ route('posts') }}">Blogs
+                                href="{{ route('posts') }}">Post
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"

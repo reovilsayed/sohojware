@@ -14,7 +14,7 @@
 </style>
 @endsection
 @section('content')
-<x-breadcrumb :title="'Blogs'"/>
+<x-breadcrumb :title="'Posts'"/>
 <section class="blog blog-home mega-section" id="blog">
         <div class="container ">
             <div class="row ">

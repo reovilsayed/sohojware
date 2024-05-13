@@ -3547,7 +3547,7 @@ body.dark-theme {
     border-radius: 0.25rem 0.25rem 0 0;
 }
 .blog .post-featured-area .featured-img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     transition: 1s ease-in-out;
