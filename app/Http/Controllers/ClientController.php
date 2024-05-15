@@ -14,8 +14,7 @@ class ClientController extends Controller
     public function index()
     {
         $projects=Project::where("user_id",Auth::user()->id)->get();
-        // $user=Auth::user();
-        // dd($user);
+     
         return view('client.dashboard',compact('projects'));
     }
     public function updatePassword(Request $request)
@@ -39,10 +38,6 @@ class ClientController extends Controller
     }
     public function imageUpload(Request $request)
     {
-
-    // $request->validate([
-    //     'avatar' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Example validation rules
-    // ]);
     if ($request->hasFile('avatar')) {
         if (Storage::exists(auth()->user()->avatar)) {
             Storage::delete(auth()->user()->avatar);
@@ -53,5 +48,58 @@ class ClientController extends Controller
     }
     auth()->user()->update(['avatar' => $imagePath]);
     return back()->with('success', 'Profile updated successfully');
+     }
+     public function project(Project $project){
+        $projects=Project::where('user_id',Auth::user()->id)->latest()->paginate(5);
+        return view('client.project',compact('projects'));
+     }
+     public function create(){
+        return view('client.create');
+     }
+     public function store(Request $request){
+         $request->validate([
+             'title' => 'required|string|max:255',
+            
+            'payment_type' => ['required','string','max:250'],
+            'budget' =>  ['required','string', 'max:200'],
+            'description' =>  ['required', 'max:500'], 
+        ]);
+       
+          Project:: create([
+            'title' => $request->title,
+            'user_id'=>auth()->id(),
+            'payment_type' => $request->payment_type,
+            'budget' => $request->budget,
+            'description' => $request->description,
+        ]);
+        
+        return redirect()->route('client.project')->with('success', 'Project successfully created');
+     }
+     public function edit(Project $project){
+       
+        return view('client.edit',compact('project'));
+     }
+     public function update(Request $request, Project $project){
+        $project->update([
+            'title' => $request->title,
+            'user_id'=>auth()->id(),
+            'payment_type' => $request->payment_type,
+            'budget' => $request->budget,
+            'description' => $request->description,
+        ]);
+        return redirect()->route('client.project')->with('success','Project update Success!');
+    }
+    public function view(Project $project){
+
+       return view('client.view',compact('project'));
+    }
+     public function destroy(Project $project)
+     {
+         $project->delete();
+         return redirect()->route('client.project')->with('success', 'Project Delete Success!');
+     }
+     
+     public function profile(){
+        return view('client.profile');
      }
 }
