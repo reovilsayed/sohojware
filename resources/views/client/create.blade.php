@@ -15,9 +15,20 @@
                         </svg>
                     </span>
                 </div>
+
                 <div class="profile-about dashboard-bg-box">
                     <div class="row">
                         <div class="col-lg-12">
+                            <div class="row mb-2">
+                                <div class="col-sm-auto mb-2">
+                                    <div class="text-sm-end">
+                                        <a href="{{ route('client.project') }}"
+                                            class="btn theme-bg-color btn-sm fw-bold text-light"><i
+                                                class="fa-solid fa-left-long me-1"></i>
+                                            Back</a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card">
                                 <div class="card-body">
                                     <form action="{{ route('client.project.store') }}" method="POST"
@@ -32,7 +43,7 @@
                                                 </div>
                                             </div>
 
-                                           
+
                                             <div class="col-xxl-6">
                                                 <div class="form-floating theme-form-floating">
                                                     <select class="form-select" name="payment_type" id="floatingSelect1">
@@ -59,8 +70,7 @@
                                             </div> --}}
                                             <div class="col-xxl-12">
                                                 <div class="form-floating theme-form-floating">
-                                                    <textarea style="height: 150px" type="text" class="form-control" id="#summernote"
-                                                        name="description"></textarea>
+                                                    <textarea style="height: 150px" type="text" class="form-control" id="#summernote" name="description"></textarea>
                                                     <label for="description">Description</label>
                                                 </div>
                                             </div>

@@ -18,6 +18,17 @@
                 <div class="profile-about dashboard-bg-box">
                     <div class="row">
                         <div class="col-lg-12">
+                            <div class="row mb-2">
+                                <div class="col-sm-auto mb-2">
+                                    <div class="text-sm-end">
+                                        <a href="{{ route('client.project') }}"
+                                            class="btn theme-bg-color btn-sm fw-bold text-light"><i
+                                                class="fa-solid fa-left-long me-1"></i>
+                                            Back</a>
+                                    </div>
+                                </div>
+
+                            </div>
                             <div class="card">
                                 <div class="card-body">
                                     <form action="{{ route('client.project.update', $project) }}" method="POST"
@@ -41,7 +52,8 @@
 
 
                                                         <option value="hourly"
-                                                            {{ $project->payment_type == 'hourly' ? 'selected' : '' }}>Hourly
+                                                            {{ $project->payment_type == 'hourly' ? 'selected' : '' }}>
+                                                            Hourly
                                                         </option>
                                                         <option value="fixed"
                                                             {{ $project->payment_type == 'fixed' ? 'selected' : '' }}>Fixed

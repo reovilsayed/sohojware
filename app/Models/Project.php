@@ -17,4 +17,17 @@ class Project extends Model
     {
         return $this->morphMany(Attachment::class, 'attachable');
     }
+    public function bootstrapStatus()
+    {
+        switch ($this->task_complete_verification) {
+            case 1:
+                return 'On going';
+
+            case 2:
+                return 'Finished';
+
+            default:
+                return 'Pending';
+        }
+    }
 }
