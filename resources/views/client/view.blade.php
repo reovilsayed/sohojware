@@ -106,7 +106,7 @@
                                             <h3 class="">Description: <span> {{ $project->description }}</span> </h3>
                                         </div>
                                         <div class="col-md-6">
-                                            <h3 class="mb-2">Note : <span>{{ $project->note }}</span></h3>
+                                            <h3 class="">Note : <span>{{ $project->note }}</span></h3>
                                         </div>
 
                                     </div>
