@@ -64,7 +64,7 @@
                                                 <div class="card">
                                                     <div class="card-body d-flex justify-content-between">
                                                         <div>
-                                                            <h4 class="card-title"> Budget : {{ $project->budget }}</h4>
+                                                            <h4 class="card-title"> Budget :$ {{ $project->budget }}</h4>
                                                             <h4 class="card-title">Total Paid :{{ $project->total_paid }}
                                                             </h4>
                                                         </div>
