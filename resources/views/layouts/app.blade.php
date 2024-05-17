@@ -134,7 +134,7 @@
                             <i class="fas fa-moon icon"></i>
                         </div>
                     </div>
-                    @auth
+                    {{-- @auth
                         <div class="dropdown text-end ms-3">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -142,8 +142,7 @@
                                     class="rounded-circle">
                             </a>
                             <ul class="dropdown-menu text-small">
-                                {{-- <li><a class="dropdown-item" style="color: #333 !important;" href="#">New
-                                        project...</a></li> --}}
+
                                 <li><a class="dropdown-item" style="color: #333 !important;"
                                         href="{{ route('client.dashboard') }}">Dashboard</a>
                                 </li>
@@ -166,7 +165,7 @@
 
                             </ul>
                         </div>
-                    @endauth
+                    @endauth --}}
                 </div>
             </nav>
         </div>
