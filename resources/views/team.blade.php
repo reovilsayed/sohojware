@@ -53,7 +53,7 @@
                                         <img class="img-fluid parallax-img" loading="lazy"
                                             src="{{ Voyager::image($member->image) }}" alt="Team Member" />
                                     </div>
-                                    {{-- <div class="tm-social">
+                                    <div class="tm-social">
                                         <div class="sc-wrapper dir-row sc-size-40">
                                             <ul class="sc-list">
                                                 @if ($member->facebook)
@@ -86,7 +86,7 @@
                                                 @endif
                                             </ul>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="tm-details">
                                     <a class="tm-link" href="{{ route('single_view', $member) }}">
