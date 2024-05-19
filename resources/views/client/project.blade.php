@@ -5,6 +5,9 @@
 
 @section('deshboard')
     <div class="col-xxl-9 col-lg-8">
+        <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none" data-bs-toggle="offcanvas"
+            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Show
+            Menu</button>
         <div class="dashboard-right-sidebar">
             <div class="dashboard-profile">
                 <div class="title">
@@ -65,19 +68,20 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                     
+
                                                 @foreach ($projects as $project)
-                              
                                                     <tr>
-                                                        <td>{{ $project->id}}</td>
+                                                        <td>{{ $project->id }}</td>
                                                         <td>{{ $project->title }}</td>
                                                         <td>{{ $project->payment_type }}</td>
                                                         <td>${{ $project->budget }}</td>
                                                         <td>{{ $project->created_at->format('d/M/Y') }}</td>
                                                         <td class="d-flex justify-content-center">
-                                                            <a href="{{route('client.project.view',$project)}}" class="btn btn-sm"><i
+                                                            <a href="{{ route('client.project.view', $project) }}"
+                                                                class="btn btn-sm"><i
                                                                     class="fa-solid fa-eye text-warning"></i></a>
-                                                            <a href="{{route('client.project.edit',$project)}}" class="btn btn-sm p-0"><i
+                                                            <a href="{{ route('client.project.edit', $project) }}"
+                                                                class="btn btn-sm p-0"><i
                                                                     class="fa-solid fa-pen-to-square text-success"></i></a>
                                                             <x-actions.delete :action="route('client.destroy', $project)" />
                                                         </td>

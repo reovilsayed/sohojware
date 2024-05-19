@@ -4,6 +4,9 @@
 @endsection
 @section('deshboard')
     <div class="col-xxl-9 col-lg-8">
+        <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none" data-bs-toggle="offcanvas"
+            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Show
+            Menu</button>
         <div class="dashboard-right-sidebar">
             <div class="dashboard-profile">
                 <div class="title">
