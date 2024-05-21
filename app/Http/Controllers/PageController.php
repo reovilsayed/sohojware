@@ -37,6 +37,7 @@ class PageController extends Controller
         $related_posts = Post::where('category_id', $post->category_id)       
                              ->where('id', '!=', $post->id) 
                              ->orderBy('created_at', 'desc')
+                             ->where('status', 'PUBLISHED')
                              ->latest()
                              ->take(4)
                              ->get();
