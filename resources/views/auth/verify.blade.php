@@ -1,5 +1,16 @@
 @extends('layouts.app')
+@section('css')
+    <style>
+        .header-basic a,
+        .header-basic .menu-link {
+            color: var(--clr-white) !important;
+        }
 
+        .display {
+            display: none
+        }
+    </style>
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

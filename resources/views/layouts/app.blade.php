@@ -68,7 +68,7 @@
 <body class="landing-page-demo">
     <header class="header-basic" id="page-header">
         <div class="container">
-            <nav class="menu-navbar " id="main-nav">
+            <nav class="menu-navbar" id="main-nav">
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
                             alt="logo" />
@@ -317,6 +317,7 @@
     <div class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up-long"></i>
     </div>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -331,6 +332,7 @@
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script>
         toastr.options = {
             "newestOnTop": true,

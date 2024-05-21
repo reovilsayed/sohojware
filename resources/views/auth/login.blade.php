@@ -5,6 +5,18 @@
     <meta property="og:description"content="{{ setting('site.description') }}" />
     <meta property="og:url" content="{{ route('login') }}" />
 @endsection
+@section('css')
+    <style>
+        .header-basic a,
+        .header-basic .menu-link {
+            color: var(--clr-white) !important;
+        }
+
+        .display {
+            display: none
+        }
+    </style>
+@endsection
 @section('content')
     <x-breadcrumb :title="'Login'" />
     <div class="account-pages mt-2">

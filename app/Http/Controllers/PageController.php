@@ -17,7 +17,7 @@ class PageController extends Controller
     public function home()
     {
         $services = Category::orderBy('order', 'asc')->get();
-        $posts = Post::latest()->limit(3)->where('status', 'PUBLISHED')->get();
+        $posts = Post::latest()->limit(4)->where('status', 'PUBLISHED')->get();
         $clients = Client::all();
         $portfolios = Portfolio::latest()->limit(6)->where('status', 1)->get();
         return view('welcome', compact('services', 'posts', 'clients', 'portfolios'));
@@ -34,8 +34,16 @@ class PageController extends Controller
     public function post($slug)
     {
         $post = Post::where('slug', $slug)->firstOrFail();
-        return view('single_post', compact('post'));
+        $related_posts = Post::where('category_id', $post->category_id)       
+                             ->where('id', '!=', $post->id) 
+                             ->orderBy('created_at', 'desc')
+                             ->latest()
+                             ->take(4)
+                             ->get();
+        return view('single_post', compact('post', 'related_posts'));
     }
+    
+    
     public function services()
     {
         $services = Category::orderBy('order', 'asc')->get();

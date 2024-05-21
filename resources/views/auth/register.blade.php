@@ -1,5 +1,16 @@
 @extends('layouts.app')
+@section('css')
+    <style>
+        .header-basic a,
+        .header-basic .menu-link {
+            color: var(--clr-white) !important;
+        }
 
+        .display {
+            display: none
+        }
+    </style>
+@endsection
 @section('content')
     <x-breadcrumb :title="'Register'" />
     <div class="account-pages mt-3">
@@ -32,8 +43,21 @@
                                 </a>
                             </div> --}}
                             <div class="p-2">
-                                <form class="" method="POST" action="{{ route('register') }}">
+                                <form method="POST" action="{{ route('register') }}">
                                     @csrf
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control  @error('name') is-invalid @enderror"
+                                            name="name" id="name" placeholder="Enter name" required autocomplete="email">
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                        <div class="invalid-feedback">
+                                            Please Enter Name
+                                        </div>
+                                    </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
                                         <input type="email" class="form-control @error('email') is-invalid @enderror"
@@ -47,22 +71,6 @@
                                             Please Enter Email
                                         </div>
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Username</label>
-                                        <input type="text" class="form-control  @error('name') is-invalid @enderror"
-                                            name="name" id="name" placeholder="Enter username"
-                                            value="{{ old('email') }}" required autocomplete="email">
-                                        @error('name')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                        <div class="invalid-feedback">
-                                            Please Enter Username
-                                        </div>
-                                    </div>
-
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control @error('password') is-invalid @enderror"
@@ -77,14 +85,14 @@
                                             Please Enter Password
                                         </div>
                                     </div>
-                                    <div class="mb-3">
+                                    {{-- <div class="mb-3">
                                         <label for="password-confirm" class="form-label">Confirmed Password</label>
                                         <input type="password" class="form-control" id="password-confirm"
                                             name="password_confirmation" placeholder="Enter password" required>
                                         <div class="invalid-feedback">
                                             Confirmed Password
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="mt-4 d-grid">
                                         <button class="btn btn-primary waves-effect waves-light"
@@ -139,5 +147,4 @@
             </div>
         </div>
     </div>
-
 @endsection

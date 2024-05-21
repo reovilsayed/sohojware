@@ -39,4 +39,27 @@
             </div>
         </div>
     </div>
+    <section class="blog blog-home mega-section" id="blog">
+        <div class="container ">
+            <div class="sec-heading">
+                <div class="content-area"><span class="pre-title wow fadeInUp" data-wow-delay=".2s">post</span>
+                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Related <span class='hollow-text'>post</span>
+                    </h2>
+                </div>
+                <div class="cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a
+                        class="cta-btn btn-solid   cta-btn btn-solid  " href="{{ route('posts') }}">see more posts<i
+                            class="fa-solid fa-arrow-right icon"></i></a></div>
+            </div>
+            <div class="col-12">
+                <div class="posts-grid">
+                    <div class="row">
+                        @foreach ($related_posts as $post)
+                            <x-related_post :post="$post" />
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection

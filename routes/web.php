@@ -24,7 +24,7 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('page/{slug}', [PageController::class, 'page'])->name('page');
 
 Route::get('posts', [PageController::class, 'posts'])->name('posts');
-Route::get('post/{slug}', [PageController::class, 'post'])->name('post');
+Route::get('posts/{slug}', [PageController::class, 'post'])->name('post');
 Route::get('services', [PageController::class, 'services'])->name('services');
 Route::get('service/{slug}', [PageController::class, 'service'])->name('service');
 Route::get('about-us', [PageController::class, 'about'])->name('about');
