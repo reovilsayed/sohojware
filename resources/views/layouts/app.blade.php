@@ -72,8 +72,8 @@
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
                             alt="logo" />
-                        <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
-                            alt="logo" />
+                        {{-- <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
+                            alt="logo" /> --}}
                     </a>
                 </div>
                 <div class="links menu-wrapper ">
