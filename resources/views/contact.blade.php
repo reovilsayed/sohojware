@@ -55,6 +55,7 @@
                     </div>
                 </div>
             </section>
+            <x-contact :doNotShowOnTheseRoutes="[route('login'), route('register')]" />
         </div>
     </section>
 @endsection
