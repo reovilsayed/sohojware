@@ -65,7 +65,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-theme landing-page-demo">
+<body class="landing-page-demo">
     <header class="header-basic" id="page-header">
         <div class="container">
             <nav class="menu-navbar " id="main-nav">
@@ -171,7 +171,7 @@
         </div>
     </header>
     @yield('content')
-   
+
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
@@ -368,16 +368,19 @@
     </script>
     <script async type="application/javascript"
         src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
-<script>
-  (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
-    basicSubscriptions.init({
-      type: "NewsArticle",
-      isPartOfType: ["Product"],
-      isPartOfProductId: "CAow5bquDA:openaccess",
-      clientOptions: { theme: "light", lang: "en" },
-    });
-  });
-</script>
+    <script>
+        (self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {
+            basicSubscriptions.init({
+                type: "NewsArticle",
+                isPartOfType: ["Product"],
+                isPartOfProductId: "CAow5bquDA:openaccess",
+                clientOptions: {
+                    theme: "light",
+                    lang: "en"
+                },
+            });
+        });
+    </script>
     @yield('js')
 
 </body>
