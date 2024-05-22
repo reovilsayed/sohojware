@@ -6,6 +6,7 @@
                     <x-singlepost :post="$post"/>
                 @endforeach
             </div>
+            
         </div>
     </div>
 </div>

@@ -35,12 +35,15 @@
                             {!! $post->body !!}
                         </div>
                     </div>
+                    <x-button.button />
                 </div>
             </div>
         </div>
     </div>
+
     <section class="blog blog-home mega-section" id="blog">
         <div class="container ">
+
             <div class="sec-heading">
                 <div class="content-area"><span class="pre-title wow fadeInUp" data-wow-delay=".2s">post</span>
                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">Related <span class='hollow-text'>post</span>
@@ -59,6 +62,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 

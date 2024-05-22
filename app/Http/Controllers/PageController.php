@@ -34,8 +34,8 @@ class PageController extends Controller
     public function post($slug)
     {
         $post = Post::where('slug', $slug)->firstOrFail();
-        $related_posts = Post::where('category_id', $post->category_id)       
-                             ->where('id', '!=', $post->id) 
+        $related_posts = Post::where('category_id', $post->category_id)
+                             ->where('id', '!=', $post->id)
                              ->orderBy('created_at', 'desc')
                              ->where('status', 'PUBLISHED')
                              ->latest()
@@ -43,8 +43,8 @@ class PageController extends Controller
                              ->get();
         return view('single_post', compact('post', 'related_posts'));
     }
-    
-    
+
+
     public function services()
     {
         $services = Category::orderBy('order', 'asc')->get();
@@ -123,7 +123,7 @@ class PageController extends Controller
         return view('letsbuild');
     }
     public function single_view(Member $member){
-       
+
         return view('single_view',compact('member'));
     }
 }
