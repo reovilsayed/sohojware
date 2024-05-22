@@ -72,8 +72,8 @@
                 <div class="header-logo"><a class="logo-link" href="{{ route('home') }}">
                         <img class="logo-img light-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
                             alt="logo" />
-                        {{-- <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
-                            alt="logo" /> --}}
+                        <img class="logo-img  dark-logo" loading="lazy" src="{{ asset('assets/logo.png') }}"
+                            alt="logo" />
                     </a>
                 </div>
                 <div class="links menu-wrapper ">
@@ -126,14 +126,14 @@
                             <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
                         </a>
                     </div>
-                    {{-- <div class="mode-switcher ms-3">
+                    <div class="mode-switcher ms-3">
                         <div class="switch-inner go-light" title="Switch To Light Mode ">
                             <i class="fas fa-sun icon"></i>
                         </div>
                         <div class="switch-inner go-dark" title="Switch To Dark Mode ">
                             <i class="fas fa-moon icon"></i>
                         </div>
-                    </div> --}}
+                    </div>
                     {{-- @auth
                         <div class="dropdown text-end ms-3">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
