@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends  \TCG\Voyager\Models\Post
 {
     use HasFactory;
+    protected $guarded = [];
 
+    protected $casts = [
+        'publish_date' => 'datetime',
+    ];
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id');

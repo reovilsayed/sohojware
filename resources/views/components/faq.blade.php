@@ -31,7 +31,7 @@
                         <div class="collapse " id="collapse-00" aria-labelledby="collapse-00"
                             data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     An online presence can help your business grow in many ways. By having a website,
                                     you can showcase your products or services, share information about your business,
                                     and provide a way for customers to contact you. Social media accounts can help you
@@ -53,7 +53,7 @@
                         </div>
                         <div class="collapse " id="collapse-0" aria-labelledby="collapse-0" data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     In today's digital age, having an online presence is essential for any business. By
                                     having a website, social media accounts, and other online platforms, you can reach a
                                     wider audience and increase your visibility. This can lead to more sales and revenue
@@ -73,7 +73,7 @@
                         </div>
                         <div class="collapse " id="collapse-1" aria-labelledby="collapse-1" data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     Simply contact us through our website, and one of our team members will reach out to
                                     you to discuss your project and provide you with a quote.
                                 </p>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="collapse " id="collapse-2" aria-labelledby="collapse-2" data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     We offer a range of monthly subscription options based on the complexity of your
                                     website and your specific maintenance needs. Our pricing starts from $100 per month,
                                     and we can tailor a subscription package to fit your unique requirements.
@@ -110,7 +110,7 @@
                         </div>
                         <div class="collapse" id="collapse-3" aria-labelledby="collapse-3" data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     Our website maintenance subscription includes regular updates and backups, security
                                     checks and monitoring, performance optimization, content updates, and technical
                                     support. We ensure that your website is running smoothly and remains secure.
@@ -130,7 +130,7 @@
                         <div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
                             data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer">
+                                <p class="faq-answer" style="color: white;">
                                     Our SEO services include both on-page and off-page optimization techniques, article
                                     writing, and implementation of Google Analytics, Tag Manager, and Search Console. We
                                     customize our approach based on your budget and specific business needs. Our goal is

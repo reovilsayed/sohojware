@@ -330,6 +330,7 @@ class PostController extends Controller
     // POST BR(E)AD
     public function update(Request $request, $id)
     {
+        
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
@@ -347,6 +348,14 @@ class PostController extends Controller
         }
 
         $data = $query->findOrFail($id);
+
+        
+    
+        if ($data->status == 'DRAFT' && $request->status == 'PUBLISHED') {
+            $data->publish_date = now();
+        } elseif ($data->status == 'PUBLISHED' && $request->status == 'DRAFT') {
+            $data->publish_date = null;
+        }
 
         // Check permission
         $this->authorize('edit', $data);
@@ -367,10 +376,14 @@ class PostController extends Controller
         $this->deleteBreadImages($original_data, $to_remove);
 
         event(new BreadDataUpdated($dataType, $data));
-        if($data->status == 'SCHEDULE'){
-            $data->publish_date = $request->publish_date;
-            $data->save();
-        }
+        // if($data->status == 'SCHEDULE'){
+        //     $data->publish_date = $request->publish_date;
+        //     $data->save();
+        // }
+
+        
+        $data->status = $request->status;
+        $data->save();
 
         return back()->with([
             'message'    => __('voyager::generic.successfully_updated')." {$dataType->getTranslatedAttribute('display_name_singular')}",

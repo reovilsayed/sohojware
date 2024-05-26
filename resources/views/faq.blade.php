@@ -15,6 +15,6 @@
 </style>
 @endsection
 @section('content')
-    <x-breadcrumb :title="'FAQ'"/>
+    <x-breadcrumb :title="'FAQS'"/>
     <x-faq />
 @endsection

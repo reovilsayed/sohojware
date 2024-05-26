@@ -1,10 +1,12 @@
 <div class="col-12 col-lg-6 col-md-6 col-xl-6 mb-4">
     <div class="post-box h-100"> <a class="post-link" href="{{ route('post', $post->slug) }}"
             title="How litespeed technology works to speed up your site ">
-            <div class="post-img-wrapper  "><img class=" parallax-img   post-img" loading="lazy"
-                    src="{{ Voyager::image($post->image) }}" alt="sohojware" title="{{ $post->title }}" /><span
-                    class="post-date"><span class="day">{{ $post->created_at->format('d M Y') }} </span>
-                </span></div>
+            <div class="post-img-wrapper  " style="height: 350px width: 400px;">
+                <img class=" parallax-img   post-img" style="height: 350px; width: 400px; object-fit: contain;     background-color: #cdcdcd;" loading="lazy"
+                    src="{{ Voyager::image($post->image) }}" alt="sohojware" title="{{ $post->title }}" />
+                    <span class="post-date"><span class="day"> {{ $post->publish_date ? $post->publish_date->format('d M Y') : '' }} </span>
+                </span>
+            </div>
         </a>
         <div class="post-summary">
             <div class="post-info"><a class="info post-cat" href="#"><i

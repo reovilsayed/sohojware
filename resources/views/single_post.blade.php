@@ -29,7 +29,7 @@
 
                             <a class="info post-date" href="#">
                                 <i class="fas fa-history icon">
-                                </i>{{ $post->created_at->format('M d Y') }}</a>
+                                </i>{{ $post->publish_date ? $post->publish_date->format('d M Y') : ''}}</a>
                         </div>
                         <div class="post-content">
                             {!! $post->body !!}

@@ -98,13 +98,14 @@
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('pricing') ? 'active' : '' }}"
                                 href="{{ route('pricing') }}">Package</a></li>
-                        <li class="nav-item menu-item"><a
-                                class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
-                                href="{{ route('faq') }}">FAQ
-                            </a></li>
+
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('posts') ? 'active' : '' }}"
                                 href="{{ route('posts') }}">Post
+                            </a></li>
+                        <li class="nav-item menu-item"><a
+                                class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
+                                href="{{ route('faq') }}">FAQS
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"
