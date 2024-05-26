@@ -31,7 +31,7 @@
                         <div class="collapse " id="collapse-00" aria-labelledby="collapse-00"
                             data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p class="faq-answer" style="color: white;">
+                                <p class="faq-answer" >
                                     An online presence can help your business grow in many ways. By having a website,
                                     you can showcase your products or services, share information about your business,
                                     and provide a way for customers to contact you. Social media accounts can help you

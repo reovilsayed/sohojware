@@ -12,6 +12,9 @@
         .header-basic .menu-link {
             color: var(--clr-white) !important;
         }
+        .dark-theme .faq-answer{
+            color: #fff !important;
+        }
 </style>
 @endsection
 @section('content')
