@@ -2,7 +2,7 @@
     <div class="post-box h-100"> <a class="post-link" href="{{ route('post', $post->slug) }}"
             title="How litespeed technology works to speed up your site ">
             <div class="post-img-wrapper  " style="height: 350px width: 400px;">
-                <img class=" parallax-img   post-img" style="height: 350px; width: 400px; object-fit: contain;     background-color: #cdcdcd;" loading="lazy"
+                <img class=" parallax-img   post-img" loading="lazy"
                     src="{{ Voyager::image($post->image) }}" alt="sohojware" title="{{ $post->title }}" />
                     <span class="post-date"><span class="day"> {{ $post->created_at->format('d M Y') }} </span>
                 </span>
