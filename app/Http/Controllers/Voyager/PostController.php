@@ -350,12 +350,6 @@ class PostController extends Controller
         $data = $query->findOrFail($id);
 
         
-    
-        if ($data->status == 'DRAFT' && $request->status == 'PUBLISHED') {
-            $data->publish_date = now();
-        } elseif ($data->status == 'PUBLISHED' && $request->status == 'DRAFT') {
-            $data->publish_date = null;
-        }
 
         // Check permission
         $this->authorize('edit', $data);
@@ -376,10 +370,10 @@ class PostController extends Controller
         $this->deleteBreadImages($original_data, $to_remove);
 
         event(new BreadDataUpdated($dataType, $data));
-        // if($data->status == 'SCHEDULE'){
-        //     $data->publish_date = $request->publish_date;
-        //     $data->save();
-        // }
+        if($data->status == 'SCHEDULE'){
+            $data->publish_date = $request->publish_date;
+            $data->save();
+        }
 
         
         $data->status = $request->status;

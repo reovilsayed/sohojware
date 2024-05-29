@@ -4,7 +4,7 @@
             <div class="post-img-wrapper  " style="height: 350px width: 400px;">
                 <img class=" parallax-img   post-img" style="height: 350px; width: 400px; object-fit: contain;     background-color: #cdcdcd;" loading="lazy"
                     src="{{ Voyager::image($post->image) }}" alt="sohojware" title="{{ $post->title }}" />
-                    <span class="post-date"><span class="day"> {{ $post->publish_date ? $post->publish_date->format('d M Y') : '' }} </span>
+                    <span class="post-date"><span class="day"> {{ $post->created_at->format('d M Y') }} </span>
                 </span>
             </div>
         </a>
