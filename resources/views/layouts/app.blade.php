@@ -111,9 +111,9 @@
                                 class="nav-link menu-link {{ request()->routeIs('contact') ? 'active' : '' }}"
                                 href="{{ route('contact') }}">contact us
                             </a></li>
-                        <li class="nav-item menu-item"><a
+                        {{-- <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('our.team') ? 'active' : '' }}"
-                                href="{{ route('our.team') }}">Our Team</a></li>
+                                href="{{ route('our.team') }}">Our Team</a></li> --}}
                         {{-- <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('letsBuild') ? 'active' : '' }}"
                                 href="{{ route('letsBuild') }}">let's Build</a></li> --}}
