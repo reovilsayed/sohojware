@@ -36,7 +36,7 @@ Route::get('portfolios', [PageController::class, 'portfolios'])->name('portfolio
 Route::get('letsBuild', [PageController::class, 'letsBuild'])->name('letsBuild');
 Route::get('single_view /{member}', [PageController::class, 'single_view'])->name('single_view');
 Route::get('portfolio/{slug}', [PageController::class, 'portfolio'])->name('portfolio');
-
+Route::post('popup', [ProjectController::class, 'popup'])->name('popup.store');
 
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');

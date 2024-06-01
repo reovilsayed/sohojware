@@ -126,4 +126,5 @@ class PageController extends Controller
 
         return view('single_view',compact('member'));
     }
+  
 }

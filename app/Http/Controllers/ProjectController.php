@@ -130,4 +130,35 @@ class ProjectController extends Controller
     {
         //
     }
+    public function popup(Request $request){
+        $request->validate([
+            'services'=>['required'],
+           'title' => ['required','string','max:350'],
+           'description' =>  ['required', 'max:500'], 
+           'name' =>  ['required','string', 'max:50'], 
+           'email' =>  ['required','string', 'max:30'], 
+           'phone' =>  ['string','max:20'], 
+       ]);
+    
+      $user = User:: create([
+        'name' => $request->name,
+        'email' => $request->email,
+        'phone' => $request->phone,
+        'password'=>Hash::make($request),
+
+       ]);
+       
+       Project:: create([
+        'user_id'=>$user->id,
+        'services'=>json_encode($request->services),
+        'title' => $request->title,
+        'description' => $request->description,
+     
+        
+       ]);
+       
+       
+       
+       return redirect()->back()->with('success', 'Project successfully created');
+    }
 }

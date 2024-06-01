@@ -3,155 +3,162 @@
     <div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="multi-step-form">
-                    <div class="multi-step-form__ilustration d-none d-md-block">
-                        <img src="{{ asset('assets/images/popup/side.jpg') }}" alt="">
-                    </div>
-                    <div class="steps">
-                        <div class="step" data-step="1">
-                            <div class="step-container">
-                                <div class="step-title">
-                                    <h3>What type of service are you looking for ? 1</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quos.</p>
-                                </div>
-                                <div class="step-body">
-                                    <div class="options">
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web1" />
-                                                <label class="form-check-label" for="web1">
-                                                    <span>Web Design & Development. </span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web2" />
-                                                <label class="form-check-label" for="web2">
-                                                    <span>Android & IOS Application.</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web5" />
-                                                <label class="form-check-label" for="web5">
-                                                    <span>Digital Marketing <small>(Seo , Smm ,
-                                                            etc)</small>.</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web3" />
-                                                <label class="form-check-label" for="web3">
-                                                    <span>Graphics Design <small>()</small>.</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web4" />
-                                                <label class="form-check-label" for="web4">
-                                                    <span>Video Editing <small>(Figma , Banner , Logo , UI/UX ,
-                                                            etc)</small>.</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                
+                <form action="{{ route('popup.store') }}" method="POST" id="survey">
+                    @csrf
+                    <div class="multi-step-form">
+                         
+                        <div class="multi-step-form__ilustration d-none d-md-block">
+                            <img src="{{ asset('assets/images/popup/side.jpg') }}" alt="">
                         </div>
-                        <div class="step" data-step="2">
-                            <div class="step-container">
-                                <div class="step-title">
-                                    <h3>
-                                        What kind of video editing do you need?
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quos.</p>
-                                </div>
-                                <div class="step-body">
-                                    <div class="options">
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web1" />
-                                                <label class="form-check-label" for="web1">
-                                                    <span>Corporate Videos .</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web2" />
-                                                <label class="form-check-label" for="web2">
-                                                    <span>Promotional Videos .</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web3" />
-                                                <label class="form-check-label" for="web3">
-                                                    <span>Social Media Content.</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web4" />
-                                                <label class="form-check-label" for="web4">
-                                                    <span>Animation and Motion Graphics .</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="option">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="web5" />
-                                                <label class="form-check-label" for="web5">
-                                                    <span>Event Videos .</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
 
+                        <div class="steps">
+
+                            <div class="step" data-step="1">
+                                <div class="step-container">
+                                    <div class="step-title">
+                                        <h3>What type of service are you looking for ?</h3>
+                                        <p>We offer website development, mobile app creation, SEO, digital marketing,
+                                            graphic
+                                            design, and video editing services. Our diverse skill sets
+                                            enable us to
+                                            support businesses of all sizes and industries
+                                            .</p>
+                                    </div>
+                                    <div class="step-body">
+                                        <div class="options">
+                                            <div class="option">
+                                                <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="web_development"
+                                                        id="web1" name="services[]"  />
+                                                    <label class="form-check-label" for="web1">
+                                                        <span>Web Development. </span>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="option">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="android_ios_application"
+                                                        id="web2" name="services[]" />
+                                                    <label class="form-check-label" for="web2">
+                                                        <span>Android & IOS Application.</span>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="option">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="digital_marketing"
+                                                        id="web3" name="services[]" />
+                                                    <label class="form-check-label" for="web3">
+                                                        <span>Digital Marketing <small>(Seo , Smm ,
+                                                                etc)</small>.</span>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="option">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="graphics_design"
+                                                        id="web4" name="services[]" />
+                                                    <label class="form-check-label" for="web4">
+                                                        <span>Graphics Design <small>(Figma , Banner , Logo , UI/UX ,
+                                                                etc)</small>.</span>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="option">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="video_editing"
+                                                        id="web5" name="services[]" />
+                                                    <label class="form-check-label" for="web5">
+                                                        <span>Video Editing <small>(Event Videos , Corporate Videos ,
+                                                                Social
+                                                                Media Content , etc)</small>.</span>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="step" data-step="3">
-                            <div class="step-container">
-                                <div class="content">
-                                    <h3 class="d-flex align-items-center justify-content-center">Thank you</h3>
+                            <div class="step" data-step="2">
+                                <div class="step-container">
+                                    <div class="step-title">
+                                        <h3>
+                                            Provide specific details to help us understand your vision.
+                                        </h3>
+                                        <p>Crafting your ideas into reality.</p>
+                                    </div>
+                                    <div class="step-body">
+                                        <div class="options">
+                                            <div class="option">
+                                                <div class="mb-3">
+                                                    <label for="FormControlInput" class="form-label ">Title</label>
+                                                    <input type="text" class="form-control" id="FormControlInput"
+                                                        placeholder="Title..." name="title">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label for="FormControlTextarea"
+                                                        class="form-label">Description</label>
+                                                    <textarea class="form-control" id="FormControlTextarea" placeholder="Text here..." rows="6" name="description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="step" data-step="3">
+                                <div class="step-container">
+                                    <div class="step-title">
+                                        <h3>
+                                            How can we connect with you
+                                        </h3>
+                                        <p>Providing the best services & it solutions.</p>
+                                    </div>
+                                    <div class="step-body">
+                                        <div class="options">
+                                            <div class="option">
+                                                <div class="mb-3">
+                                                    <label for="FormControlInput" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="FormControlInput"
+                                                        placeholder="Name..." name="name">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="mb-3 col-lg-6">
+                                                        <label for="FormControlInput" class="form-label">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control"
+                                                            id="FormControlInput" placeholder="name@example.com"
+                                                            name="email">
+                                                    </div>
+                                                    <div class="mb-3 col-lg-6">
+                                                        <label for="FormControlInput" class="form-label">Phone
+                                                            Number</label>
+                                                        <input type="tel" class="form-control"
+                                                            id="FormControlInput" placeholder="" name="phone">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="step-btn" id="back-btn">Back</button>
+                                <button type="button" class="step-btn" id="next-btn">Next</button>
+                            </div>
+
                         </div>
-                        <div>
-                            <button class="step-btn" id="back-btn">Back</button>
-                            <button class="step-btn" id="next-btn">Next</button>
-                        </div>
+
                     </div>
-                </div>
             </div>
-
+            </form>
         </div>
     </div>
 </div>
@@ -195,11 +202,12 @@
 
         // Function to go to the next step
         function nextStep() {
-            if (currentStep < steps.length - 1) {
-                steps[currentStep].classList.remove('active');
-                currentStep++;
-                steps[currentStep].classList.add('active');
+            steps[currentStep].classList.remove('active');
+            currentStep++;
+            if (currentStep == steps.length) {
+                document.querySelector('#next-btn').type = 'submit';
             }
+            steps[currentStep].classList.add('active');
         }
 
         function backStep() {

@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/popup.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
@@ -172,11 +176,12 @@
         </div>
     </header>
     @yield('content')
-
+    <x-popup />
     <footer class="page-footer dark-color-footer" id="page-footer">
         <div class="overlay-photo-image-bg"
             data-bg-img="{{ asset('assets/images/sections-bg-images/footer-bg-1.webp') }}" data-bg-opacity=".25">
         </div>
+        <!-- Button trigger modal -->
         <div class="container">
             <div class="row footer-cols">
                 <div class="col-12 col-md-8 col-lg-4  footer-col "><img class="img-fluid footer-logo" loading="lazy"
@@ -254,7 +259,7 @@
                                 href="mailto:info@sohojware.com">info@sohojware.com</a>
                         </div>
                         {{-- <div class="contact-info-card"><i class="fa-solid fa-location-dot me-2"
-                                style="color:#0a6a9e"></i><span class="text-lowercase  info">5 Xyz st., Abc,
+                            style="color:#0a6a9e"></i><span class="text-lowercase  info">5 Xyz st., Abc,
                                 alexandria, egypt.</span></div> --}}
                         <div class="contact-info-card"><i class="fa-solid fa-mobile me-2"
                                 style="color:#0a6a9e"></i><a class="info"
@@ -284,6 +289,11 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-info btn-sm text-white " data-bs-toggle="modal"
+                                    data-bs-target="#modalId">
+                                    Popup
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -307,6 +317,7 @@
                             | <a href="{{ route('page', ['slug' => 'privacy-policy']) }}">Privacy Policy</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -333,6 +344,7 @@
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
 
     <script>
         toastr.options = {
