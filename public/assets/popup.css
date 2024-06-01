@@ -1,0 +1,164 @@
+.header-basic a,
+.header-basic .menu-link {
+    color: var(--clr-white) !important;
+}
+
+.display {
+    display: none
+}
+
+.parallax-img {
+    height: 300px;
+    width: 297px;
+    object-fit: cover;
+}
+
+.steps {
+    position: relative;
+}
+
+.multi-step-form {
+    position: relative;
+    background: #FBF9F1;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 600px;
+   
+    box-shadow: 10px 10px 20px #c8c6c0;
+    border-radius: 10px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .multi-step-form {
+        position: relative;
+        background: #FBF9F1;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        height: 600px;
+       
+        box-shadow: 10px 10px 20px #c8c6c0;
+        border-radius: 10px;
+
+    }
+}
+
+.multi-step-form__ilustration {
+    overflow: hidden;
+}
+
+.multi-step-form__ilustration img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+
+.multi-step-form__ilustration img:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+.multi-step-form .step {
+    opacity: 0;
+
+    z-index: -100;
+    position: absolute;
+    z-index: 1;
+    transition: .5s ease;
+
+    padding: 10px;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.multi-step-form .step h3 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.multi-step-form .step p {
+
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px
+}
+
+.multi-step-form .step.active {
+    z-index: 10;
+    display: block;
+    top: 10px;
+    left: 0px;
+    opacity: 1;
+    width: 100%;
+}
+
+.options {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.option {
+
+    background-color: #AAD7D9;
+    padding: 10px 20px;
+    transition: .1s ease-in;
+    border-radius: 10px;
+}
+
+.option-check,
+.option:hover {
+    background-color: #92C7CF;
+
+}
+
+
+
+.option .form-check {
+    display: flex;
+    gap: 40px;
+}
+
+.option input {
+    background-color: #E5E1DA;
+}
+
+.step-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 24px;
+    border-radius: 5px;
+    border: none;
+    background: #307a7e;
+    color: #FBF9F1;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+}
+
+#back-btn {
+    right: 120px;
+}
+
+.step-btn:hover {
+
+    background: #92C7CF;
+
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
