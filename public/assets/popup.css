@@ -7,26 +7,80 @@
     display: none
 }
 
+.modal {
+    --bs-modal-padding: 0px !important;
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        --bs-modal-width: 800px !important;
+        --bs-modal-height: 800px !important;
+    }
+}
+
+.form-check-input:checked {
+    background-color: #b9d5d9;
+    border-color: #b9d5d9;
+
+}
+
+.form-check-input:focus {
+    border-color: #b9d5d9 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.option input:focus {
+    border-color: #b9d5d9 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.option textarea:focus {
+    border-color: #b9d5d9 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.form-label {
+    margin-bottom: 0.5rem !important;
+    font-weight: 500;
+    padding: 4px;
+}
+
 .parallax-img {
     height: 300px;
     width: 297px;
     object-fit: cover;
+
+
 }
 
 .steps {
     position: relative;
-    color: black;
+    color: rgb(57, 53, 53);
 }
+
+
+.step-title {
+    width: 545px;
+    margin: -10px 33px;
+    text-align: justify;
+}
+
+.step-title h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 .multi-step-form {
     position: relative;
-    background: #FBF9F1;
+    background: transparent;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    height: 600px;
-   
-    box-shadow: 10px 10px 20px #c8c6c0;
+    min-height: 400px;
     border-radius: 10px;
 
 }
@@ -34,15 +88,13 @@
 @media only screen and (min-width: 768px) {
     .multi-step-form {
         position: relative;
-        background: #FBF9F1;
+        background: transparent;
         display: grid;
         grid-template-columns: 1fr 2fr;
         width: 100%;
-        height: 600px;
-       
-        box-shadow: 10px 10px 20px #c8c6c0;
+        min-height: 400px;
         border-radius: 10px;
-
+        margin-left: 0px;
     }
 }
 
@@ -51,73 +103,75 @@
 }
 
 .multi-step-form__ilustration img {
-
+    z-index: 100;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1)
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
-.multi-step-form__ilustration img:hover {
-    transform: scale(1.1) rotate(1deg);
-}
+
 
 .multi-step-form .step {
     opacity: 0;
-
-    z-index: -100;
+    z-index: -10;
     position: absolute;
-    z-index: 1;
+    top: 10px;
+    right: 20px;
     transition: .5s ease;
-
-    padding: 10px;
     justify-content: center;
-    padding-top: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    padding-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .multi-step-form .step h3 {
-    font-size: 28px;
-    font-weight: 500;
+    width: 80%;
+    font-size: 23px;
     letter-spacing: 1px;
 
 }
 
 .multi-step-form .step p {
 
-
-    font-size: 14px;
-    font-weight: 400;
+    width: 77%;
+    font-size: 10px;
+    font-weight: 500;
     letter-spacing: 1px
 }
 
 .multi-step-form .step.active {
     z-index: 10;
-    display: block;
-    top: -20px;
-    left: 0px;
     opacity: 1;
+    top: 9px;
+    right: 0px;
     width: 100%;
 }
 
 .options {
-    margin-top: 30px;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .option {
-
-    background-color: #AAD7D9;
-    padding: 10px 20px;
+    width: 100% !important;
+    align-items: center;
+    background-color: #b2d2e4;
+    padding: 4px 10px;
     transition: .1s ease-in;
     border-radius: 10px;
 }
 
 .option-check,
 .option:hover {
-    background-color: #92C7CF;
+    background-color: #82c3e6;
 
 }
 
@@ -125,11 +179,11 @@
 
 .option .form-check {
     display: flex;
-    gap: 40px;
+    gap: 10px;
 }
 
 .option input {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
 }
 
 .step-btn {
@@ -139,8 +193,7 @@
     padding: 8px 24px;
     border-radius: 5px;
     border: none;
-    background: #307a7e;
-    color: #FBF9F1;
+    background: #b2d2e4;
     transition: .2s ease-in;
     cursor: pointer;
 
@@ -152,7 +205,7 @@
 
 .step-btn:hover {
 
-    background: #92C7CF;
+    background: #67C6E3;
 
 }
 
@@ -162,4 +215,135 @@ label {
     width: 100%;
     align-items: center;
 
+}
+
+.service {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.form-style-5 {
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-style-5 fieldset {
+    border: none;
+}
+
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-style-5 input[type="text"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="tel"],
+.form-style-5 textarea,
+.form-style-5 select {
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #b2d2e4;
+    color: #1b1d1e;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-style-5 .number {
+    background: #b2d2e4;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.btn-hidden {
+    display: none;
+}
+
+@media (max-width: 976px) {
+    .step-title {
+        width: 70%;
+    }
+
+    .step-title h3,
+    p {
+        width: auto !important;
+    }
+
+    .step-body {
+        height: 20vh;
+        overflow: scroll;
+    }
+
+    .options {
+        margin-top: 4px;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .form-style-5 {
+        max-width: 70%;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 486px) {
+    .step-body {
+        height: 20vh;
+        overflow: scroll;
+    }
+
+    .options {
+        margin-top: 4px;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .form-style-5 {
+        max-width: 70%;
+        padding: 0;
+
+    }
+
+    .form-style-5 input[type="text"],
+    .form-style-5 input[type="email"],
+    .form-style-5 input[type="tel"],
+    .form-style-5 textarea,
+    .form-style-5 select {
+        margin-bottom: 4px;
+    }
 }

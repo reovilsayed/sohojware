@@ -11,7 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sayed Khan">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/plugin/swiper.css') }}" />
@@ -19,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{ asset('assets/popup.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -343,8 +343,8 @@
     <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  
 
     <script>
         toastr.options = {

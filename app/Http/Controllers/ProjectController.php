@@ -139,8 +139,8 @@ class ProjectController extends Controller
            'email' =>  ['required','string', 'max:30'], 
            'phone' =>  ['string','max:20'], 
        ]);
-    
-      $user = User:: create([
+     
+        $user = User:: create([
         'name' => $request->name,
         'email' => $request->email,
         'phone' => $request->phone,
