@@ -164,9 +164,9 @@
     width: 100% !important;
     align-items: center;
     background-color: #b2d2e4;
-    padding: 4px 10px;
+    padding: 4px 8px;
     transition: .1s ease-in;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .option-check,
@@ -201,6 +201,13 @@
 
 #back-btn {
     right: 120px;
+}
+
+#err-message {
+    color: red;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
 }
 
 .step-btn:hover {
@@ -250,20 +257,14 @@ label {
 .form-style-5 input[type="tel"],
 .form-style-5 textarea,
 .form-style-5 select {
-    border: none;
+    border: 2px solid;
     border-radius: 4px;
     font-size: 15px;
     margin: 0;
     outline: 0;
     padding: 10px;
     width: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    background-color: #b2d2e4;
-    color: #1b1d1e;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    color: #a7aaac;
     margin-bottom: 30px;
 }
 

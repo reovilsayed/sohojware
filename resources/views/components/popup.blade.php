@@ -94,8 +94,8 @@
                                             <div class="form-style-5">
                                                 <fieldset>
                                                     <legend><span class="number">#</span> Project Info</legend>
-                                                    <input type="text" name="title" placeholder="Your tilte *">
-                                                    <textarea name="description" placeholder="Describe the project"></textarea>
+                                                    <input type="text" name="title" placeholder="Your tilte *" required>
+                                                    <textarea name="description" placeholder="Describe the project" rows="4" required></textarea>
                                                 </fieldset>
                                             </div>
 
@@ -103,31 +103,33 @@
                                     </div>
                                 </div>
                             </div>
+                            @auth
+                            @else
+                                <div class="step" data-step="3">
+                                    <div class="step-container">
+                                        <div class="step-title">
+                                            <h3>
+                                                How can we connect with you
+                                            </h3>
+                                            <p>Providing the best services & it solutions.</p>
+                                        </div>
+                                        <div class="step-body">
+                                            <div class="options">
 
-                            <div class="step" data-step="3">
-                                <div class="step-container">
-                                    <div class="step-title">
-                                        <h3>
-                                            How can we connect with you
-                                        </h3>
-                                        <p>Providing the best services & it solutions.</p>
-                                    </div>
-                                    <div class="step-body">
-                                        <div class="options">
-
-                                            <div class="form-style-5">
-                                                <fieldset>
-                                                    <legend><span class="number">#</span> Client Info</legend>
-                                                    <input type="text" name="name" placeholder="Your name *">
-                                                    <input type="email" name="email" placeholder="Your email *">
-                                                    <input type="tel" name="phone" placeholder="Your phone  ">
-                                                </fieldset>
+                                                <div class="form-style-5">
+                                                    <fieldset>
+                                                        <legend><span class="number">#</span> Client Info</legend>
+                                                        <input type="text" name="name" placeholder="Your name *">
+                                                        <input type="email" name="email" placeholder="Your email *">
+                                                        <input type="tel" name="phone" placeholder="Your phone  ">
+                                                    </fieldset>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            @endauth
+                            <span id="err-message"></span>
                             <div>
                                 <button type="button" class="step-btn text-dark" id="back-btn"><i
                                         class="fa-solid fa-caret-left"></i> Back</button>
@@ -143,12 +145,7 @@
 </div>
 
 <!-- Optional: Place to the bottom of scripts -->
-<script>
-    const myModal = new bootstrap.Modal(
-        document.getElementById("modalId"),
-        options,
-    );
-</script>
+
 <script>
     function check(element) {
         // Find the checkbox or radio input within the clicked .option element
@@ -184,6 +181,16 @@
 
         // Function to go to the next step
         function nextStep() {
+            var services = document.querySelectorAll('input[name="services[]"]:checked');
+            var errMessage = document.getElementById('err-message');
+            var nextBtn = document.getElementById('next-btn');
+            console.log(services.length);
+            if (services.length === 0) {
+                errMessage.innerHTML = 'You need to select an option'
+                return
+            } else {
+                errMessage.innerHTML = ''
+            }
             steps[currentStep].classList.remove('active');
             currentStep++;
             if (currentStep == steps.length) {

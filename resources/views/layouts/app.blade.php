@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="{{ asset('assets/popup.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -343,7 +345,8 @@
     <script src="{{ asset('assets/js/plugins/isotope-min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.fancybox.min.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
+    <!-- Include SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script>
@@ -364,23 +367,7 @@
     @if (session()->has('success'))
         <x-alert.success />
     @endif
-    <script>
-        $('#massage').summernote({
-            placeholder: 'Text Here....',
-            tabsize: 2,
-            height: 400,
-            toolbar: [
-                // [groupName, [list of button]]
-                ['style', ['bold', 'italic', 'underline', 'clear']],
-                ['font', ['strikethrough', 'superscript', 'subscript']],
-                ['fontsize', ['fontsize']],
-                ['color', ['color']],
-                ['para', ['ul', 'ol', 'paragraph']],
-                ['height', ['height']]
-            ]
 
-        });
-    </script>
     <script async type="application/javascript"
         src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
     <script>
@@ -397,6 +384,15 @@
         });
     </script>
     @yield('js')
+    @if (session()->has('success_sweet_alert'))
+        <script>
+            Swal.fire({
+                title: "Good job!",
+                text: "{{ session('success_sweet_alert') }}",
+                icon: "success"
+            });
+        </script>
+    @endif
 
 </body>
 
