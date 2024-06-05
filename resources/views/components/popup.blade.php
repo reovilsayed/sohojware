@@ -1,5 +1,4 @@
-<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-    aria-labelledby="modalTitleId" aria-hidden="true">
+<div class="modal fade" id="modalId" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -94,7 +93,8 @@
                                             <div class="form-style-5">
                                                 <fieldset>
                                                     <legend><span class="number">#</span> Project Info</legend>
-                                                    <input type="text" name="title" placeholder="Your tilte *" required>
+                                                    <input type="text" name="title" placeholder="Your tilte *"
+                                                        required>
                                                     <textarea name="description" placeholder="Describe the project" rows="4" required></textarea>
                                                 </fieldset>
                                             </div>
@@ -119,9 +119,12 @@
                                                 <div class="form-style-5">
                                                     <fieldset>
                                                         <legend><span class="number">#</span> Client Info</legend>
-                                                        <input type="text" name="name" placeholder="Your name *">
-                                                        <input type="email" name="email" placeholder="Your email *">
-                                                        <input type="tel" name="phone" placeholder="Your phone  ">
+                                                        <input type="text" name="name" id="client-name"
+                                                            placeholder="Your name *">
+                                                        <input type="email" name="email" id="client-email"
+                                                            placeholder="Your email *">
+                                                        <input type="tel" name="phone" id="client-phone"
+                                                            placeholder="Your phone  ">
                                                     </fieldset>
                                                 </div>
                                             </div>
@@ -147,6 +150,34 @@
 <!-- Optional: Place to the bottom of scripts -->
 
 <script>
+    const CheckStep = {
+        step0: () => {
+            var services = document.querySelectorAll('input[name="services[]"]:checked');
+            if (services.length === 0) {
+                return 'You need to select an option *';
+            };
+            return false;
+        },
+        step1: () => {
+            var nameInput = document.querySelector('input[name="title"]');
+            if (!nameInput.value.length) {
+                return 'You need to enter a title *';
+            };
+            return false;
+        },
+        step2: () => {
+            var emailInput = document.getElementById('client-email');
+            if (!emailInput.value.length) {
+                return 'You need to enter an email *';
+            };
+            var nameInput = document.getElementById('client-name');
+            if (!nameInput.value.length) {
+                return 'You need to enter a name *';
+            };
+            return false;
+        }
+    };
+
     function check(element) {
         // Find the checkbox or radio input within the clicked .option element
         const input = element.querySelector('.form-check-input');
@@ -181,19 +212,19 @@
 
         // Function to go to the next step
         function nextStep() {
-            var services = document.querySelectorAll('input[name="services[]"]:checked');
             var errMessage = document.getElementById('err-message');
             var nextBtn = document.getElementById('next-btn');
-            console.log(services.length);
-            if (services.length === 0) {
-                errMessage.innerHTML = 'You need to select an option'
-                return
+            const stepValidation = CheckStep[`step${currentStep}`]();
+            if (stepValidation.length) {
+                errMessage.innerHTML = stepValidation;
+                return;
             } else {
-                errMessage.innerHTML = ''
+                errMessage.innerHTML = '';
             }
             steps[currentStep].classList.remove('active');
             currentStep++;
             if (currentStep == steps.length) {
+                $('#modalId').modal('hide');
                 document.querySelector('#next-btn').type = 'submit';
             }
             steps[currentStep].classList.add('active');
