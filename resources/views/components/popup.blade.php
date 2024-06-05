@@ -24,7 +24,7 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="web_development" id="web1" name="services[]" />
                                                     <label class="form-check-label" for="web1">
-                                                        <span class="service">Web Development. </span>
+                                                        <span class="service fw-bolder">Web Development. </span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -35,7 +35,8 @@
                                                         value="android_ios_application" id="web2"
                                                         name="services[]" />
                                                     <label class="form-check-label" for="web2">
-                                                        <span class="service">Android & IOS Application.</span>
+                                                        <span class="service fw-bolder">Android & IOS
+                                                            Application.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -45,7 +46,8 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="digital_marketing" id="web3" name="services[]" />
                                                     <label class="form-check-label" for="web3">
-                                                        <span class="service">Digital Marketing <small>(Seo , Smm ,
+                                                        <span class="service fw-bolder">Digital Marketing <small>(Seo ,
+                                                                Smm ,
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
@@ -56,7 +58,7 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="graphics_design" id="web4" name="services[]" />
                                                     <label class="form-check-label" for="web4">
-                                                        <span class="service">Graphics Design <small>(Figma , Banner ,
+                                                        <span class="service fw-bolder">Graphics Design <small>(Banner ,
                                                                 Logo , UI/UX ,
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
@@ -68,8 +70,9 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="video_editing" id="web5" name="services[]" />
                                                     <label class="form-check-label" for="web5">
-                                                        <span class="service">Video Editing <small>(Event Videos ,
-                                                                Corporate Videos ,
+                                                        <span class="service fw-bolder">Video Editing <small>(Event
+                                                                Videos ,
+                                                                Corporate Videos,
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
