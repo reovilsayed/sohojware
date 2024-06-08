@@ -46,8 +46,8 @@
                                                         value="digital_marketing" id="web3" name="services[]" />
                                                     <label class="form-check-label" for="web3">
                                                         <span class="service fw-bolder">Digital Marketing <small>(Seo ,
-                                                                Smm ,
-                                                                etc)</small>.</span>
+                                                                & Smm
+                                                               , etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -58,8 +58,8 @@
                                                         value="graphics_design" id="web4" name="services[]" />
                                                     <label class="form-check-label" for="web4">
                                                         <span class="service fw-bolder">Graphics Design <small>(Banner ,
-                                                                Logo , UI/UX ,
-                                                                etc)</small>.</span>
+                                                                Logo & UI/UX
+                                                               , etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -70,9 +70,9 @@
                                                         value="video_editing" id="web5" name="services[]" />
                                                     <label class="form-check-label" for="web5">
                                                         <span class="service fw-bolder">Video Editing <small>(Event
-                                                                Videos ,
-                                                                Corporate Videos,
-                                                                etc)</small>.</span>
+                                                                Videos &
+                                                                Corporate Videos
+                                                              ,  etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
