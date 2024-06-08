@@ -13,31 +13,36 @@
 
 @media (min-width: 1200px) {
     .modal-xl {
-        --bs-modal-width: 800px !important;
-        --bs-modal-height: 800px !important;
+        --bs-modal-width: 1100px !important;
+        --bs-modal-height: 100% !important;
     }
 }
 
-.form-check-input:checked {
-    background-color: #b9d5d9;
-    border-color: #b9d5d9;
+.form-check-input {
+    transform: scale(1.4);
+    border: none;
+    transition: .1s ease-in;
+}
 
+.form-check-input:checked {
+    background-color: #30f61a;
+    border-radius: 50%;
 }
 
 .form-check-input:focus {
-    border-color: #b9d5d9 !important;
+    border-color: #d9b9d7 !important;
     outline: 0;
     box-shadow: none !important;
 }
 
 .option input:focus {
-    border-color: #b9d5d9 !important;
+    border-color: #ffffff !important;
     outline: 0;
     box-shadow: none !important;
 }
 
 .option textarea:focus {
-    border-color: #b9d5d9 !important;
+    border-color: #eeeeee !important;
     outline: 0;
     box-shadow: none !important;
 }
@@ -63,16 +68,69 @@
 
 
 .step-title {
-    width: 545px;
-    margin: -10px 33px;
+    width: 100%;
+    margin: -6px 90px 2px;
     text-align: justify;
 }
 
 .step-title h3 {
-    font-size: 20px;
+    width: 80%;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-size: 27px;
     font-weight: 600;
 }
 
+.step-title p {
+    width: 74%;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+
+
+.step-title2 {
+    width: 80%;
+    text-align: justify;
+    margin: -5px 141px -33px;
+}
+
+.step-title2 h3 {
+    width: 72%;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.step-title2 p {
+    width: 74%;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.step-title3 {
+    width: 80%;
+    text-align: center;
+    margin: -5px 141px -33px;
+}
+
+.step-title3 h3 {
+    width: 76%;
+    font-size: 27px;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.step-title3 p {
+    width: 74%;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
 
 .multi-step-form {
     position: relative;
@@ -122,25 +180,11 @@
     transition: .5s ease;
     justify-content: center;
     padding-top: 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Inter", Arial, sans-serif;
 
     transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.multi-step-form .step h3 {
-    width: 80%;
-    font-size: 23px;
-    letter-spacing: 1px;
-
-}
-
-.multi-step-form .step p {
-
-    width: 77%;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 1px
-}
 
 .multi-step-form .step.active {
     z-index: 10;
@@ -151,7 +195,6 @@
 }
 
 .options {
-
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -163,18 +206,25 @@
 .option {
     width: 100% !important;
     align-items: center;
-    background-color: #b2d2e4;
-    padding: 4px 8px;
-    transition: .1s ease-in;
-    border-radius: 6px;
+    background-color: #eccaea3d;
+    padding: 12px 12px;
+    transition: .2s ease-in;
+    border-radius: 5px;
+}
+
+
+.option:hover {
+    background-color: rgba(210, 148, 148, 0.2);
+    color: rgb(0, 0, 0);
+
 }
 
 .option-check,
-.option:hover {
-    background-color: #82c3e6;
+.option-check:hover {
+    background-color: #2d32aa;
+    color: white;
 
 }
-
 
 
 .option .form-check {
@@ -186,33 +236,35 @@
     background-color: #f8f8f8;
 }
 
+
 .step-btn {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 8px 24px;
-    border-radius: 5px;
+    bottom: 25px;
+    right: 30px;
+    padding: 8px 32px;
+    border-radius: 4px;
     border: none;
-    background: #b2d2e4;
+    background: #2d32aa;
+    color: #fff;
     transition: .2s ease-in;
     cursor: pointer;
-
+    letter-spacing: 1px;
 }
 
 #back-btn {
-    right: 120px;
+    right: 150px;
 }
 
 #err-message {
     color: red;
     position: absolute;
-    bottom: 80px;
-    right: 20px;
+    bottom: 67px;
+    right: 32px;
 }
 
 .step-btn:hover {
 
-    background: #67C6E3;
+    background: #3d41a9;
 
 }
 
@@ -221,7 +273,7 @@ label {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-
+    margin: initial;
 }
 
 .service {
@@ -264,8 +316,8 @@ label {
     outline: 0;
     padding: 10px;
     width: 100%;
-    color: #a7aaac;
-    margin-bottom: 30px;
+    color: #000;
+    margin-bottom: 35px;
 }
 
 
@@ -276,19 +328,7 @@ label {
     /* Firefox */
 }
 
-.form-style-5 .number {
-    background: #b2d2e4;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 15px 15px 15px 0px;
-}
+
 
 .btn-hidden {
     display: none;

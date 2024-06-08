@@ -6,16 +6,15 @@
                     @csrf
                     <div class="multi-step-form">
                         <div class="multi-step-form__ilustration d-none d-md-block">
-                            <img src="{{ asset('assets/images/popup/side-2.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/popup/side-1.jpg') }}" alt="">
                         </div>
                         <div class="steps">
                             <div class="step" data-step="1">
                                 <div class="step-container">
                                     <div class="step-title">
                                         <h3>What type of service are you looking for ?</h3>
-                                        <p>We offer website development, mobile app, SEO, digital marketing,
-                                            graphic
-                                            design, and video editing services.</p>
+                                        <p>Let us help you achieve your goals and reach your target audience effectively
+                                        </p>
                                     </div>
                                     <div class="step-body">
                                         <div class="options">
@@ -84,21 +83,19 @@
                             </div>
                             <div class="step" data-step="2">
                                 <div class="step-container">
-                                    <div class="step-title">
-                                        <h3 style="letter-spacing: 0px;">
+                                    <div class="step-title2">
+                                        <h3>
                                             Provide specific details to help us understand your vision.
                                         </h3>
                                         <p>Crafting your ideas into reality.</p>
                                     </div>
                                     <div class="step-body">
                                         <div class="options">
-
                                             <div class="form-style-5">
                                                 <fieldset>
-                                                    <legend><span class="number">#</span> Project Info</legend>
                                                     <input type="text" name="title" placeholder="Your tilte *"
                                                         required>
-                                                    <textarea name="description" placeholder="Describe the project" rows="4" required></textarea>
+                                                    <textarea name="description" placeholder="Describe the project" rows="5" required></textarea>
                                                 </fieldset>
                                             </div>
 
@@ -110,18 +107,16 @@
                             @else
                                 <div class="step" data-step="3">
                                     <div class="step-container">
-                                        <div class="step-title">
+                                        <div class="step-title3">
                                             <h3>
-                                                How can we connect with you
+                                                Please fill with your Details
                                             </h3>
-                                            <p>Providing the best services & it solutions.</p>
+                                            <p>A summary of your request will be sent to your email address.</p>
                                         </div>
                                         <div class="step-body">
                                             <div class="options">
-
                                                 <div class="form-style-5">
                                                     <fieldset>
-                                                        <legend><span class="number">#</span> Client Info</legend>
                                                         <input type="text" name="name" id="client-name"
                                                             placeholder="Your name *">
                                                         <input type="email" name="email" id="client-email"
@@ -137,9 +132,9 @@
                             @endauth
                             <span id="err-message"></span>
                             <div>
-                                <button type="button" class="step-btn text-dark" id="back-btn"><i
+                                <button type="button" class="step-btn" id="back-btn"><i
                                         class="fa-solid fa-caret-left"></i> Back</button>
-                                <button type="button" class="step-btn text-dark" id="next-btn">Next <i
+                                <button type="button" class="step-btn" id="next-btn">Next <i
                                         class="fa-solid fa-caret-right"></i></button>
                             </div>
                         </div>
