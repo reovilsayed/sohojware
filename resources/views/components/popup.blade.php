@@ -91,14 +91,15 @@
                                     </div>
                                     <div class="step-body">
                                         <div class="options">
-                                            <div class="form-style-5">
-                                                <fieldset>
-                                                    <input type="text" name="title" placeholder="Your tilte *"
-                                                        required>
-                                                    <textarea name="description" placeholder="Describe the project" rows="5" required></textarea>
-                                                </fieldset>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" name="title" class="form-control"
+                                                    id="client-name floatingInputGrid" placeholder="Your Title">
+                                                <label for="floatingInputGrid">Title</label>
                                             </div>
-
+                                            <div class="">
+                                                <textarea class="form-control" name="description" placeholder="Describe the project here" id="floatingTextarea2"
+                                                    rows="5"></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -115,16 +116,22 @@
                                         </div>
                                         <div class="step-body">
                                             <div class="options">
-                                                <div class="form-style-5">
-                                                    <fieldset>
-                                                        <input type="text" name="name" id="client-name"
-                                                            placeholder="Your name *">
-                                                        <input type="email" name="email" id="client-email"
-                                                            placeholder="Your email *">
-                                                        <input type="tel" name="phone" id="client-phone"
-                                                            placeholder="Your phone  ">
-                                                    </fieldset>
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" name="name" class="form-control"
+                                                        id="client-name" placeholder="Your Name">
+                                                    <label for="client-name">First & Last Name</label>
                                                 </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" name="email" class="form-control"
+                                                        id="client-email" placeholder="Your Email">
+                                                    <label for="client-email">Email address</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="tel" name="phone" class="form-control"
+                                                        id="client-phone" placeholder="+880 1303550622">
+                                                    <label for="client-phone">Your telephone (optional)</label>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -139,8 +146,8 @@
                             </div>
                         </div>
                     </div>
+                </form>
             </div>
-            </form>
         </div>
     </div>
 </div>
@@ -173,7 +180,8 @@
                 return 'You need to enter a name *';
             };
             return false;
-        }
+        },
+        step3: () => true
     };
 
     function check(element) {
@@ -201,6 +209,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         const steps = document.querySelectorAll('.step');
         let currentStep = 0;
+
         if (currentStep === 0) {
             document.getElementById('back-btn').classList.add('btn-hidden')
         }
@@ -212,6 +221,7 @@
         function nextStep() {
             var errMessage = document.getElementById('err-message');
             var nextBtn = document.getElementById('next-btn');
+            console.log(currentStep);
             const stepValidation = CheckStep[`step${currentStep}`]();
             if (stepValidation.length) {
                 errMessage.innerHTML = stepValidation;
@@ -221,6 +231,7 @@
             }
             steps[currentStep].classList.remove('active');
             currentStep++;
+
             if (currentStep == steps.length) {
                 $('#modalId').modal('hide');
                 document.querySelector('#next-btn').type = 'submit';

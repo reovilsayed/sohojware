@@ -94,11 +94,11 @@
 .step-title2 {
     width: 80%;
     text-align: justify;
-    margin: -5px 141px -33px;
+    margin: 0px 145px 0px;
 }
 
 .step-title2 h3 {
-    width: 72%;
+    width: 75%;
     font-size: 27px;
     font-weight: 600;
     text-align: center;
@@ -114,7 +114,7 @@
 .step-title3 {
     width: 80%;
     text-align: center;
-    margin: -5px 141px -33px;
+    margin: 0px 145px 0px;
 }
 
 .step-title3 h3 {
@@ -282,54 +282,6 @@ label {
 }
 
 
-.form-style-5 {
-    max-width: 500px;
-    padding: 10px 20px;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.form-style-5 fieldset {
-    border: none;
-}
-
-.form-style-5 legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-.form-style-5 label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.form-style-5 input[type="text"],
-.form-style-5 input[type="email"],
-.form-style-5 input[type="tel"],
-.form-style-5 textarea,
-.form-style-5 select {
-    border: 2px solid;
-    border-radius: 4px;
-    font-size: 15px;
-    margin: 0;
-    outline: 0;
-    padding: 10px;
-    width: 100%;
-    color: #000;
-    margin-bottom: 35px;
-}
-
-
-
-::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 1;
-    /* Firefox */
-}
-
-
-
 .btn-hidden {
     display: none;
 }
@@ -355,11 +307,6 @@ label {
         overflow: hidden;
     }
 
-    .form-style-5 {
-        max-width: 70%;
-        padding: 0;
-
-    }
 }
 
 @media (max-width: 486px) {
@@ -374,17 +321,4 @@ label {
         overflow: hidden;
     }
 
-    .form-style-5 {
-        max-width: 70%;
-        padding: 0;
-
-    }
-
-    .form-style-5 input[type="text"],
-    .form-style-5 input[type="email"],
-    .form-style-5 input[type="tel"],
-    .form-style-5 textarea,
-    .form-style-5 select {
-        margin-bottom: 4px;
-    }
 }
