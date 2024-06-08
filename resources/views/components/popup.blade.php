@@ -45,7 +45,7 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="digital_marketing" id="web3" name="services[]" />
                                                     <label class="form-check-label" for="web3">
-                                                        <span class="service fw-bolder">Digital Marketing <small>(Seo ,
+                                                        <span class="service fw-bolder">Digital Marketing <small>(Seo 
                                                                 & Smm
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
