@@ -18,7 +18,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 col-xl-5">
                     <div class="card overflow-hidden">
-                        <div class="bg-primary-subtle">
+                        {{-- <div class="bg-primary-subtle">
                             <div class="row">
                                 <div class="col-7">
                                     <div class="text-primary p-4">
@@ -26,11 +26,11 @@
                                         <p>Get your free Sohojware account now.</p>
                                     </div>
                                 </div>
-                                {{-- <div class="col-5 align-self-end">
+                                <div class="col-5 align-self-end">
                                     <img src="assets/images/profile-img.png" alt="" class="img-fluid">
-                                </div> --}}
+                                </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="card-body pt-0">
                             {{-- <div>
                                 <a href="index.html">
@@ -48,7 +48,8 @@
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
                                         <input type="text" class="form-control  @error('name') is-invalid @enderror"
-                                            name="name" id="name" placeholder="Enter name" required autocomplete="email">
+                                            name="name" id="name" placeholder="Enter name" required
+                                            autocomplete="email">
                                         @error('name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

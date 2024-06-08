@@ -24,7 +24,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 col-xl-5">
                     <div class="card overflow-hidden">
-                        <div class="bg-primary-subtle">
+                        {{-- <div class="bg-primary-subtle">
                             <div class="row">
                                 <div class="col-7">
                                     <div class="text-primary p-4">
@@ -33,7 +33,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="card-body pt-0">
                             {{-- <div class="auth-logo">
                                 <a href="index.html" class="auth-logo-light">
