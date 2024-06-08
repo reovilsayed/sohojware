@@ -47,7 +47,7 @@
                                                     <label class="form-check-label" for="web3">
                                                         <span class="service fw-bolder">Digital Marketing <small>(Seo ,
                                                                 & Smm
-                                                               , etc)</small>.</span>
+                                                                etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -59,7 +59,7 @@
                                                     <label class="form-check-label" for="web4">
                                                         <span class="service fw-bolder">Graphics Design <small>(Banner ,
                                                                 Logo & UI/UX
-                                                               , etc)</small>.</span>
+                                                                etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -72,7 +72,7 @@
                                                         <span class="service fw-bolder">Video Editing <small>(Event
                                                                 Videos &
                                                                 Corporate Videos
-                                                              ,  etc)</small>.</span>
+                                                               etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
