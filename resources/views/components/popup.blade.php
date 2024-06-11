@@ -9,11 +9,15 @@
                             <img src="{{ asset('assets/images/popup/side-1.jpg') }}" alt="">
                         </div>
                         <div class="steps">
+                            <button type="button" class="close me-2" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                             <div class="step" data-step="1">
                                 <div class="step-container">
                                     <div class="step-title">
                                         <h3>What type of service are you looking for ?</h3>
-                                        <p>Let us help you achieve your goals and reach your target audience effectively
+                                        <p>Let us help you achieve your goals and reach your target audience
+                                            effectively
                                         </p>
                                     </div>
                                     <div class="step-body">
@@ -45,7 +49,8 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="digital_marketing" id="web3" name="services[]" />
                                                     <label class="form-check-label" for="web3">
-                                                        <span class="service fw-bolder">Digital Marketing <small>(Seo 
+                                                        <span class="service fw-bolder">Digital Marketing
+                                                            <small>(Seo
                                                                 & Smm
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
@@ -57,7 +62,8 @@
                                                     <input class="form-check-input" type="checkbox"
                                                         value="graphics_design" id="web4" name="services[]" />
                                                     <label class="form-check-label" for="web4">
-                                                        <span class="service fw-bolder">Graphics Design <small>(Banner ,
+                                                        <span class="service fw-bolder">Graphics Design
+                                                            <small>(Banner ,
                                                                 Logo & UI/UX
                                                                 etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
@@ -72,7 +78,7 @@
                                                         <span class="service fw-bolder">Video Editing <small>(Event
                                                                 Videos &
                                                                 Corporate Videos
-                                                               etc)</small>.</span>
+                                                                etc)</small>.</span>
                                                         <i class="fa-solid fa-arrow-right"></i>
                                                     </label>
                                                 </div>
@@ -188,9 +194,7 @@
         // Find the checkbox or radio input within the clicked .option element
         const input = element.querySelector('.form-check-input');
 
-        // Toggle the checked state of the input
-        input.checked = !input.checked;
-
+       
         // Toggle the 'option-check' class based on the checked state
         if (input.checked) {
             element.classList.add('option-check');
@@ -207,6 +211,7 @@
         });
     });
     document.addEventListener('DOMContentLoaded', () => {
+
         const steps = document.querySelectorAll('.step');
         let currentStep = 0;
 
