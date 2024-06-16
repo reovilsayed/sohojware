@@ -292,10 +292,10 @@
                                     </ul>
                                 </div>
                                 <!-- Modal trigger button -->
-                                <button type="button" class="btn btn-info btn-sm text-white " data-bs-toggle="modal"
+                                {{-- <button type="button" class="btn btn-info btn-sm text-white " data-bs-toggle="modal"
                                     data-bs-target="#modalId">
                                     Popup
-                                </button>
+                                </button> --}}
                             </div>
                         </div>
                     </div>

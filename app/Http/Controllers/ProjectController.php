@@ -133,56 +133,54 @@ class ProjectController extends Controller
     {
         //
     }
-    public function popup(Request $request){
-      
+    public function popup(Request $request)
+    {
 
         $rules = [
-            'services'=>['required'],
-           'title' => ['required','string','max:350'],
-           'description' =>  ['required', 'max:500'], 
-           'name' =>  ['required','string', 'max:50'], 
-           'email' =>  ['required','string', 'max:30'], 
-           'phone' =>  ['string','max:20'], 
+            'services' => ['required'],
+            'title' => ['required', 'string', 'max:350'],
+            'description' => ['required', 'max:500'],
+            'name' => ['required', 'string', 'max:50'],
+            'email' => ['required', 'string', 'max:30'],
+            'phone' => ['string', 'max:20'],
         ];
 
-        if(auth()->check()){
+        if (auth()->check()) {
             unset($rules['name']);
             unset($rules['email']);
             unset($rules['phone']);
         }
-      
-        $request->validate($rules);
-     
-        if(!auth()->check()){
 
-            $user = User:: create([
+        $request->validate($rules);
+
+        if (!auth()->check()) {
+
+            $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
                 'phone' => $request->phone,
-                'password'=>Hash::make('password'),
-                
+                'password' => Hash::make('password'),
+
             ]);
 
             $data = [
-                'name'=>$request->name,
+                'name' => $request->name,
                 'subject' => 'We Create User Account to SohojWare',
-                'body' => 'Name: '.$request->name .'<br>'. 'Email:'.$request->email.'<br>'.'Password: password'.'<br>'. 'Phone:'.$request->phone,
+                'body' => 'Name: ' . $request->name . '<br>' . 'Email:' . $request->email . '<br>' . 'Password: password' . '<br>' . 'Phone:' . $request->phone,
                 'button_link' => '',
                 'button_text' => '',
             ];
             Mail::to('shuvo123@gmail.com')->send(new user_create_mail($data));
-        }else{
+        } else {
             $user = auth()->user();
         }
-            
-            Project:: create([
-        'user_id'=>$user->id,
-        'services'=>json_encode($request->services),
-        'title' => $request->title,
-        'description' => $request->description,
-     
-        
-       ]);
-       return redirect()->back()->with('success_sweet_alert', 'Project successfully created');
+
+        Project::create([
+            'user_id' => $user->id,
+            'services' => json_encode($request->services),
+            'title' => $request->title,
+            'description' => $request->description,
+        ]);
+        return redirect()->back()->with('success_sweet_alert', 'Project successfully created');
     }
 }

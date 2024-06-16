@@ -43,6 +43,11 @@ class PageController extends Controller
                              ->get();
         return view('single_post', compact('post', 'related_posts'));
     }
+    public function posttoposts($slug)
+    {
+        $post = Post::where('slug', $slug)->firstOrFail();
+        return redirect(route('post',$post->slug));
+    }
 
 
     public function services()
