@@ -8,6 +8,7 @@
     <meta name="description" content="@yield('meta-description', setting('site.description'))">
     <meta name="keywords" content="@yield('meta-keywords', setting('site.keywords'))">
     @yield('social_media')
+    <meta name="google-adsense-account" content="ca-pub-3288924076884130">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sayed Khan">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
