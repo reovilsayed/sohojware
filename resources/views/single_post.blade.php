@@ -14,7 +14,7 @@
     <style>
         .header-basic a,
         .header-basic .menu-link {
-            color: var(--clr-white) !important;
+            color: var(--clr-dark) !important;
         }
     </style>
 @endsection
