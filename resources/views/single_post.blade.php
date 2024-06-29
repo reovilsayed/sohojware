@@ -10,7 +10,14 @@
     <meta property="og:url" content="{{ route('post', $post->slug) }}" />
     <meta property="og:image" content="{{ Voyager::image($post->image) }}" />
 @endsection
-
+@section('css')
+    <style>
+        .header-basic a,
+        .header-basic .menu-link {
+            color: var(--clr-white) !important;
+        }
+    </style>
+@endsection
 @section('content')
     <div class="blog blog-post ">
         <div class="container">
