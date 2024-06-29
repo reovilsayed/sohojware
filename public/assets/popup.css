@@ -309,16 +309,24 @@ label {
 
 }
 
-@media (max-width: 486px) {
+@media (max-width: 586px) {
+    .step-title {
+        width: 70%;
+    }
+
+    .step-title h3,
+    p {
+        width: auto !important;
+    }
+
     .step-body {
-        height: 12vh;
+        height: 20vh;
         overflow: scroll;
     }
 
     .options {
         margin-top: 4px;
-        width: 70%;
+        width: 80%;
         overflow: hidden;
     }
-
 }
