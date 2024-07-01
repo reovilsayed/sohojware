@@ -4171,10 +4171,7 @@ body.dark-theme {
 
 }
 
-img {
-    height: auto;
-    width: 100%;
-}
+
 
 .blog .post-main-area .post-content a {
     color: var(--clr-main);
