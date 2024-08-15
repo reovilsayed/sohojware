@@ -34,7 +34,6 @@
     @production
         @if (Str::startsWith($current = url()->current(), 'https://www'))
             <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
-            <meta name="robots" content="noindex">
         @else
             <link rel="canonical" href="{{ $current }}">
         @endif
