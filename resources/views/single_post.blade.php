@@ -16,53 +16,62 @@
         .header-basic .menu-link {
             color: var(--clr-dark) !important;
         }
-        
+
         @media (min-width: 375px) and (max-width: 667px) {
-            .post-main-area{
+            .post-main-area {
                 width: 100% !important;
                 height: auto;
             }
-            .post-content p img{
+
+            .post-content p img {
                 width: 100% !important;
                 height: auto;
             }
         }
+
         @media (min-width: 360px) and (max-width: 740px) {
-            .post-main-area{
+            .post-main-area {
                 width: 100% !important;
                 height: auto;
             }
-            .post-content p img{
+
+            .post-content p img {
                 width: 100% !important;
                 height: auto;
             }
         }
+
         @media (min-width: 768px) and (max-width: 1024px) {
-            .post-main-area{
+            .post-main-area {
                 width: 100% !important;
                 height: auto;
             }
-            .post-content p img{
+
+            .post-content p img {
                 width: 100% !important;
                 height: auto;
             }
         }
+
         @media (min-width: 344px) and (max-width: 882px) {
-            .post-main-area{
+            .post-main-area {
                 width: 100% !important;
                 height: auto;
             }
-            .post-content p img{
+
+            .post-content p img {
                 width: 100% !important;
                 height: auto;
             }
         }
+
         @media (min-width: 800px) and (max-width: 1280px) {
-            .post-main-area{
+            .post-main-area {
                 width: 100% !important;
                 height: auto;
             }
-            .post-content p img{
+
+            .post-content p img {
                 width: 100% !important;
                 height: auto;
             }
@@ -123,5 +132,19 @@
 
         </div>
     </section>
+@endsection
+@section('js')
+    <script>
+        const video = document.getElementById("myVideo");
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                video.contentWindow.postMessage({
+                    event: "command",
+                    func: "playVideo"
+                }, "*");
+            }
+        });
 
+        observer.observe(video);
+    </script>
 @endsection
