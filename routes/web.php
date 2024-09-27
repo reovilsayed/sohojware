@@ -48,21 +48,22 @@ Route::resource('projects', ProjectController::class);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-Route::group(['prefix' => 'client', 'as' => 'client.','middleware'=>'auth'], function () {
+Route::group(['prefix' => 'client', 'as' => 'client.', 'middleware' => 'auth'], function () {
     Route::get('dashboard', [ClientController::class, 'index'])->name('dashboard');
     Route::get('dashboard-project', [ClientController::class, 'project'])->name('project');
     Route::get('project/create', [ClientController::class, 'create'])->name('create');
     Route::post('project/store', [ClientController::class, 'store'])->name('project.store');
     Route::get('project/edit/{project}', [ClientController::class, 'edit'])->name('project.edit');
     Route::post('project/update/{project}', [ClientController::class, 'update'])->name('project.update');
-    Route::get('project/view/{project}',[ClientController::class,'view'])->name('project.view');
+    Route::get('project/view/{project}', [ClientController::class, 'view'])->name('project.view');
     Route::delete('project/{project}', [ClientController::class, 'destroy'])->name('destroy');
     Route::get('dashboard/profile', [ClientController::class, 'profile'])->name('profile');
     Route::post('update/password', [ClientController::class, 'updatePassword'])->name('updatePassword');
     Route::post('avatar/upload', [ClientController::class, 'imageUpload'])->name('imageUpload');
-
 });
 
 Auth::routes();
 
+Route::get('viralsnare-test-page', [PageController::class, 'viralsnarePdf'])->name('viralsnarePdf');
+Route::get('viralsnare-test-page-2', [PageController::class, 'viralsnarePdfBlack'])->name('viralsnarePdfBlack');
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -35,18 +35,18 @@ class PageController extends Controller
     {
         $post = Post::where('slug', $slug)->firstOrFail();
         $related_posts = Post::where('category_id', $post->category_id)
-                             ->where('id', '!=', $post->id)
-                             ->orderBy('created_at', 'desc')
-                             ->where('status', 'PUBLISHED')
-                             ->latest()
-                             ->take(4)
-                             ->get();
+            ->where('id', '!=', $post->id)
+            ->orderBy('created_at', 'desc')
+            ->where('status', 'PUBLISHED')
+            ->latest()
+            ->take(4)
+            ->get();
         return view('single_post', compact('post', 'related_posts'));
     }
     public function posttoposts($slug)
     {
         $post = Post::where('slug', $slug)->firstOrFail();
-        return redirect(route('post',$post->slug));
+        return redirect(route('post', $post->slug));
     }
 
 
@@ -124,12 +124,21 @@ class PageController extends Controller
         ]);
         return back()->with('success_msg', 'Thanks for your subscription');
     }
-    public function letsBuild(){
+    public function letsBuild()
+    {
         return view('letsbuild');
     }
-    public function single_view(Member $member){
+    public function single_view(Member $member)
+    {
 
-        return view('single_view',compact('member'));
+        return view('single_view', compact('member'));
     }
-  
+    public function viralsnarePdf()
+    {
+        return view('viralsnarePdf');
+    }
+    public function viralsnarePdfBlack()
+    {
+        return view('viralsnarePdfBlack');
+    }
 }
