@@ -11,6 +11,7 @@
     <meta name="google-adsense-account" content="ca-pub-3288924076884130">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sayed Khan">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
     <link rel="icon" href="{{ asset('assets/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -34,7 +35,6 @@
     @production
         @if (Str::startsWith($current = url()->current(), 'https://www'))
             <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
-            <meta name="robots" content="noindex">
         @else
             <link rel="canonical" href="{{ $current }}">
         @endif
@@ -108,7 +108,7 @@
 
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('posts') ? 'active' : '' }}"
-                                href="{{ route('posts') }}">Post
+                                href="{{ route('posts') }}">Posts
                             </a></li>
                         <li class="nav-item menu-item"><a
                                 class="nav-link menu-link {{ request()->routeIs('faq') ? 'active' : '' }}"
