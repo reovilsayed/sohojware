@@ -131,11 +131,11 @@
     }
 </style>
 
-<body>
-    <div class="containar" style="width: 800px; ">
+<body style="background-color: grey">
+    <div class="containar" style="width: 800px; background-color: white">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="{{asset('assets/157.png')}}" alt="">
+                <img src="{{ asset('assets/157.png') }}" alt="">
             </div>
             <div class="title">
                 <p>Exclusive Content Submission</p>
@@ -145,7 +145,7 @@
             <div class="content_title" style="color: #1111AA;">
                 <div class="fw-bold sub-content">Submitted Content</div>
             </div>
-            <div class="content_item">
+            <div class="content_item" style="background-color: #FAFAFA">
                 <div class="lable-gorup">
                     <div class="fw-medium lable">Uploaded file:</div>
                     <div class="fw-medium lable">Public video link:</div>
