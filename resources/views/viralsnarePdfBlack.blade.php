@@ -135,7 +135,7 @@
     <div class="containar" style="width: 800px; ">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="157.png" alt="">
+                <img src="{{ asset('assets/157.png') }}" alt="">
             </div>
             <div class="title">
                 <p>Exclusive Content Submission</p>
@@ -177,9 +177,12 @@
                 </div>
                 <div class="data-group" style="padding-left: 28px;">
                     <div class="fw-regular data" style="font-size: 13px !important;">Sandy Duvall</div>
-                    <div class="fw-regular data" style="font-size: 13px !important; background-color:black;">sandy@sierrafit.com</div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">March 14, 1960</div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">+1 (459) 799-4651</div>
+                    <div class="fw-regular data" style="font-size: 13px !important; background-color:black;">
+                        sandy@sierrafit.com</div>
+                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">March 14,
+                        1960</div>
+                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">+1 (459)
+                        799-4651</div>
                 </div>
             </div>
         </section>

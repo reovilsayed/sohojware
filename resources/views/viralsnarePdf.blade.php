@@ -135,7 +135,7 @@
     <div class="containar" style="width: 800px; ">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="157.png" alt="">
+                <img src="{{asset('assets/157.png')}}" alt="">
             </div>
             <div class="title">
                 <p>Exclusive Content Submission</p>
