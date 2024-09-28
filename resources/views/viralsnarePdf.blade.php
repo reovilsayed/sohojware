@@ -145,7 +145,7 @@
             <div class="content_title" style="color: #1111AA;">
                 <div class="fw-bold sub-content">Submitted Content</div>
             </div>
-            <div class="content_item" style="background-color: #FAFAFA">
+            <div class="content_item" >
                 <div class="lable-gorup">
                     <div class="fw-medium lable">Uploaded file:</div>
                     <div class="fw-medium lable">Public video link:</div>

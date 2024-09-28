@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>header without color</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -62,20 +62,20 @@
     }
 
     .content {
-        margin: 0 23px;
+        margin: 23px 23px;
+        border-radius: 4px;
+        border: 1px solid #EAEAEA;
     }
 
     .content_item {
         display: flex;
         width: 754px;
-        border-radius: 5px;
-        border: 1px solid #EAEAEA;
+
     }
 
     .form_content {
         width: 754px;
-        border-radius: 4px;
-        border: 1px solid #EAEAEA;
+
     }
 
     .lable {
@@ -98,8 +98,8 @@
 
     .sub-content {
         margin-left: 8px;
-        margin-top: 23px;
-        margin-bottom: 8px;
+
+        padding: 15px 0;
     }
 
     .form_content_item {
@@ -129,21 +129,26 @@
         font-size: 12px;
         padding: 0 25px 25px 25px;
     }
+
+    .content_title {
+        background-color: #FAFAFA;
+        border-bottom: 1px solid #EAEAEA;
+    }
 </style>
 
 <body style="background-color: grey">
     <div class="containar" style="width: 800px; background-color: white">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="{{ asset('assets/157.png') }}" alt="">
+                <img src="157.png" alt="">
             </div>
             <div class="title">
                 <p>Exclusive Content Submission</p>
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Submitted Content</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Submitted Content</div>
             </div>
             <div class="content_item">
                 <div class="lable-gorup">
@@ -165,8 +170,8 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Submitter Details</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Submitter Details</div>
             </div>
             <div class="content_item">
                 <div class="lable-gorup">
@@ -177,18 +182,15 @@
                 </div>
                 <div class="data-group" style="padding-left: 28px;">
                     <div class="fw-regular data" style="font-size: 13px !important;">Sandy Duvall</div>
-                    <div class="fw-regular data" style="font-size: 13px !important; background-color:black;">
-                        sandy@sierrafit.com</div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">March 14,
-                        1960</div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;">+1 (459)
-                        799-4651</div>
+                    <div class="fw-regular data" style="font-size: 13px !important;">sandy@sierrafit.com</div>
+                    <div class="fw-regular data" style="font-size: 13px !important;">March 14, 1960</div>
+                    <div class="fw-regular data" style="font-size: 13px !important;">+1 (459) 799-4651</div>
                 </div>
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Exclusive Submission Confirmation</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Exclusive Submission Confirmation</div>
             </div>
             <div class="form_content">
                 <div class="form_content_item">

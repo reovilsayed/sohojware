@@ -65,5 +65,14 @@ Route::group(['prefix' => 'client', 'as' => 'client.', 'middleware' => 'auth'], 
 Auth::routes();
 
 Route::get('viralsnare-test-page', [PageController::class, 'viralsnarePdf'])->name('viralsnarePdf');
-Route::get('viralsnare-test-page-2', [PageController::class, 'viralsnarePdfBlack'])->name('viralsnarePdfBlack');
+Route::get('viralsnare-test-page-dark', [PageController::class, 'viralsnarePdfBlack'])->name('viralsnarePdfBlack');
+Route::get('viralsnare-test-page-2', function () {
+    return view('viralsnarePdf3');
+});
+Route::get('viralsnare-test-page-3', function () {
+    return view('viralsnarePdf4');
+});
+Route::get('viralsnare-test-page-4', function () {
+    return view('viralsnarePdf5');
+});
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
