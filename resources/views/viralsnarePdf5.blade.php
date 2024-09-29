@@ -154,7 +154,7 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title " style="color: #525252;">
+            <div class="content_title " style="color: #1C1C1C;">
                 <div class="fw-medium sub-content">Submitted Content</div>
             </div>
             <div class="content_item">
@@ -177,7 +177,7 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title " style="color: #525252;">
+            <div class="content_title " style="color: #1C1C1C;">
                 <div class="fw-medium sub-content">Submitter Details</div>
             </div>
             <div class="content_item">
@@ -196,7 +196,7 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title " style="color: #525252;">
+            <div class="content_title " style="color: #1C1C1C;">
                 <div class="fw-medium sub-content">Exclusive Submission Confirmation</div>
             </div>
             <div class="form_content">
