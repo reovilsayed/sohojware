@@ -188,11 +188,11 @@
                     <div class="fw-regular data" style="font-size: 13px !important; ">
                         <span style="background-color:black;">sandy@sierrafit.com</span>
                     </div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;"><span
+                    <div class="fw-regular data" style="font-size: 13px !important;"><span
                             style="background-color:black;">March
                             14,
                             1960</span></div>
-                    <div class="fw-regular data" style="font-size: 13px !important;background-color:black;"><span
+                    <div class="fw-regular data" style="font-size: 13px !important;"><span
                             style="background-color:black;">+1
                             (459)
                             799-4651</span></div>
