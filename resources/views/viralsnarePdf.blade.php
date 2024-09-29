@@ -59,7 +59,7 @@
     .title {
         margin-left: 228px;
         margin-top: 32px;
-        color: #101010;
+        color: #111111;
     }
 
     .content {
@@ -91,6 +91,7 @@
         padding: 25px;
         display: inline;
         width: 220;
+        color: #101010;
     }
 
     .data-group {
