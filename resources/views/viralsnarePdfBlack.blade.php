@@ -58,7 +58,7 @@
     .title {
         margin-left: 228px;
         margin-top: 32px;
-        color: #111111;
+        color: #101010;
     }
 
     .content {
@@ -94,6 +94,8 @@
 
     .data-group {
         padding: 25px 0;
+
+        color: #333333;
     }
 
     .sub-content {
