@@ -136,11 +136,11 @@
     }
 </style>
 
-<body>
-    <div class="containar" style="width: 800px; ">
+<body style="background-color: grey">
+    <div class="containar" style="width: 800px; background-color: white;">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="{{asset('assets/157.png')}}" alt="">
+                <img src="{{ asset('assets/157.png') }}" alt="">
             </div>
             <div class="title">
                 <p class="fw-medium">Exclusive Content Submission</p>
