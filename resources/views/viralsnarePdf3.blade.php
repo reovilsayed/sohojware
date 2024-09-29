@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header colored</title>
+    <title>header without color</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,12 +21,12 @@
 
         text-transform: none !important;
         font-family: "Inter", sans-serif;
-        font-size: 14px;
+        font-size: 13px;
         font-style: normal;
     }
 
     .fw-bold {
-        font-weight: 700 !important;
+        font-weight: 600 !important;
     }
 
     .fw-medium {
@@ -38,7 +38,7 @@
     }
 
     .fw-light {
-        font-weight: 200 !important;
+        font-weight: 300 !important;
     }
 
     .containar {
@@ -98,8 +98,12 @@
 
     .sub-content {
         margin-left: 8px;
-
+        font-size: 14px;
         padding: 15px 0;
+    }
+
+    p {
+        font-size: 14px;
     }
 
     .form_content_item {
@@ -136,19 +140,19 @@
     }
 </style>
 
-<body style="background-color: grey">
-    <div class="containar" style="width: 800px; background-color: white">
+<body>
+    <div class="containar" style="width: 800px; ">
         <section class="header" style="height: 80px;">
             <div class="logo">
-                <img src="{{ asset('assets/157.png') }}" alt="">
+                <img src="157.png" alt="">
             </div>
             <div class="title">
-                <p>Exclusive Content Submission</p>
+                <p class="fw-medium">Exclusive Content Submission</p>
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Submitted Content</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Submitted Content</div>
             </div>
             <div class="content_item">
                 <div class="lable-gorup">
@@ -170,8 +174,8 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Submitter Details</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Submitter Details</div>
             </div>
             <div class="content_item">
                 <div class="lable-gorup">
@@ -189,8 +193,8 @@
             </div>
         </section>
         <section class="content">
-            <div class="content_title" style="color: #1111AA;">
-                <div class="fw-bold sub-content">Exclusive Submission Confirmation</div>
+            <div class="content_title " style="color: #525252;">
+                <div class="fw-medium sub-content">Exclusive Submission Confirmation</div>
             </div>
             <div class="form_content">
                 <div class="form_content_item">
@@ -215,11 +219,13 @@
                 <div class="check-group">
                     <div class="check-item">
                         <input type="checkbox" name="" id="" checked>
-                        <label for="">Yes, I have read and agreed to the Terms of Service.</label>
+                        <label for="" class="fw-medium">Yes, I have read and agreed to the <span
+                                class="fw-bold">Terms of Service.</span></label>
                     </div>
                     <div class="check-item-2">
                         <input type="checkbox" name="" id="" checked>
-                        <label for="">Yes, I have read and agreed to the Terms of Service.</label>
+                        <label for="" class="fw-medium">Yes, I have read and agreed to the <span
+                                class="fw-bold">Terms of Submission.</span></label>
                     </div>
                 </div>
                 <hr style="margin: 25px;">
