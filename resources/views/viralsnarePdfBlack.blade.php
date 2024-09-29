@@ -186,14 +186,14 @@
                 <div class="data-group" style="padding-left: 28px;">
                     <div class="fw-regular data" style="font-size: 13px !important;">Sandy Duvall</div>
                     <div class="fw-regular data" style="font-size: 13px !important; ">
-                        <span style="background-color:black;">sandy@sierrafit.com</span>
+                        <span style="background-color:#000000; color: #000000;">sandy@sierrafit.com</span>
                     </div>
                     <div class="fw-regular data" style="font-size: 13px !important;"><span
-                            style="background-color:black;">March
+                            style="background-color:#000000; color: #000000;">March
                             14,
                             1960</span></div>
                     <div class="fw-regular data" style="font-size: 13px !important;"><span
-                            style="background-color:black;">+1
+                            style="background-color:#000000; color: #000000;">+1
                             (459)
                             799-4651</span></div>
                 </div>
