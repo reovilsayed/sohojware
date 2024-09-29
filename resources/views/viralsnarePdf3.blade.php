@@ -94,6 +94,7 @@
 
     .data-group {
         padding: 25px 0;
+        color: #333333
     }
 
     .sub-content {
